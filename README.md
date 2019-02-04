@@ -1,3 +1,3 @@
-# PEST ALERT!
+# :bug: PEST ALERT! :bug:
 
 ## CABI-project
