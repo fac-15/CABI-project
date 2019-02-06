@@ -2,11 +2,11 @@
     "name": "CABI-project",
     "version": "1.0.0",
     "description": "## CABI-project",
-    "main": "index.js",
+    "main": "utils/index.js",
     "scripts": {
         "test": "jest --watch",
-        "dev": "parcel index.html",
-        "build": "parcel build index.html",
+        "dev": "parcel public/index.html",
+        "build": "parcel build public/index.html",
         "start": "react-scripts start"
     },
     "repository": {
