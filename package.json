@@ -1,45 +1,53 @@
 {
-  "name": "CABI-project",
-  "version": "1.0.0",
-  "description": "## CABI-project",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest --watch",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fac-15/CABI-project.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fac-15/CABI-project/issues"
-  },
-  "homepage": "https://github.com/fac-15/CABI-project#readme",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.13.0",
-    "eslint-config-react-minimal": "^1.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-react": "^7.12.4",
-    "jest": "^24.1.0",
-    "parcel-bundler": "^1.11.0"
-  },
-  "dependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
-      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-    }
-  }
+    "name": "CABI-project",
+    "version": "1.0.0",
+    "description": "## CABI-project",
+    "main": "utils/index.js",
+    "scripts": {
+        "test": "jest --watch",
+        "dev": "parcel public/index.html",
+        "build": "parcel build public/index.html",
+        "start": "react-scripts start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fac-15/CABI-project.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fac-15/CABI-project/issues"
+    },
+    "homepage": "https://github.com/fac-15/CABI-project#readme",
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-class-properties": "^7.3.0",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/preset-react": "^7.0.0",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.5",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "eslint": "^5.13.0",
+        "eslint-config-react-minimal": "^1.0.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-react": "^7.12.4",
+        "jest": "^24.1.0",
+        "parcel-bundler": "^1.11.0"
+    },
+    "dependencies": {
+        "express": "^4.16.4",
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
+            "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+        }
+    },
+    "proxy": "http://localhost:5000"
 }
