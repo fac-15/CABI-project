@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import jsonGhana from '../../factsheets_Ghana.json';
 require('babel-polyfill');
 
 class App extends Component {
     state = {
-        data: null
+        data: null,
+        panGhana: null
     };
 
     componentDidMount() {
@@ -27,6 +29,10 @@ class App extends Component {
             <div className="App">
                 <header className="App-Header">
                     <h1 className="App-Title">Hello World</h1>
+
+                    {jsonGhana.Factsheets.map(i => {
+                        if (i.PAN) return <p> {i.PAN} </p>;
+                    })}
                 </header>
                 <p className="App-intro">{this.state.data}</p>
             </div>
