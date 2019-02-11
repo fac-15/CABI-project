@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import jsonGhana from '../../factsheets_Ghana.json';
 require('babel-polyfill');
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Search from './Search';
+import Dashboard from './Dashboard';
+
 
 class App extends Component {
     state = {
@@ -26,16 +30,20 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-Header">
-                    <h1 className="App-Title">Hello World</h1>
-
-                    {jsonGhana.Factsheets.map(i => {
-                        if (i.PAN) return <p> {i.PAN} </p>;
-                    })}
-                </header>
-                <p className="App-intro">{this.state.data}</p>
+            <Router>
+                <div>
+                 <Switch>
+                    <Route exact path='/' component={(state) => <Search data={this.state.data} />} />
+                    <Route path='/home' component={Dashboard} />
+            {/* <Route path='/crop' component={Crop} />
+            <Route path='/pest' component={Pest} />
+            <Route path='/risk' component={Risk} />
+            <Route path='/form' component={Form} />
+            <Route path='/search' component={Search} />
+            <Route component={404} /> */}
+                </Switch>
             </div>
+        </Router>
         );
     }
 }
