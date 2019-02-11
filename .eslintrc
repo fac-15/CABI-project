@@ -5,7 +5,9 @@
   "rules": {
     "no-console": "off",
     "no-undef": "off",
+    "import/no-commonjs": "off",
     "no-unused-vars": "off",
+    "import/no-nodejs-modules": "off",
     "no-sync": "off"
   }
 }

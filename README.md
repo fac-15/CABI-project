@@ -16,3 +16,7 @@
 ![#a05EB5](https://placehold.it/15/a05EB5/000000?text=+) `#a05EB5 - Accent`
 ![#e10098](https://placehold.it/15/e10098/000000?text=+) `#e10098 - Accent`
 ![#80225f](https://placehold.it/15/80225f/000000?text=+) `#80225f - Accent`
+
+##### React Planning
+![img_20190211_150302](https://user-images.githubusercontent.com/41472850/52572180-1e584800-2e0f-11e9-9b81-2a91b17d2145.jpg)
+![img_20190211_145103](https://user-images.githubusercontent.com/41472850/52572194-2912dd00-2e0f-11e9-8b71-8ca62152da66.jpg)
