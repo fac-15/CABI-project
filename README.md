@@ -18,5 +18,5 @@
 ![#80225f](https://placehold.it/15/80225f/000000?text=+) `#80225f - Accent`
 
 ##### React Planning
-![img_20190211_150302](https://user-images.githubusercontent.com/41472850/52572180-1e584800-2e0f-11e9-9b81-2a91b17d2145.jpg)
-![img_20190211_145103](https://user-images.githubusercontent.com/41472850/52572194-2912dd00-2e0f-11e9-8b71-8ca62152da66.jpg)
+![react](https://user-images.githubusercontent.com/41472850/52576240-9cb8e800-2e17-11e9-8f4a-1b3bffe48df0.png)
+![react1](https://user-images.githubusercontent.com/41472850/52576456-01744280-2e18-11e9-9bba-8e08b720ebeb.png)
