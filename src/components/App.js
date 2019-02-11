@@ -1,13 +1,16 @@
-import React, { Component } from "react";
-require("babel-polyfill");
-import jasonData from "../../factsheets_Ghana.json";
-const arr1 = jasonData.Factsheets.filter(d => d.PAN == 20157800393);
+import React, { Component } from 'react';
+import jsonGhana from '../../factsheets_Ghana.json';
+require('babel-polyfill');
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Search from './Search';
+import Dashboard from './Dashboard';
+
 
 class App extends Component {
-  state = {
-    data: null,
-    json: []
-  };
+    state = {
+        data: null,
+        panGhana: null
+    };
 
   componentDidMount() {
     this.callBackendAPI()
@@ -18,24 +21,26 @@ class App extends Component {
   callBackendAPI = async () => {
     const response = await fetch("./express_backend");
     const body = await response.json();
-
-    if (response.status === 200) {
-      throw Error(body.message);
-    }
-    return body;
-  };
-
-  render() {
-    return (
-      <div className="App">
-        <header className="App-Header">
-          <h1 className="App-Title">Hello World</h1>
-        </header>
-        <p> {jasonData.Factsheets[1].PAN}</p>
-        <p className="App-intro">{this.state.data}</p>
-      </div>
-    );
   }
+
+    render() {
+        return (
+            <Router>
+                <div>
+                 <Switch>
+                    <Route exact path='/' component={(state) => <Search data={this.state.data} />} />
+                    <Route path='/home' component={Dashboard} />
+            {/* <Route path='/crop' component={Crop} />
+            <Route path='/pest' component={Pest} />
+            <Route path='/risk' component={Risk} />
+            <Route path='/form' component={Form} />
+            <Route path='/search' component={Search} />
+            <Route component={404} /> */}
+                </Switch>
+            </div>
+        </Router>
+        );
+    }
 }
 
 export default App;
