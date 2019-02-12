@@ -6,12 +6,12 @@ export default function PestButton({ pest, route }) {
     const { name, risk, crop } = pest;
     return (
         <div>
+            <h2>{crop}</h2>
             <Link to={route}>
-             <button>
-              <h3>{name}</h3>
-              <RiskLevel level={risk} />
-              <p>{crop}</p>
-             </button>
+                <button>
+                    <h3>{name}</h3>
+                    <RiskLevel level={risk} />
+                </button>
             </Link>
         </div>
     );

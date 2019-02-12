@@ -1,6 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const riskNumToString = (num) => {
+    let string;
+    if (num === 1) {
+        string = "Low risk";
+    } else if (num === 2) {
+        string = "Medium risk";
+    } else {
+        string = "High risk";
+    }
+    return string;
+};
+
 const riskColor = num => {
     return num === 1
         ? 'green'
@@ -17,7 +29,7 @@ const Risk = styled.p`
 
 const RiskLevel = props => (
     <div>
-        <Risk level={props.level}>{props.level}</Risk>
+        <Risk level={props.level}>{riskNumToString(props.level)}</Risk>
     </div>
 );
 

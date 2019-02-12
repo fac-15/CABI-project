@@ -15,13 +15,18 @@ const pests = [
         crop: 'Bean'
     },
     {
+        name: 'Fall armyworm',
+        risk: 2,
+        crop: 'Tomato'
+    },
+    {
         name: 'Busseloa',
-        risk: 1,
+        risk: 3,
         crop: 'Maize'
     },
     {
         name: 'Busseloa',
-        risk: 1,
+        risk: 2,
         crop: 'Tomato'
     }
 ];
