@@ -4,9 +4,9 @@ import CropButton from './CropButton';
 const CropBox = props => (
     <div>
         <h2>Can't identify the pest? Choose a crop:</h2>
-        {props.crops.map(crop => (
-        <CropButton crop={crop} route="/crop" />
-        ))}
+        <CropButton crop="Tomato" route="/crop" />
+        <CropButton crop="Bean" route="/crop" />
+        <CropButton crop="Maize" route="/crop" />
     </div>
 );
 

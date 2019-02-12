@@ -8,8 +8,10 @@ client.get(url)
 
 try:
 	csrftoken = client.cookies['csrftoken']
+
+	print csrftoken
 	
-	login_data = dict(username='XXXXXX',password='XXXXXX',csrfmiddlewaretoken=csrftoken,next='/api/pests/')
+	login_data = dict(username='XXXXX',password='XXXXXXXX',csrfmiddlewaretoken=csrftoken,next='/api/pests/')
 	
 	r = client.post(url, data=login_data, headers=dict(Referer=url))
 	

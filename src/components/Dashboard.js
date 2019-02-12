@@ -7,7 +7,7 @@ import CropBox from './CropBox'
 const Dashboard = props => (
     <div>
         <h1 className="App-Title">Hello Dashboard! Muahahahahaha</h1>
-        <CropBox crops={props.data} />
+        <CropBox className="cropbox" crops={props.data} />
         <PestBox pests={props.data} />
         <Button name="Back" route="/" />
     </div>
