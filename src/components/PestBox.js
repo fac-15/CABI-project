@@ -5,7 +5,7 @@ const PestBox = props => (
     <div>
         <h2>{props.cropName}</h2>
         {props.pests.map(pest => (
-            <PestButton pest={pest} />
+            <PestButton pest={pest} route="/pest" />
         ))}
     </div>
 );
