@@ -10,7 +10,7 @@ const pests = [
     {
         name: 'Busseloa',
         risk: 1,
-        crop: 'Maize'
+        crop: 'Bean'
     },
     {
         name: 'Busseloa',
@@ -20,7 +20,7 @@ const pests = [
     {
         name: 'Busseloa',
         risk: 1,
-        crop: 'Maize'
+        crop: 'Tomato'
     }
 ];
 
