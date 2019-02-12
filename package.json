@@ -42,7 +42,7 @@
         "express": "^4.16.4",
         "fs": "0.0.1-security",
         "react": "^16.8.1",
-        "react-dom": "^16.8.0",
+        "react-dom": "^16.8.1",
         "react-router-dom": "^4.3.1",
         "styled-components": "^4.1.3"
     },
