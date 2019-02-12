@@ -1,13 +1,14 @@
-import React from "react";
-import jsonGhana from "../../factsheets_Ghana.json";
-import Button from "./Button.js";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import React from 'react';
+import jsonGhana from '../../factsheets_Ghana.json';
+import PestBox from './PestBox';
+import Button from './Button.js';
 
-export default function Dashboard() {
-  return (
+const Dashboard = props => (
     <div>
-      <h1 className="App-Title">Hello Dashboard! Muahahahahaha</h1>
-      <Button name="Back" route="/" />
+        <h1 className="App-Title">Hello Dashboard! Muahahahahaha</h1>
+        <PestBox cropName={props.crop} pests={props.data} />
+        <Button name="Back" route="/" />
     </div>
-  );
-}
+);
+
+export default Dashboard;
