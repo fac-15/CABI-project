@@ -1,12 +1,12 @@
-import React from 'react';
-import PestButton from './PestButton';
+import React from "react";
+import PestButton from "./PestButton";
 
 const PestBox = props => (
-    <div>
-        {props.pests.map(pest => (
-            <PestButton pest={pest} route="/pest" />
-        ))}
-    </div>
+  <div>
+    {props.pests.map(pest => (
+      <PestButton pest={pest} route="/pest" key={pest.key} />
+    ))}
+  </div>
 );
 
 export default PestBox;
