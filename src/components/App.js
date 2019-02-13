@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Search from './Search';
 import Dashboard from './Dashboard';
 import Risk from './Risk';
-import Crop from './Crop'
-import Pest from './Pest'
+import Crop from './Crop';
+import Pest from './Pest';
+import Header from './Header';
 
 const pests = [
     {
@@ -64,8 +65,11 @@ class App extends Component {
                             path="/home"
                             component={() => <Dashboard data={pests} />}
                         />
-                     <Route path='/crop' component={Crop} /> 
-                     <Route path='/pest' component={Pest} />
+                        <Route
+                            path="/crop"
+                            component={() => <Crop data={pests} />}
+                        />
+                        <Route path="/pest" component={Pest} />
                         <Route
                             path="/risk"
                             component={() => <Risk data={pests} />}
