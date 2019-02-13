@@ -43,6 +43,7 @@
         "fs": "0.0.1-security",
         "header": "^0.1.1",
         "react": "^16.8.1",
+        "react-country-region-selector": "^1.4.3",
         "react-dom": "^16.8.1",
         "react-router-dom": "^4.3.1",
         "request": "^2.88.0",
