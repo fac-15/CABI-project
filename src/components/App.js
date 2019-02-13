@@ -5,9 +5,11 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Search from './Search';
 import Dashboard from './Dashboard';
 import Risk from './Risk';
+import Form from './Form'
 import Crop from './Crop';
 import Pest from './Pest';
 import Header from './Header';
+
 
 const pests = [
     {
@@ -74,8 +76,8 @@ class App extends Component {
                             path="/risk"
                             component={() => <Risk data={pests} />}
                         />
-                        {/* <Route path='/form' component={Form} />
-            <Route path='/search' component={Search} />
+                        <Route path='/form' component={Form} />
+            {/* <Route path='/search' component={Search} />
             <Route component={404} /> */}
                     </Switch>
                 </div>
