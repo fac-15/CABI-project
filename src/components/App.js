@@ -7,6 +7,7 @@ import Dashboard from './Dashboard';
 import Risk from './Risk';
 import Crop from './Crop'
 import Pest from './Pest'
+import Form from './Form'
 
 const pests = [
     {
@@ -70,8 +71,8 @@ class App extends Component {
                             path="/risk"
                             component={() => <Risk data={pests} />}
                         />
-                        {/* <Route path='/form' component={Form} />
-            <Route path='/search' component={Search} />
+                        <Route path='/form' component={Form} />
+            {/* <Route path='/search' component={Search} />
             <Route component={404} /> */}
                     </Switch>
                 </div>
