@@ -28,3 +28,7 @@ app.get("/", (req, res) => {
   res.json(jsonGhana);
 });
 // });
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve("public", "index.html"));
+});
