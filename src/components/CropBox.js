@@ -6,7 +6,7 @@ const CropBox = props => (
     <div>
         <p>
             You are in {props.country}, {props.region}. <Link to='/'>
-            <button>Change location</button>
+            Change location
             </Link>
         </p>
         <h2>Can't identify the pest? Choose a crop:</h2>
