@@ -61,7 +61,10 @@ class App extends Component {
               component={state => <Search data={this.state.data} />}
             />
             <Route path="/home" component={() => <Dashboard data={pests} />} />
-            <Route path="/crop" component={<Crop {...props} />} />
+            <Route
+              path="/crop/:crops"
+              component={props => <Crop {...props} data={pests} />}
+            />
             <Route path="/pest" component={Pest} />
             <Route path="/risk" component={() => <Risk data={pests} />} />
             <Route path="/form" component={Form} />

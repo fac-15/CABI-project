@@ -4,21 +4,11 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import HowManyFarmers from "./HowManyFarmers.js";
 import Header from "./Header";
 
-// const Crop = props => (
-//     <div>
-//         <Header name={props.name} />
-//         {/* <h1 className="App-Title">TEXT</h1> */}
-//     </div>
-// );
-
 export default function Crop(props) {
-  debugger;
-  const name = window.location.href.split("/")[4];
-
   return (
     <div>
-      {console.log(name)}
-      <Header name={name} />
+      {console.log(props.match.params.crops)}
+      <Header name={props.match.params.crops} />
       <HowManyFarmers />
     </div>
   );
