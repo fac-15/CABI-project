@@ -5,11 +5,14 @@ import HowManyFarmers from "./HowManyFarmers.js";
 import Header from "./Header";
 
 export default function Crop(props) {
+
   return (
     <div>
       {console.log(props.match.params.crops)}
       <Header name={props.match.params.crops} />
+      <div id="container">
       <HowManyFarmers />
+      </div>
     </div>
   );
 }

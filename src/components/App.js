@@ -1,14 +1,16 @@
-import React, { Component } from "react";
-import jsonGhana from "../../factsheets_Ghana.json";
-require("babel-polyfill");
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Search from "./Search";
-import Dashboard from "./Dashboard";
-import Risk from "./Risk";
-import Form from "./Form";
-import Crop from "./Crop";
-import Pest from "./Pest";
-import Header from "./Header";
+
+import React, { Component } from 'react';
+import jsonGhana from '../../factsheets_Ghana.json';
+require('babel-polyfill');
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import Search from './Search';
+import Dashboard from './Dashboard';
+import Risk from './Risk';
+import Form from './Form'
+import Crop from './Crop';
+import Pest from './Pest';
+import Header from './Header';
+import HowManyFarmers from './HowManyFarmers.js';
 
 const pests = [
   {
