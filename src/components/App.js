@@ -9,6 +9,7 @@ import Form from './Form'
 import Crop from './Crop';
 import Pest from './Pest';
 import Header from './Header';
+import HowManyFarmers from './HowManyFarmers.js';
 
 
 const pests = [

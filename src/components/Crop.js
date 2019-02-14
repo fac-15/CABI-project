@@ -19,7 +19,9 @@ export default function Crop(props) {
         <div>
             {console.log(name)}
             <Header name={name} />
+            <div id="container">
             <HowManyFarmers />
+            </div>
         </div>
     );
 }
