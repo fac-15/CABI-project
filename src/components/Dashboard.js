@@ -28,6 +28,7 @@ class Dashboard extends React.Component {
     render() {
         return (
             <div>
+                <Title />
                 <h1 className="App-Title">Hello Dashboard! Muahahahahaha</h1>
                 <CropBox
                     country={this.state.country}

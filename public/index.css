@@ -34,6 +34,7 @@ body {
 
 .form {
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .clickMe {
