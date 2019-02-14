@@ -1,9 +1,8 @@
-
 import React from "react";
 import jsonGhana from "../../factsheets_Ghana.json";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import HowManyFarmers from "./HowManyFarmers.js";
-import Header from './Header';
+import Header from "./Header";
 
 // const Crop = props => (
 //     <div>
@@ -13,13 +12,14 @@ import Header from './Header';
 // );
 
 export default function Crop(props) {
-    const name = window.location.href.split('/')[4];
+  debugger;
+  const name = window.location.href.split("/")[4];
 
-    return (
-        <div>
-            {console.log(name)}
-            <Header name={name} />
-            <HowManyFarmers />
-        </div>
-    );
+  return (
+    <div>
+      {console.log(name)}
+      <Header name={name} />
+      <HowManyFarmers />
+    </div>
+  );
 }
