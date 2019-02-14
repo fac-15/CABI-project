@@ -17,5 +17,4 @@ export default function Crop(props) {
             </div>
     </div>
   );
-
 }

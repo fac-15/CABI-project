@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import jsonGhana from '../../factsheets_Ghana.json';
 require('babel-polyfill');
@@ -10,7 +11,6 @@ import Crop from './Crop';
 import Pest from './Pest';
 import Header from './Header';
 import HowManyFarmers from './HowManyFarmers.js';
-
 
 const pests = [
   {
