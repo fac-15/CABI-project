@@ -1,10 +1,13 @@
 import React from 'react';
 import CropButton from './CropButton';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const CropBox = props => (
     <div>
         <p>
-            You are in {props.country}, {props.region}
+            You are in {props.country}, {props.region}. <Link to='/'>
+            <button>Change location</button>
+            </Link>
         </p>
         <h2>Can't identify the pest? Choose a crop:</h2>
         <CropButton crop="Tomato" route="/crop/Tomato" />
