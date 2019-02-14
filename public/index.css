@@ -1,8 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-    background: grey;
+    background:white;
     font-family: 'Open Sans', sans-serif;
 }
+        
+.panel {
+    width: 100%;
+    position: absolute;
+    bottom: 3em;
+    margin-top: 1em;
+    max-height: 0em;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.panel.visible{
+  max-height:100%;
+}
 
+.HowManyFarmers-enter {
+    height: 0em;
+}
 
+.HowManyFarmers-enter.example-enter-active {
+    height: 100%;
+    -webkit-transition: height .3s ease;
+}
+
+.HowManyFarmers-leave.example-leave-active {
+    height: 0px;
+    -webkit-transition: height .3s ease;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.clickMe {
+    position: absolute;
+    bottom: 1em;
+    width: 50%;
+    background: #368729;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    margin-left: auto;
+}
