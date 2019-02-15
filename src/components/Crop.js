@@ -3,37 +3,25 @@ import React from 'react';
 import HowManyFarmers from './HowManyFarmers.js';
 import Header from './Header';
 import Title from './Title.js';
-// import fullJson from '../data/factsheet.json';
+var jsonSheet = require('../data/factsheet.json');
 
 class Crop extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
-            info: null
+            data: {}
         };
     }
 
-    componentDidMount = async () => {
-        // await fetch('../data/factsheet.json')
+    componentDidMount() {
+        // fetch(jsonSheet)
         //     .then(res => res.json())
         //     .then(data => {
-        //         console.log(data.CommonName);
-        //         this.setState({
-        //             info: data[0].CommonName
-        //         });
+        //         this.setState({ data: jsonSheet });
         //     });
-        const myHeaders = new Headers({
-            'Content-Type': 'application/json',
-            Accept: 'application/json'
-        });
-        await fetch('../data/factsheet.json', { headers: myHeaders })
-            .then(res => res.json())
-            .then(data => {
-                this.setState({
-                    info: data
-                });
-            });
-    };
+        this.setState({ data: jsonSheet });
+        console.log(jsonSheet);
+    }
 
     render() {
         return (
@@ -43,6 +31,17 @@ class Crop extends React.Component {
                 {console.log(this.props.match.params.crops)}
                 <Header name={this.props.match.params.crops} />
                 <div id="container">
+                    <ul>
+                        {jsonSheet.map(e => {
+                            if (e.Crop === 'maize') {
+                                return (
+                                    <li key={e.CountryISO}>
+                                        {e.PestScientificName}
+                                    </li>
+                                );
+                            }
+                        })}
+                    </ul>
                     <HowManyFarmers />
                 </div>
             </div>
