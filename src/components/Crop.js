@@ -9,36 +9,27 @@ class Crop extends React.Component {
     constructor() {
         super();
         this.state = {
-            data: {}
+            data: null
         };
     }
 
     componentDidMount() {
-        // fetch(jsonSheet)
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         this.setState({ data: jsonSheet });
-        //     });
-        this.setState({ data: jsonSheet });
-        console.log(jsonSheet);
+        this.setState({ data: jsonSheet[0] });
+        // console.log(this.state.data);
     }
 
     render() {
         return (
             <div>
                 <Title />
-                {console.log('data: ', JSON.stringify(this.state.info))}
+                {console.log('data: ', JSON.stringify(this.state.data))}
                 {console.log(this.props.match.params.crops)}
                 <Header name={this.props.match.params.crops} />
                 <div id="container">
                     <ul>
                         {jsonSheet.map(e => {
-                            if (e.Crop === 'maize') {
-                                return (
-                                    <li key={e.CountryISO}>
-                                        {e.PestScientificName}
-                                    </li>
-                                );
+                            if (e.Crop === 'tomato') {
+                                return <li> {e.PestScientificName}</li>;
                             }
                         })}
                     </ul>
