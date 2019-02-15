@@ -1,5 +1,4 @@
 import React from "react";
-import jsonGhana from "../../factsheets_Ghana.json";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import HowManyFarmers from "./HowManyFarmers.js";
 import Header from "./Header";

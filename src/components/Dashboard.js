@@ -1,5 +1,4 @@
 import React from 'react';
-import jsonGhana from '../../factsheets_Ghana.json';
 import PestBox from './PestBox';
 import Button from './Button.js';
 import CropBox from './CropBox';
