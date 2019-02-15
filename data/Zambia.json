@@ -1,0 +1,292 @@
+﻿{
+    "Zambia": [
+        {
+            "OBJECTID": "1",
+            "COUNTY": "Chibombo"
+        },
+        {
+            "OBJECTID": "2",
+            "COUNTY": "Kabwe"
+        },
+        {
+            "OBJECTID": "3",
+            "COUNTY": "Kapiri Mposhi"
+        },
+        {
+            "OBJECTID": "4",
+            "COUNTY": "Mkushi"
+        },
+        {
+            "OBJECTID": "5",
+            "COUNTY": "Mumbwa"
+        },
+        {
+            "OBJECTID": "6",
+            "COUNTY": "Serenje"
+        },
+        {
+            "OBJECTID": "7",
+            "COUNTY": "Chililabombwe"
+        },
+        {
+            "OBJECTID": "8",
+            "COUNTY": "Chingola"
+        },
+        {
+            "OBJECTID": "9",
+            "COUNTY": "Kalulushi"
+        },
+        {
+            "OBJECTID": "10",
+            "COUNTY": "Kitwe"
+        },
+        {
+            "OBJECTID": "11",
+            "COUNTY": "Luanshya"
+        },
+        {
+            "OBJECTID": "12",
+            "COUNTY": "Lufwanyama"
+        },
+        {
+            "OBJECTID": "13",
+            "COUNTY": "Masaiti"
+        },
+        {
+            "OBJECTID": "14",
+            "COUNTY": "MPongwe"
+        },
+        {
+            "OBJECTID": "15",
+            "COUNTY": "Mufulira"
+        },
+        {
+            "OBJECTID": "16",
+            "COUNTY": "Ndola"
+        },
+        {
+            "OBJECTID": "17",
+            "COUNTY": "Chadiza"
+        },
+        {
+            "OBJECTID": "18",
+            "COUNTY": "Chama"
+        },
+        {
+            "OBJECTID": "19",
+            "COUNTY": "Chipata"
+        },
+        {
+            "OBJECTID": "20",
+            "COUNTY": "Katete"
+        },
+        {
+            "OBJECTID": "21",
+            "COUNTY": "Lundazi"
+        },
+        {
+            "OBJECTID": "22",
+            "COUNTY": "Mambwe"
+        },
+        {
+            "OBJECTID": "23",
+            "COUNTY": "Nyimba"
+        },
+        {
+            "OBJECTID": "24",
+            "COUNTY": "Petauke"
+        },
+        {
+            "OBJECTID": "25",
+            "COUNTY": "Chiengi"
+        },
+        {
+            "OBJECTID": "26",
+            "COUNTY": "Kawambwa"
+        },
+        {
+            "OBJECTID": "27",
+            "COUNTY": "Mansa"
+        },
+        {
+            "OBJECTID": "28",
+            "COUNTY": "Milenge"
+        },
+        {
+            "OBJECTID": "29",
+            "COUNTY": "Mwense"
+        },
+        {
+            "OBJECTID": "30",
+            "COUNTY": "Nchelenge"
+        },
+        {
+            "OBJECTID": "31",
+            "COUNTY": "Samfya"
+        },
+        {
+            "OBJECTID": "32",
+            "COUNTY": "Chongwe"
+        },
+        {
+            "OBJECTID": "33",
+            "COUNTY": "Kafue"
+        },
+        {
+            "OBJECTID": "34",
+            "COUNTY": "Luangwa"
+        },
+        {
+            "OBJECTID": "35",
+            "COUNTY": "Lusaka"
+        },
+        {
+            "OBJECTID": "36",
+            "COUNTY": "Chilubi"
+        },
+        {
+            "OBJECTID": "37",
+            "COUNTY": "Chinsali"
+        },
+        {
+            "OBJECTID": "38",
+            "COUNTY": "Isoka"
+        },
+        {
+            "OBJECTID": "39",
+            "COUNTY": "Kaputa"
+        },
+        {
+            "OBJECTID": "40",
+            "COUNTY": "Kasama"
+        },
+        {
+            "OBJECTID": "41",
+            "COUNTY": "Luwingu"
+        },
+        {
+            "OBJECTID": "42",
+            "COUNTY": "Mbala"
+        },
+        {
+            "OBJECTID": "43",
+            "COUNTY": "Mpika"
+        },
+        {
+            "OBJECTID": "44",
+            "COUNTY": "Mporokoso"
+        },
+        {
+            "OBJECTID": "45",
+            "COUNTY": "Mpulungu"
+        },
+        {
+            "OBJECTID": "46",
+            "COUNTY": "Mungwi"
+        },
+        {
+            "OBJECTID": "47",
+            "COUNTY": "Nakonde"
+        },
+        {
+            "OBJECTID": "48",
+            "COUNTY": "Chavuma"
+        },
+        {
+            "OBJECTID": "49",
+            "COUNTY": "Kabompo"
+        },
+        {
+            "OBJECTID": "50",
+            "COUNTY": "Kasempa"
+        },
+        {
+            "OBJECTID": "51",
+            "COUNTY": "Mufumbwe"
+        },
+        {
+            "OBJECTID": "52",
+            "COUNTY": "Mwinilunga"
+        },
+        {
+            "OBJECTID": "53",
+            "COUNTY": "Solwezi"
+        },
+        {
+            "OBJECTID": "54",
+            "COUNTY": "Zambezi"
+        },
+        {
+            "OBJECTID": "55",
+            "COUNTY": "Choma"
+        },
+        {
+            "OBJECTID": "56",
+            "COUNTY": "Gwembe"
+        },
+        {
+            "OBJECTID": "57",
+            "COUNTY": "Itezhi-Tezhi"
+        },
+        {
+            "OBJECTID": "58",
+            "COUNTY": "Kalomo"
+        },
+        {
+            "OBJECTID": "59",
+            "COUNTY": "Kazungula"
+        },
+        {
+            "OBJECTID": "60",
+            "COUNTY": "Livingstone"
+        },
+        {
+            "OBJECTID": "61",
+            "COUNTY": "Mazabuka"
+        },
+        {
+            "OBJECTID": "62",
+            "COUNTY": "Monze"
+        },
+        {
+            "OBJECTID": "63",
+            "COUNTY": "Namwala"
+        },
+        {
+            "OBJECTID": "64",
+            "COUNTY": "Siavonga"
+        },
+        {
+            "OBJECTID": "65",
+            "COUNTY": "Sinazongwe"
+        },
+        {
+            "OBJECTID": "66",
+            "COUNTY": "Kalabo"
+        },
+        {
+            "OBJECTID": "67",
+            "COUNTY": "Kaoma"
+        },
+        {
+            "OBJECTID": "68",
+            "COUNTY": "Lukulu"
+        },
+        {
+            "OBJECTID": "69",
+            "COUNTY": "Mongu"
+        },
+        {
+            "OBJECTID": "70",
+            "COUNTY": "Senanga"
+        },
+        {
+            "OBJECTID": "71",
+            "COUNTY": "Sesheke"
+        },
+        {
+            "OBJECTID": "72",
+            "COUNTY": "Shangombo"
+        }
+    ]
+}
