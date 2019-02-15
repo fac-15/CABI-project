@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import jsonGhana from '../../factsheets_Ghana.json';
+// import jsonGhana from '../../factsheets_Ghana.json';
 require('babel-polyfill');
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Search from './Search';
@@ -8,8 +8,8 @@ import Risk from './Risk';
 import Form from './Form';
 import Crop from './Crop';
 import Pest from './Pest';
-import Header from './Header';
-import HowManyFarmers from './HowManyFarmers.js';
+// import Header from './Header';
+// import HowManyFarmers from './HowManyFarmers.js';
 
 const pests = [
     {
@@ -34,7 +34,7 @@ const pests = [
     }
 ];
 
-class App extends Component {
+class Routes extends Component {
     state = {
         data: null,
         panGhana: null
@@ -90,4 +90,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Routes;
