@@ -1,0 +1,552 @@
+﻿{
+    "Ghana": [
+        {
+            "OBJECTID": "66",
+            "COUNTY": "New Juaben"
+        },
+        {
+            "OBJECTID": "67",
+            "COUNTY": "Suhum Kraboa Coaltar"
+        },
+        {
+            "OBJECTID": "68",
+            "COUNTY": "West Akim"
+        },
+        {
+            "OBJECTID": "69",
+            "COUNTY": "Yilo Krobo"
+        },
+        {
+            "OBJECTID": "70",
+            "COUNTY": "Accra"
+        },
+        {
+            "OBJECTID": "71",
+            "COUNTY": "Dangbe East"
+        },
+        {
+            "OBJECTID": "72",
+            "COUNTY": "Dangbe West"
+        },
+        {
+            "OBJECTID": "73",
+            "COUNTY": "Ga East"
+        },
+        {
+            "OBJECTID": "74",
+            "COUNTY": "Ga West"
+        },
+        {
+            "OBJECTID": "75",
+            "COUNTY": "Tema"
+        },
+        {
+            "OBJECTID": "76",
+            "COUNTY": "Bole"
+        },
+        {
+            "OBJECTID": "77",
+            "COUNTY": "Bunkpurugu Yunyoo"
+        },
+        {
+            "OBJECTID": "78",
+            "COUNTY": "Central Gonja"
+        },
+        {
+            "OBJECTID": "1",
+            "COUNTY": "Adansi North"
+        },
+        {
+            "OBJECTID": "2",
+            "COUNTY": "Adansi South"
+        },
+        {
+            "OBJECTID": "3",
+            "COUNTY": "Afigya Sekyere"
+        },
+        {
+            "OBJECTID": "4",
+            "COUNTY": "Ahafo Ano North"
+        },
+        {
+            "OBJECTID": "5",
+            "COUNTY": "Ahafo Ano South"
+        },
+        {
+            "OBJECTID": "6",
+            "COUNTY": "Amansie Central"
+        },
+        {
+            "OBJECTID": "7",
+            "COUNTY": "Amansie East"
+        },
+        {
+            "OBJECTID": "8",
+            "COUNTY": "Amansie West"
+        },
+        {
+            "OBJECTID": "9",
+            "COUNTY": "Asante Akim North"
+        },
+        {
+            "OBJECTID": "10",
+            "COUNTY": "Asante Akim South"
+        },
+        {
+            "OBJECTID": "11",
+            "COUNTY": "Atwima"
+        },
+        {
+            "OBJECTID": "12",
+            "COUNTY": "Atwima Mponua"
+        },
+        {
+            "OBJECTID": "13",
+            "COUNTY": "Bosomtwe-Kwanwoma"
+        },
+        {
+            "OBJECTID": "14",
+            "COUNTY": "Ejisu-Juabeng"
+        },
+        {
+            "OBJECTID": "15",
+            "COUNTY": "Ejura Sekyedumase"
+        },
+        {
+            "OBJECTID": "16",
+            "COUNTY": "Kumasi"
+        },
+        {
+            "OBJECTID": "17",
+            "COUNTY": "Kwabre"
+        },
+        {
+            "OBJECTID": "18",
+            "COUNTY": "Obuasi Municipal"
+        },
+        {
+            "OBJECTID": "19",
+            "COUNTY": "Offinso"
+        },
+        {
+            "OBJECTID": "20",
+            "COUNTY": "Sekyere East"
+        },
+        {
+            "OBJECTID": "21",
+            "COUNTY": "Sekyere West"
+        },
+        {
+            "OBJECTID": "22",
+            "COUNTY": "Asunafo North"
+        },
+        {
+            "OBJECTID": "23",
+            "COUNTY": "Asunafo South"
+        },
+        {
+            "OBJECTID": "24",
+            "COUNTY": "Asutifi"
+        },
+        {
+            "OBJECTID": "25",
+            "COUNTY": "Atebubu-Amantin"
+        },
+        {
+            "OBJECTID": "26",
+            "COUNTY": "Berekum"
+        },
+        {
+            "OBJECTID": "27",
+            "COUNTY": "Dormaa"
+        },
+        {
+            "OBJECTID": "28",
+            "COUNTY": "Jaman North"
+        },
+        {
+            "OBJECTID": "29",
+            "COUNTY": "Jaman South"
+        },
+        {
+            "OBJECTID": "30",
+            "COUNTY": "Kintampo North"
+        },
+        {
+            "OBJECTID": "31",
+            "COUNTY": "Kintampo South"
+        },
+        {
+            "OBJECTID": "32",
+            "COUNTY": "Nkoranza"
+        },
+        {
+            "OBJECTID": "33",
+            "COUNTY": "Pru"
+        },
+        {
+            "OBJECTID": "34",
+            "COUNTY": "Sene"
+        },
+        {
+            "OBJECTID": "35",
+            "COUNTY": "Sunyani"
+        },
+        {
+            "OBJECTID": "36",
+            "COUNTY": "Tain"
+        },
+        {
+            "OBJECTID": "37",
+            "COUNTY": "Tano North"
+        },
+        {
+            "OBJECTID": "38",
+            "COUNTY": "Tano South"
+        },
+        {
+            "OBJECTID": "39",
+            "COUNTY": "Techiman"
+        },
+        {
+            "OBJECTID": "40",
+            "COUNTY": "Abura-Asebu-Kwamankese"
+        },
+        {
+            "OBJECTID": "41",
+            "COUNTY": "Agona"
+        },
+        {
+            "OBJECTID": "42",
+            "COUNTY": "Ajumako-Enyan-Esiam"
+        },
+        {
+            "OBJECTID": "43",
+            "COUNTY": "Asikuma Odoben Brakwa"
+        },
+        {
+            "OBJECTID": "44",
+            "COUNTY": "Assin North"
+        },
+        {
+            "OBJECTID": "45",
+            "COUNTY": "Assin South"
+        },
+        {
+            "OBJECTID": "46",
+            "COUNTY": "Awutu Efutu Senya"
+        },
+        {
+            "OBJECTID": "47",
+            "COUNTY": "Cape Coast"
+        },
+        {
+            "OBJECTID": "48",
+            "COUNTY": "Gomoa"
+        },
+        {
+            "OBJECTID": "49",
+            "COUNTY": "Komenda-Edina-Eguafo-Abirem"
+        },
+        {
+            "OBJECTID": "50",
+            "COUNTY": "Lower Denkyira"
+        },
+        {
+            "OBJECTID": "51",
+            "COUNTY": "Mfantsiman"
+        },
+        {
+            "OBJECTID": "52",
+            "COUNTY": "Upper Denkyira"
+        },
+        {
+            "OBJECTID": "53",
+            "COUNTY": "Afram Plains"
+        },
+        {
+            "OBJECTID": "54",
+            "COUNTY": "Akwapim North"
+        },
+        {
+            "OBJECTID": "55",
+            "COUNTY": "Akwapim South"
+        },
+        {
+            "OBJECTID": "56",
+            "COUNTY": "Asuogyaman"
+        },
+        {
+            "OBJECTID": "57",
+            "COUNTY": "Atiwa"
+        },
+        {
+            "OBJECTID": "58",
+            "COUNTY": "Birim North"
+        },
+        {
+            "OBJECTID": "59",
+            "COUNTY": "Birim South"
+        },
+        {
+            "OBJECTID": "60",
+            "COUNTY": "East Akim"
+        },
+        {
+            "OBJECTID": "61",
+            "COUNTY": "Fanteakwa"
+        },
+        {
+            "OBJECTID": "62",
+            "COUNTY": "Kwabibirem"
+        },
+        {
+            "OBJECTID": "63",
+            "COUNTY": "Kwahu South"
+        },
+        {
+            "OBJECTID": "64",
+            "COUNTY": "Kwahu West"
+        },
+        {
+            "OBJECTID": "65",
+            "COUNTY": "Manya Krobo"
+        },
+        {
+            "OBJECTID": "79",
+            "COUNTY": "East Gonja"
+        },
+        {
+            "OBJECTID": "80",
+            "COUNTY": "East Mamprusi"
+        },
+        {
+            "OBJECTID": "81",
+            "COUNTY": "Gushiegu"
+        },
+        {
+            "OBJECTID": "82",
+            "COUNTY": "Karaga"
+        },
+        {
+            "OBJECTID": "83",
+            "COUNTY": "Nanumba North"
+        },
+        {
+            "OBJECTID": "84",
+            "COUNTY": "Nanumba South"
+        },
+        {
+            "OBJECTID": "85",
+            "COUNTY": "Saboba Chereponi"
+        },
+        {
+            "OBJECTID": "86",
+            "COUNTY": "Savelugu Nanton"
+        },
+        {
+            "OBJECTID": "87",
+            "COUNTY": "Sawa-Tuna-Kalba"
+        },
+        {
+            "OBJECTID": "88",
+            "COUNTY": "Tamale"
+        },
+        {
+            "OBJECTID": "89",
+            "COUNTY": "Tolon-Kumbungu"
+        },
+        {
+            "OBJECTID": "90",
+            "COUNTY": "West Gonja"
+        },
+        {
+            "OBJECTID": "91",
+            "COUNTY": "West Mamprusi"
+        },
+        {
+            "OBJECTID": "92",
+            "COUNTY": "Yendi"
+        },
+        {
+            "OBJECTID": "93",
+            "COUNTY": "Zabzugu Tatale"
+        },
+        {
+            "OBJECTID": "94",
+            "COUNTY": "Bawku Municipal"
+        },
+        {
+            "OBJECTID": "95",
+            "COUNTY": "Bawku West"
+        },
+        {
+            "OBJECTID": "96",
+            "COUNTY": "Bolgatanga"
+        },
+        {
+            "OBJECTID": "97",
+            "COUNTY": "Bongo"
+        },
+        {
+            "OBJECTID": "98",
+            "COUNTY": "Builsa"
+        },
+        {
+            "OBJECTID": "99",
+            "COUNTY": "Garu Tempane"
+        },
+        {
+            "OBJECTID": "100",
+            "COUNTY": "Kassena Nankana"
+        },
+        {
+            "OBJECTID": "101",
+            "COUNTY": "Talensi Nabdam"
+        },
+        {
+            "OBJECTID": "102",
+            "COUNTY": "Jirapa Lambussie"
+        },
+        {
+            "OBJECTID": "103",
+            "COUNTY": "Lawra"
+        },
+        {
+            "OBJECTID": "104",
+            "COUNTY": "Nadowli"
+        },
+        {
+            "OBJECTID": "105",
+            "COUNTY": "Sissala East"
+        },
+        {
+            "OBJECTID": "106",
+            "COUNTY": "Sissala West"
+        },
+        {
+            "OBJECTID": "107",
+            "COUNTY": "Wa"
+        },
+        {
+            "OBJECTID": "108",
+            "COUNTY": "Wa East"
+        },
+        {
+            "OBJECTID": "109",
+            "COUNTY": "Wa West"
+        },
+        {
+            "OBJECTID": "110",
+            "COUNTY": "Adaklu Anyigbe"
+        },
+        {
+            "OBJECTID": "111",
+            "COUNTY": "Akatsi"
+        },
+        {
+            "OBJECTID": "112",
+            "COUNTY": "Ho"
+        },
+        {
+            "OBJECTID": "113",
+            "COUNTY": "Hohoe"
+        },
+        {
+            "OBJECTID": "114",
+            "COUNTY": "Jasikan"
+        },
+        {
+            "OBJECTID": "115",
+            "COUNTY": "Kadjebi"
+        },
+        {
+            "OBJECTID": "116",
+            "COUNTY": "Keta"
+        },
+        {
+            "OBJECTID": "117",
+            "COUNTY": "Ketu"
+        },
+        {
+            "OBJECTID": "118",
+            "COUNTY": "Kpandu"
+        },
+        {
+            "OBJECTID": "119",
+            "COUNTY": "Krachi"
+        },
+        {
+            "OBJECTID": "120",
+            "COUNTY": "Krachi East"
+        },
+        {
+            "OBJECTID": "121",
+            "COUNTY": "Nkwanta"
+        },
+        {
+            "OBJECTID": "122",
+            "COUNTY": "North Tongu"
+        },
+        {
+            "OBJECTID": "123",
+            "COUNTY": "South Dayi"
+        },
+        {
+            "OBJECTID": "124",
+            "COUNTY": "South Tongu"
+        },
+        {
+            "OBJECTID": "125",
+            "COUNTY": "Ahanta West"
+        },
+        {
+            "OBJECTID": "126",
+            "COUNTY": "Aowin-Suaman"
+        },
+        {
+            "OBJECTID": "127",
+            "COUNTY": "Bia"
+        },
+        {
+            "OBJECTID": "128",
+            "COUNTY": "Bibiani Anhwiaso Bekwai"
+        },
+        {
+            "OBJECTID": "129",
+            "COUNTY": "Jomoro"
+        },
+        {
+            "OBJECTID": "130",
+            "COUNTY": "Juabeso"
+        },
+        {
+            "OBJECTID": "131",
+            "COUNTY": "Mpohor Wassa East"
+        },
+        {
+            "OBJECTID": "132",
+            "COUNTY": "Nzema East"
+        },
+        {
+            "OBJECTID": "133",
+            "COUNTY": "Sefwi Wiawso"
+        },
+        {
+            "OBJECTID": "134",
+            "COUNTY": "Shama Ahanta East"
+        },
+        {
+            "OBJECTID": "135",
+            "COUNTY": "Wasa Amenfi East"
+        },
+        {
+            "OBJECTID": "136",
+            "COUNTY": "Wasa Amenfi West"
+        },
+        {
+            "OBJECTID": "137",
+            "COUNTY": "Wassa West"
+        }
+    ]
+}

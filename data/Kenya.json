@@ -1,0 +1,1164 @@
+﻿{
+    "Kenya": [
+        {
+            "OBJECTID": "1",
+            "COUNTY": "KAMUKUNJI"
+        },
+        {
+            "OBJECTID": "2",
+            "COUNTY": "WESTLANDS"
+        },
+        {
+            "OBJECTID": "3",
+            "COUNTY": "DAGORETTI NORTH"
+        },
+        {
+            "OBJECTID": "4",
+            "COUNTY": "ROYSAMBU"
+        },
+        {
+            "OBJECTID": "5",
+            "COUNTY": "STAREHE"
+        },
+        {
+            "OBJECTID": "6",
+            "COUNTY": "LANGATA"
+        },
+        {
+            "OBJECTID": "7",
+            "COUNTY": "DAGORETTI SOUTH"
+        },
+        {
+            "OBJECTID": "8",
+            "COUNTY": "KASARANI"
+        },
+        {
+            "OBJECTID": "9",
+            "COUNTY": "RUARAKA"
+        },
+        {
+            "OBJECTID": "10",
+            "COUNTY": "KIBRA"
+        },
+        {
+            "OBJECTID": "11",
+            "COUNTY": "MATHARE"
+        },
+        {
+            "OBJECTID": "12",
+            "COUNTY": "KISAUNI"
+        },
+        {
+            "OBJECTID": "13",
+            "COUNTY": "MVITA"
+        },
+        {
+            "OBJECTID": "14",
+            "COUNTY": "JOMVU"
+        },
+        {
+            "OBJECTID": "15",
+            "COUNTY": "NYALI"
+        },
+        {
+            "OBJECTID": "16",
+            "COUNTY": "LIKONI"
+        },
+        {
+            "OBJECTID": "17",
+            "COUNTY": "KINANGO"
+        },
+        {
+            "OBJECTID": "18",
+            "COUNTY": "MATUGA"
+        },
+        {
+            "OBJECTID": "19",
+            "COUNTY": "LUNGA LUNGA"
+        },
+        {
+            "OBJECTID": "20",
+            "COUNTY": "MSAMBWENI"
+        },
+        {
+            "OBJECTID": "21",
+            "COUNTY": "KALOLENI"
+        },
+        {
+            "OBJECTID": "22",
+            "COUNTY": "GANZE"
+        },
+        {
+            "OBJECTID": "23",
+            "COUNTY": "KILIFI NORTH"
+        },
+        {
+            "OBJECTID": "24",
+            "COUNTY": "KILIFI SOUTH"
+        },
+        {
+            "OBJECTID": "25",
+            "COUNTY": "MAGARINI"
+        },
+        {
+            "OBJECTID": "26",
+            "COUNTY": "RABAI"
+        },
+        {
+            "OBJECTID": "27",
+            "COUNTY": "MALINDI"
+        },
+        {
+            "OBJECTID": "28",
+            "COUNTY": "GALOLE"
+        },
+        {
+            "OBJECTID": "29",
+            "COUNTY": "BURA"
+        },
+        {
+            "OBJECTID": "30",
+            "COUNTY": "GARSEN"
+        },
+        {
+            "OBJECTID": "31",
+            "COUNTY": "LAMU WEST"
+        },
+        {
+            "OBJECTID": "32",
+            "COUNTY": "LAMU EAST"
+        },
+        {
+            "OBJECTID": "33",
+            "COUNTY": "WUNDANYI"
+        },
+        {
+            "OBJECTID": "34",
+            "COUNTY": "VOI"
+        },
+        {
+            "OBJECTID": "35",
+            "COUNTY": "MWATATE"
+        },
+        {
+            "OBJECTID": "36",
+            "COUNTY": "TAVETA"
+        },
+        {
+            "OBJECTID": "37",
+            "COUNTY": "BALAMBALA"
+        },
+        {
+            "OBJECTID": "38",
+            "COUNTY": "IJARA"
+        },
+        {
+            "OBJECTID": "39",
+            "COUNTY": "DADAAB"
+        },
+        {
+            "OBJECTID": "40",
+            "COUNTY": "GARISSA TOWNSHIP"
+        },
+        {
+            "OBJECTID": "41",
+            "COUNTY": "FAFI"
+        },
+        {
+            "OBJECTID": "42",
+            "COUNTY": "LAGDERA"
+        },
+        {
+            "OBJECTID": "43",
+            "COUNTY": "WAJIR WEST"
+        },
+        {
+            "OBJECTID": "44",
+            "COUNTY": "WAJIR NORTH"
+        },
+        {
+            "OBJECTID": "45",
+            "COUNTY": "WAJIR SOUTH"
+        },
+        {
+            "OBJECTID": "46",
+            "COUNTY": "TARBAJ"
+        },
+        {
+            "OBJECTID": "47",
+            "COUNTY": "ELDAS"
+        },
+        {
+            "OBJECTID": "48",
+            "COUNTY": "WAJIR EAST"
+        },
+        {
+            "OBJECTID": "49",
+            "COUNTY": "MANDERA SOUTH"
+        },
+        {
+            "OBJECTID": "50",
+            "COUNTY": "MANDERA NORTH"
+        },
+        {
+            "OBJECTID": "51",
+            "COUNTY": "MANDERA WEST"
+        },
+        {
+            "OBJECTID": "52",
+            "COUNTY": "BANISSA"
+        },
+        {
+            "OBJECTID": "53",
+            "COUNTY": "NORTH HORR"
+        },
+        {
+            "OBJECTID": "54",
+            "COUNTY": "MOYALE"
+        },
+        {
+            "OBJECTID": "55",
+            "COUNTY": "LAISAMIS"
+        },
+        {
+            "OBJECTID": "56",
+            "COUNTY": "SAKU"
+        },
+        {
+            "OBJECTID": "57",
+            "COUNTY": "ISIOLO NORTH"
+        },
+        {
+            "OBJECTID": "58",
+            "COUNTY": "ISIOLO SOUTH"
+        },
+        {
+            "OBJECTID": "59",
+            "COUNTY": "NORTH IMENTI"
+        },
+        {
+            "OBJECTID": "60",
+            "COUNTY": "TIGANIA WEST"
+        },
+        {
+            "OBJECTID": "61",
+            "COUNTY": "SOUTH IMENTI"
+        },
+        {
+            "OBJECTID": "62",
+            "COUNTY": "BUURI"
+        },
+        {
+            "OBJECTID": "63",
+            "COUNTY": "IGEMBE SOUTH"
+        },
+        {
+            "OBJECTID": "64",
+            "COUNTY": "IGEMBE CENTRAL"
+        },
+        {
+            "OBJECTID": "65",
+            "COUNTY": "TIGANIA EAST"
+        },
+        {
+            "OBJECTID": "66",
+            "COUNTY": "CENTRAL IMENTI"
+        },
+        {
+            "OBJECTID": "67",
+            "COUNTY": "IGEMBE NORTH"
+        },
+        {
+            "OBJECTID": "68",
+            "COUNTY": "MAARA"
+        },
+        {
+            "OBJECTID": "69",
+            "COUNTY": "THARAKA"
+        },
+        {
+            "OBJECTID": "70",
+            "COUNTY": "CHUKA/IGAMBANG'OMBE"
+        },
+        {
+            "OBJECTID": "71",
+            "COUNTY": "RUNYENJES"
+        },
+        {
+            "OBJECTID": "72",
+            "COUNTY": "MBEERE NORTH"
+        },
+        {
+            "OBJECTID": "73",
+            "COUNTY": "MANYATTA"
+        },
+        {
+            "OBJECTID": "74",
+            "COUNTY": "MBEERE SOUTH"
+        },
+        {
+            "OBJECTID": "75",
+            "COUNTY": "KITUI EAST"
+        },
+        {
+            "OBJECTID": "76",
+            "COUNTY": "KITUI WEST"
+        },
+        {
+            "OBJECTID": "77",
+            "COUNTY": "KITUI RURAL"
+        },
+        {
+            "OBJECTID": "78",
+            "COUNTY": "KITUI SOUTH"
+        },
+        {
+            "OBJECTID": "79",
+            "COUNTY": "KITUI CENTRAL"
+        },
+        {
+            "OBJECTID": "80",
+            "COUNTY": "YATTA"
+        },
+        {
+            "OBJECTID": "81",
+            "COUNTY": "MACHAKOS TOWN"
+        },
+        {
+            "OBJECTID": "82",
+            "COUNTY": "MATUNGULU"
+        },
+        {
+            "OBJECTID": "83",
+            "COUNTY": "MWALA"
+        },
+        {
+            "OBJECTID": "84",
+            "COUNTY": "MASINGA"
+        },
+        {
+            "OBJECTID": "85",
+            "COUNTY": "KANGUNDO"
+        },
+        {
+            "OBJECTID": "86",
+            "COUNTY": "MAVOKO"
+        },
+        {
+            "OBJECTID": "87",
+            "COUNTY": "KATHIANI"
+        },
+        {
+            "OBJECTID": "88",
+            "COUNTY": "KIPIPIRI"
+        },
+        {
+            "OBJECTID": "89",
+            "COUNTY": "KINANGOP"
+        },
+        {
+            "OBJECTID": "90",
+            "COUNTY": "NDARAGWA"
+        },
+        {
+            "OBJECTID": "91",
+            "COUNTY": "KIENI"
+        },
+        {
+            "OBJECTID": "92",
+            "COUNTY": "MATHIRA"
+        },
+        {
+            "OBJECTID": "93",
+            "COUNTY": "OTHAYA"
+        },
+        {
+            "OBJECTID": "94",
+            "COUNTY": "TETU"
+        },
+        {
+            "OBJECTID": "95",
+            "COUNTY": "MUKURWEINI"
+        },
+        {
+            "OBJECTID": "96",
+            "COUNTY": "NYERI TOWN"
+        },
+        {
+            "OBJECTID": "97",
+            "COUNTY": "GICHUGU"
+        },
+        {
+            "OBJECTID": "98",
+            "COUNTY": "KIRINYAGA CENTRAL"
+        },
+        {
+            "OBJECTID": "99",
+            "COUNTY": "NDIA"
+        },
+        {
+            "OBJECTID": "100",
+            "COUNTY": "MWEA"
+        },
+        {
+            "OBJECTID": "101",
+            "COUNTY": "MATHIOYA"
+        },
+        {
+            "OBJECTID": "102",
+            "COUNTY": "KANDARA"
+        },
+        {
+            "OBJECTID": "103",
+            "COUNTY": "MARAGWA"
+        },
+        {
+            "OBJECTID": "104",
+            "COUNTY": "KANGEMA"
+        },
+        {
+            "OBJECTID": "105",
+            "COUNTY": "KIGUMO"
+        },
+        {
+            "OBJECTID": "106",
+            "COUNTY": "KIHARU"
+        },
+        {
+            "OBJECTID": "107",
+            "COUNTY": "GATUNDU NORTH"
+        },
+        {
+            "OBJECTID": "108",
+            "COUNTY": "KABETE"
+        },
+        {
+            "OBJECTID": "109",
+            "COUNTY": "KIAMBAA"
+        },
+        {
+            "OBJECTID": "110",
+            "COUNTY": "GITHUNGURI"
+        },
+        {
+            "OBJECTID": "111",
+            "COUNTY": "THIKA TOWN"
+        },
+        {
+            "OBJECTID": "112",
+            "COUNTY": "GATANGA"
+        },
+        {
+            "OBJECTID": "113",
+            "COUNTY": "KIKUYU"
+        },
+        {
+            "OBJECTID": "114",
+            "COUNTY": "LIMURU"
+        },
+        {
+            "OBJECTID": "115",
+            "COUNTY": "GATUNDU SOUTH"
+        },
+        {
+            "OBJECTID": "116",
+            "COUNTY": "LARI"
+        },
+        {
+            "OBJECTID": "117",
+            "COUNTY": "JUJA"
+        },
+        {
+            "OBJECTID": "118",
+            "COUNTY": "RUIRU"
+        },
+        {
+            "OBJECTID": "119",
+            "COUNTY": "KIAMBU"
+        },
+        {
+            "OBJECTID": "120",
+            "COUNTY": "TURKANA NORTH"
+        },
+        {
+            "OBJECTID": "121",
+            "COUNTY": "TURKANA EAST"
+        },
+        {
+            "OBJECTID": "122",
+            "COUNTY": "TURKANA CENTRAL"
+        },
+        {
+            "OBJECTID": "123",
+            "COUNTY": "TURKANA WEST"
+        },
+        {
+            "OBJECTID": "124",
+            "COUNTY": "LOIMA"
+        },
+        {
+            "OBJECTID": "125",
+            "COUNTY": "TURKANA SOUTH"
+        },
+        {
+            "OBJECTID": "126",
+            "COUNTY": "KAPENGURIA"
+        },
+        {
+            "OBJECTID": "127",
+            "COUNTY": "SIGOR"
+        },
+        {
+            "OBJECTID": "128",
+            "COUNTY": "KACHELIBA"
+        },
+        {
+            "OBJECTID": "129",
+            "COUNTY": "POKOT SOUTH"
+        },
+        {
+            "OBJECTID": "130",
+            "COUNTY": "MARAKWET WEST"
+        },
+        {
+            "OBJECTID": "131",
+            "COUNTY": "SAMBURU NORTH"
+        },
+        {
+            "OBJECTID": "132",
+            "COUNTY": "SAMBURU WEST"
+        },
+        {
+            "OBJECTID": "133",
+            "COUNTY": "SAMBURU EAST"
+        },
+        {
+            "OBJECTID": "134",
+            "COUNTY": "AINABKOI"
+        },
+        {
+            "OBJECTID": "135",
+            "COUNTY": "MOIBEN"
+        },
+        {
+            "OBJECTID": "136",
+            "COUNTY": "SOY"
+        },
+        {
+            "OBJECTID": "137",
+            "COUNTY": "TURBO"
+        },
+        {
+            "OBJECTID": "138",
+            "COUNTY": "KESSES"
+        },
+        {
+            "OBJECTID": "139",
+            "COUNTY": "KAPSERET"
+        },
+        {
+            "OBJECTID": "140",
+            "COUNTY": "MARAKWET EAST"
+        },
+        {
+            "OBJECTID": "141",
+            "COUNTY": "KEIYO NORTH"
+        },
+        {
+            "OBJECTID": "142",
+            "COUNTY": "KEIYO SOUTH"
+        },
+        {
+            "OBJECTID": "143",
+            "COUNTY": "MOSOP"
+        },
+        {
+            "OBJECTID": "144",
+            "COUNTY": "NANDI HILLS"
+        },
+        {
+            "OBJECTID": "145",
+            "COUNTY": "EMGWEN"
+        },
+        {
+            "OBJECTID": "146",
+            "COUNTY": "TINDERET"
+        },
+        {
+            "OBJECTID": "147",
+            "COUNTY": "ALDAI"
+        },
+        {
+            "OBJECTID": "148",
+            "COUNTY": "CHESUMEI"
+        },
+        {
+            "OBJECTID": "149",
+            "COUNTY": "BARINGO CENTRAL"
+        },
+        {
+            "OBJECTID": "150",
+            "COUNTY": "BARINGO NORTH"
+        },
+        {
+            "OBJECTID": "151",
+            "COUNTY": "MOGOTIO"
+        },
+        {
+            "OBJECTID": "152",
+            "COUNTY": "ELDAMA RAVINE"
+        },
+        {
+            "OBJECTID": "153",
+            "COUNTY": "BARINGO SOUTH"
+        },
+        {
+            "OBJECTID": "154",
+            "COUNTY": "TIATY"
+        },
+        {
+            "OBJECTID": "155",
+            "COUNTY": "LAIKIPIA NORTH"
+        },
+        {
+            "OBJECTID": "156",
+            "COUNTY": "SUBUKIA"
+        },
+        {
+            "OBJECTID": "157",
+            "COUNTY": "KURESOI SOUTH"
+        },
+        {
+            "OBJECTID": "158",
+            "COUNTY": "NJORO"
+        },
+        {
+            "OBJECTID": "159",
+            "COUNTY": "NAKURU TOWN EAST"
+        },
+        {
+            "OBJECTID": "160",
+            "COUNTY": "RONGAI"
+        },
+        {
+            "OBJECTID": "161",
+            "COUNTY": "NAIVASHA"
+        },
+        {
+            "OBJECTID": "162",
+            "COUNTY": "GILGIL"
+        },
+        {
+            "OBJECTID": "163",
+            "COUNTY": "NAKURU TOWN WEST"
+        },
+        {
+            "OBJECTID": "164",
+            "COUNTY": "KURESOI NORTH"
+        },
+        {
+            "OBJECTID": "165",
+            "COUNTY": "MOLO"
+        },
+        {
+            "OBJECTID": "166",
+            "COUNTY": "BAHATI"
+        },
+        {
+            "OBJECTID": "167",
+            "COUNTY": "NAROK SOUTH"
+        },
+        {
+            "OBJECTID": "168",
+            "COUNTY": "NAROK NORTH"
+        },
+        {
+            "OBJECTID": "169",
+            "COUNTY": "KILGORIS"
+        },
+        {
+            "OBJECTID": "170",
+            "COUNTY": "NAROK WEST"
+        },
+        {
+            "OBJECTID": "171",
+            "COUNTY": "EMURUA DIKIRR"
+        },
+        {
+            "OBJECTID": "172",
+            "COUNTY": "NAROK EAST"
+        },
+        {
+            "OBJECTID": "173",
+            "COUNTY": "KAJIADO CENTRAL"
+        },
+        {
+            "OBJECTID": "174",
+            "COUNTY": "KAJIADO WEST"
+        },
+        {
+            "OBJECTID": "175",
+            "COUNTY": "KAJIADO EAST"
+        },
+        {
+            "OBJECTID": "176",
+            "COUNTY": "KAJIADO SOUTH"
+        },
+        {
+            "OBJECTID": "177",
+            "COUNTY": "KAJIADO NORTH"
+        },
+        {
+            "OBJECTID": "178",
+            "COUNTY": "KIBWEZI WEST"
+        },
+        {
+            "OBJECTID": "179",
+            "COUNTY": "MBOONI"
+        },
+        {
+            "OBJECTID": "180",
+            "COUNTY": "MAKUENI"
+        },
+        {
+            "OBJECTID": "181",
+            "COUNTY": "KAITI"
+        },
+        {
+            "OBJECTID": "182",
+            "COUNTY": "KILOME"
+        },
+        {
+            "OBJECTID": "183",
+            "COUNTY": "KIBWEZI EAST"
+        },
+        {
+            "OBJECTID": "184",
+            "COUNTY": "BELGUT"
+        },
+        {
+            "OBJECTID": "185",
+            "COUNTY": "KIPKELION WEST"
+        },
+        {
+            "OBJECTID": "186",
+            "COUNTY": "SIGOWET/SOIN"
+        },
+        {
+            "OBJECTID": "187",
+            "COUNTY": "KIPKELION EAST"
+        },
+        {
+            "OBJECTID": "188",
+            "COUNTY": "AINAMOI"
+        },
+        {
+            "OBJECTID": "189",
+            "COUNTY": "KONOIN"
+        },
+        {
+            "OBJECTID": "190",
+            "COUNTY": "SHINYALU"
+        },
+        {
+            "OBJECTID": "191",
+            "COUNTY": "MATUNGU"
+        },
+        {
+            "OBJECTID": "192",
+            "COUNTY": "BUTERE"
+        },
+        {
+            "OBJECTID": "193",
+            "COUNTY": "KHWISERO"
+        },
+        {
+            "OBJECTID": "194",
+            "COUNTY": "MALAVA"
+        },
+        {
+            "OBJECTID": "195",
+            "COUNTY": "IKOLOMANI"
+        },
+        {
+            "OBJECTID": "196",
+            "COUNTY": "LURAMBI"
+        },
+        {
+            "OBJECTID": "197",
+            "COUNTY": "MUMIAS WEST"
+        },
+        {
+            "OBJECTID": "198",
+            "COUNTY": "NAVAKHOLO"
+        },
+        {
+            "OBJECTID": "199",
+            "COUNTY": "MUMIAS EAST"
+        },
+        {
+            "OBJECTID": "200",
+            "COUNTY": "HAMISI"
+        },
+        {
+            "OBJECTID": "201",
+            "COUNTY": "SABATIA"
+        },
+        {
+            "OBJECTID": "202",
+            "COUNTY": "LUANDA"
+        },
+        {
+            "OBJECTID": "203",
+            "COUNTY": "VIHIGA"
+        },
+        {
+            "OBJECTID": "204",
+            "COUNTY": "EMUHAYA"
+        },
+        {
+            "OBJECTID": "205",
+            "COUNTY": "KANDUYI"
+        },
+        {
+            "OBJECTID": "206",
+            "COUNTY": "MT. ELGON"
+        },
+        {
+            "OBJECTID": "207",
+            "COUNTY": "KIMILILI"
+        },
+        {
+            "OBJECTID": "208",
+            "COUNTY": "SIRISIA"
+        },
+        {
+            "OBJECTID": "209",
+            "COUNTY": "BUMULA"
+        },
+        {
+            "OBJECTID": "210",
+            "COUNTY": "TONGAREN"
+        },
+        {
+            "OBJECTID": "211",
+            "COUNTY": "WEBUYE EAST"
+        },
+        {
+            "OBJECTID": "212",
+            "COUNTY": "KABUCHAI"
+        },
+        {
+            "OBJECTID": "213",
+            "COUNTY": "WEBUTE WEST"
+        },
+        {
+            "OBJECTID": "214",
+            "COUNTY": "TESO NORTH"
+        },
+        {
+            "OBJECTID": "215",
+            "COUNTY": "BUTULA"
+        },
+        {
+            "OBJECTID": "216",
+            "COUNTY": "FUNYULA"
+        },
+        {
+            "OBJECTID": "217",
+            "COUNTY": "TESO SOUTH"
+        },
+        {
+            "OBJECTID": "218",
+            "COUNTY": "MATAYOS"
+        },
+        {
+            "OBJECTID": "219",
+            "COUNTY": "NAMBALE"
+        },
+        {
+            "OBJECTID": "220",
+            "COUNTY": "BUDALANGI"
+        },
+        {
+            "OBJECTID": "221",
+            "COUNTY": "UGENYA"
+        },
+        {
+            "OBJECTID": "222",
+            "COUNTY": "RARIEDA"
+        },
+        {
+            "OBJECTID": "223",
+            "COUNTY": "BONDO"
+        },
+        {
+            "OBJECTID": "224",
+            "COUNTY": "UGUNJA"
+        },
+        {
+            "OBJECTID": "225",
+            "COUNTY": "GEM"
+        },
+        {
+            "OBJECTID": "226",
+            "COUNTY": "ALEGO USONGA"
+        },
+        {
+            "OBJECTID": "227",
+            "COUNTY": "RANGWE"
+        },
+        {
+            "OBJECTID": "228",
+            "COUNTY": "KASIPUL"
+        },
+        {
+            "OBJECTID": "229",
+            "COUNTY": "SUBA"
+        },
+        {
+            "OBJECTID": "230",
+            "COUNTY": "KARACHUONYO"
+        },
+        {
+            "OBJECTID": "231",
+            "COUNTY": "KABONDO KASIPUL"
+        },
+        {
+            "OBJECTID": "232",
+            "COUNTY": "MBITA"
+        },
+        {
+            "OBJECTID": "233",
+            "COUNTY": "NDHIWA"
+        },
+        {
+            "OBJECTID": "234",
+            "COUNTY": "HOMA BAY TOWN"
+        },
+        {
+            "OBJECTID": "235",
+            "COUNTY": "KURIA EAST"
+        },
+        {
+            "OBJECTID": "236",
+            "COUNTY": "NYATIKE"
+        },
+        {
+            "OBJECTID": "237",
+            "COUNTY": "AWENDO"
+        },
+        {
+            "OBJECTID": "238",
+            "COUNTY": "KURIA WEST"
+        },
+        {
+            "OBJECTID": "239",
+            "COUNTY": "URIRI"
+        },
+        {
+            "OBJECTID": "240",
+            "COUNTY": "RONGO"
+        },
+        {
+            "OBJECTID": "241",
+            "COUNTY": "NYARIBARI CHACHE"
+        },
+        {
+            "OBJECTID": "242",
+            "COUNTY": "KITUTU CHACHE NORTH"
+        },
+        {
+            "OBJECTID": "243",
+            "COUNTY": "NYARIBARI MASABA"
+        },
+        {
+            "OBJECTID": "244",
+            "COUNTY": "BOMACHOGE CHACHE"
+        },
+        {
+            "OBJECTID": "245",
+            "COUNTY": "BOBASI"
+        },
+        {
+            "OBJECTID": "246",
+            "COUNTY": "BOMACHOGE BORABU"
+        },
+        {
+            "OBJECTID": "247",
+            "COUNTY": "BONCHARI"
+        },
+        {
+            "OBJECTID": "248",
+            "COUNTY": "KITUTU CHACHE SOUTH"
+        },
+        {
+            "OBJECTID": "249",
+            "COUNTY": "SOUTH MUGIRANGO"
+        },
+        {
+            "OBJECTID": "250",
+            "COUNTY": "BURETI"
+        },
+        {
+            "OBJECTID": "251",
+            "COUNTY": "CHEPALUNGU"
+        },
+        {
+            "OBJECTID": "252",
+            "COUNTY": "BOMET EAST"
+        },
+        {
+            "OBJECTID": "253",
+            "COUNTY": "SOTIK"
+        },
+        {
+            "OBJECTID": "254",
+            "COUNTY": "BOMET CENTRAL"
+        },
+        {
+            "OBJECTID": "255",
+            "COUNTY": "NORTH MUGIRANGO"
+        },
+        {
+            "OBJECTID": "256",
+            "COUNTY": "WEST MUGIRANGO"
+        },
+        {
+            "OBJECTID": "257",
+            "COUNTY": "KITUTU MASABA"
+        },
+        {
+            "OBJECTID": "258",
+            "COUNTY": "BORABU"
+        },
+        {
+            "OBJECTID": "259",
+            "COUNTY": "NYAKACH"
+        },
+        {
+            "OBJECTID": "260",
+            "COUNTY": "SEME"
+        },
+        {
+            "OBJECTID": "261",
+            "COUNTY": "NYANDO"
+        },
+        {
+            "OBJECTID": "262",
+            "COUNTY": "KISUMU WEST"
+        },
+        {
+            "OBJECTID": "263",
+            "COUNTY": "KISUMU EAST"
+        },
+        {
+            "OBJECTID": "264",
+            "COUNTY": "MUHORONI"
+        },
+        {
+            "OBJECTID": "265",
+            "COUNTY": "KISUMU CENTRAL"
+        },
+        {
+            "OBJECTID": "266",
+            "COUNTY": "LUGARI"
+        },
+        {
+            "OBJECTID": "267",
+            "COUNTY": "ENDEBESS"
+        },
+        {
+            "OBJECTID": "268",
+            "COUNTY": "KWANZA"
+        },
+        {
+            "OBJECTID": "269",
+            "COUNTY": "SABOTI"
+        },
+        {
+            "OBJECTID": "270",
+            "COUNTY": "CHERANGANY"
+        },
+        {
+            "OBJECTID": "271",
+            "COUNTY": "KIMININI"
+        },
+        {
+            "OBJECTID": "272",
+            "COUNTY": "LIKUYANI"
+        },
+        {
+            "OBJECTID": "273",
+            "COUNTY": "LAFEY"
+        },
+        {
+            "OBJECTID": "274",
+            "COUNTY": "MANDERA EAST"
+        },
+        {
+            "OBJECTID": "275",
+            "COUNTY": "EMBAKASI WEST"
+        },
+        {
+            "OBJECTID": "276",
+            "COUNTY": "EMBAKASI EAST"
+        },
+        {
+            "OBJECTID": "277",
+            "COUNTY": "EMBAKASI NORTH"
+        },
+        {
+            "OBJECTID": "278",
+            "COUNTY": "EMBAKASI CENTRAL"
+        },
+        {
+            "OBJECTID": "279",
+            "COUNTY": "EMBAKASI SOUTH"
+        },
+        {
+            "OBJECTID": "280",
+            "COUNTY": "MAKADARA"
+        },
+        {
+            "OBJECTID": "281",
+            "COUNTY": "MWINGI WEST"
+        },
+        {
+            "OBJECTID": "282",
+            "COUNTY": "MWINGI CENTRAL"
+        },
+        {
+            "OBJECTID": "283",
+            "COUNTY": "MWINGI NORTH"
+        },
+        {
+            "OBJECTID": "284",
+            "COUNTY": "OL JOROK"
+        },
+        {
+            "OBJECTID": "285",
+            "COUNTY": "OL KALOU"
+        },
+        {
+            "OBJECTID": "286",
+            "COUNTY": "SUNA EAST"
+        },
+        {
+            "OBJECTID": "287",
+            "COUNTY": "SUNA WEST"
+        },
+        {
+            "OBJECTID": "288",
+            "COUNTY": "LAIKIPIA WEST"
+        },
+        {
+            "OBJECTID": "289",
+            "COUNTY": "LAIKIPIA EAST"
+        },
+        {
+            "OBJECTID": "290",
+            "COUNTY": "CHANGAMWE"
+        }
+    ]
+}
