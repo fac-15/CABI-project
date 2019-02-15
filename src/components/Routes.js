@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import jsonGhana from '../../factsheets_Ghana.json';
 require('babel-polyfill');
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Search from './Search';
