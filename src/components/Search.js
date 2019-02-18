@@ -6,8 +6,7 @@ import Title from './Title.js';
 const Search = props => (
     <div>
         <Title />
-        <h1 className="App-Title">Select your location</h1>
-        <Link to="/home">Home</Link>
+        <h1 className="location">Select your location</h1>
         <Location />
     </div>
 );

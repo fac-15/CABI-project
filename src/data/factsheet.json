@@ -1,7 +1,7 @@
 ﻿[
     {
         "pestID": "1",
-        "PestScientificName": "Busseola fusca",
+        "PestScientificName": "busseola_fusca",
         "CommonName": "African stalk borer",
         "Crop": "maize",
         "CountryISO": "GH",
@@ -26,7 +26,7 @@
     },
     {
         "pestID": "1",
-        "PestScientificName": "Busseola fusca",
+        "PestScientificName": "busseola_fusca",
         "CommonName": "African stalk borer",
         "Crop": "maize",
         "CountryISO": "KE",
@@ -45,12 +45,12 @@
         },
         "Image 3": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_106902.jpg",
-            "Caption": "<i>Busseola fusca</i> (Francis Nduati, Kenya)"
+            "Caption": "<i>busseola_ fusca</i> (Francis Nduati, Kenya)"
         }
     },
     {
         "pestID": "1",
-        "PestScientificName": "Busseola fusca",
+        "PestScientificName": "busseola_fusca",
         "CommonName": "African stalk borer",
         "Crop": "maize",
         "CountryISO": "ZM",
@@ -75,22 +75,22 @@
     },
     {
         "pestID": "2",
-        "PestScientificName": "Chilo partellus",
+        "PestScientificName": "chilo_partellus",
         "CommonName": "Spotted stem borer",
         "Crop": "maize",
         "CountryISO": "KE",
         "Identifier": "20177801278",
         "Prevention": "Plant early to avoid a serious infestation<br/>-&nbsp;Applying nitrogen, either a commercial product or manure or compost, to enhance the crop's tolerance to an attack<br/>-&nbsp;Implement a ‘push-pull’ system in which <i>Desmodium</i>, a repellent plant, and Napier grass, a trap crop, are intercropped with maize to lure the insect away from the crop<br/>-&nbsp;Intercrop with non-host plants, such as cowpeas or cassava to reduce damage. Adult moths will lay eggs on the non-host plants, but the larvae are unable to feed on them and will die<br/>-&nbsp;Rotate maize with a non-host plant, e.g. a legume, to prevent the build-up of the pest in the field and to increase the nitrogen in the soil which will make the next maize crop hardier and less susceptible to an attack. Avoid crop rotation with sorghum, pearl millet, sugarcane, wheat or rice.<br/>-&nbsp;Maintain habitat to conserve parasitoids and predators such as ants and earwigs<br/>",
         "Monitoring": "Start monitoring weekly 3 weeks after planting.<br/>-&nbsp;Consider early control when 5-10% of young plants are damaged (feeding holes in leaves)<br/>-&nbsp;Look out for:<br/>\\t • Leaves: Holes on leaf funnels and eggs on the underside of leaves near the funnels. Caterpillars are found in leaf funnels<br/>\\t • Stems: Weak. Feeding damage to growing points, preventing flowering. Dead heart - the central shoot withers and dries. Older caterpillars burrow into stems and into cobs.<br/>-&nbsp;Cut open the stems of a few plants that show symptoms to look for larvae and pupae<br/>-&nbsp;Eggs: scale-like, creamy white laid in overlapping batches<br/>-&nbsp;Larvae: creamy white to yellowish brown body with dark-brown dorsal spots and 4 purple stripes on backwith a reddish-brown head, up to 25 mm long<br/>-&nbsp;Pupae: up to 15 mm long, light yellow-brown to dark red-brown<br/>-&nbsp;Adults: small moths with light yellow brown forewings different to hindwings which are often white. Wingspan up to 17 mm<br/>",
-        "Direct Control without restrictions": "Release parasitic wasps such as <i>Cotesia flavipes<i> or </i>Trichogramma chilonis</i> if locally available to control the spotted stem borer<br/>-&nbsp;Destroy crop residues after harvest to reduce populations and limit the pest the following season. Stems should be burned, fed to livestock or dried on the ground under full exposure of the sun’s heat<br/>-&nbsp;Use neem-based products to spray on young plants every 10-14 days until flowering if threshold is reached (follow instructions on labels)<br/>",
+        "Direct Control without restrictions": "Release parasitic wasps such as <i>Cotesia flavipes<i> or </i>Trichogramma chilo_nis</i> if locally available to control the spotted stem borer<br/>-&nbsp;Destroy crop residues after harvest to reduce populations and limit the pest the following season. Stems should be burned, fed to livestock or dried on the ground under full exposure of the sun’s heat<br/>-&nbsp;Use neem-based products to spray on young plants every 10-14 days until flowering if threshold is reached (follow instructions on labels)<br/>",
         "Direct Control with restrictions": "Pesticides may be available to control this pest. Please check with the Ministry of Agriculture in your country to find out which pesticides are registered in your country and the local restrictions for their use.",
         "Image 1": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109244.jpg",
-            "Caption": "<i>Chilo partellus</i> caterpillar (NBAIR)"
+            "Caption": "<i>chilo partellus</i> caterpillar (NBAIR)"
         },
         "Image 2": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109245.jpg",
-            "Caption": "Moth of <i>Chilo partellus</i> (©Georg Goergen/IITA Insect Museum, Cotonou, Benin)"
+            "Caption": "Moth of <i>chilo partellus</i> (©Georg Goergen/IITA Insect Museum, Cotonou, Benin)"
         },
         "Image 3": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109246.jpg",
@@ -99,22 +99,22 @@
     },
     {
         "pestID": "2",
-        "PestScientificName": "Chilo partellus",
+        "PestScientificName": "chilo_partellus",
         "CommonName": "Spotted stem borer",
         "Crop": "maize",
         "CountryISO": "ZM",
         "Identifier": "20177801278",
         "Prevention": "Plant early to avoid a serious infestation<br/>-&nbsp;Applying nitrogen, either a commercial product or manure or compost, to enhance the crop's tolerance to an attack<br/>-&nbsp;Implement a ‘push-pull’ system in which <i>Desmodium</i>, a repellent plant, and Napier grass, a trap crop, are intercropped with maize to lure the insect away from the crop<br/>-&nbsp;Intercrop with non-host plants, such as cowpeas or cassava to reduce damage. Adult moths will lay eggs on the non-host plants, but the larvae are unable to feed on them and will die<br/>-&nbsp;Rotate maize with a non-host plant, e.g. a legume, to prevent the build-up of the pest in the field and to increase the nitrogen in the soil which will make the next maize crop hardier and less susceptible to an attack. Avoid crop rotation with sorghum, pearl millet, sugarcane, wheat or rice.<br/>-&nbsp;Maintain habitat to conserve parasitoids and predators such as ants and earwigs<br/>",
         "Monitoring": "Start monitoring weekly 3 weeks after planting.<br/>-&nbsp;Consider early control when 5-10% of young plants are damaged (feeding holes in leaves)<br/>-&nbsp;Look out for:<br/>\\t • Leaves: Holes on leaf funnels and eggs on the underside of leaves near the funnels. Caterpillars are found in leaf funnels<br/>\\t • Stems: Weak. Feeding damage to growing points, preventing flowering. Dead heart - the central shoot withers and dries. Older caterpillars burrow into stems and into cobs.<br/>-&nbsp;Cut open the stems of a few plants that show symptoms to look for larvae and pupae<br/>-&nbsp;Eggs: scale-like, creamy white laid in overlapping batches<br/>-&nbsp;Larvae: creamy white to yellowish brown body with dark-brown dorsal spots and 4 purple stripes on backwith a reddish-brown head, up to 25 mm long<br/>-&nbsp;Pupae: up to 15 mm long, light yellow-brown to dark red-brown<br/>-&nbsp;Adults: small moths with light yellow brown forewings different to hindwings which are often white. Wingspan up to 17 mm<br/>",
-        "Direct Control without restrictions": "Release parasitic wasps such as <i>Cotesia flavipes<i> or </i>Trichogramma chilonis</i> if locally available to control the spotted stem borer<br/>-&nbsp;Destroy crop residues after harvest to reduce populations and limit the pest the following season. Stems should be burned, fed to livestock or dried on the ground under full exposure of the sun’s heat<br/>-&nbsp;Use neem-based products to spray on young plants every 10-14 days until flowering if threshold is reached (follow instructions on labels)<br/>",
+        "Direct Control without restrictions": "Release parasitic wasps such as <i>Cotesia flavipes<i> or </i>Trichogramma chilo_nis</i> if locally available to control the spotted stem borer<br/>-&nbsp;Destroy crop residues after harvest to reduce populations and limit the pest the following season. Stems should be burned, fed to livestock or dried on the ground under full exposure of the sun’s heat<br/>-&nbsp;Use neem-based products to spray on young plants every 10-14 days until flowering if threshold is reached (follow instructions on labels)<br/>",
         "Direct Control with restrictions": "Pesticides may be available to control this pest. Please check with the Ministry of Agriculture in your country to find out which pesticides are registered in your country and the local restrictions for their use.",
         "Image 1": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109244.jpg",
-            "Caption": "<i>Chilo partellus</i> caterpillar (NBAIR)"
+            "Caption": "<i>chilo partellus</i> caterpillar (NBAIR)"
         },
         "Image 2": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109245.jpg",
-            "Caption": "Moth of <i>Chilo partellus</i> (©Georg Goergen/IITA Insect Museum, Cotonou, Benin)"
+            "Caption": "Moth of <i>chilo partellus</i> (©Georg Goergen/IITA Insect Museum, Cotonou, Benin)"
         },
         "Image 3": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109246.jpg",
@@ -123,7 +123,7 @@
     },
     {
         "pestID": "3",
-        "PestScientificName": "Liriomyza huidobrensis",
+        "PestScientificName": "liriomyza_huidobrensis",
         "CommonName": "Leafminer on beans",
         "Crop": "beans",
         "CountryISO": "KE",
@@ -131,7 +131,7 @@
     },
     {
         "pestID": "3",
-        "PestScientificName": "Liriomyza huidobrensis",
+        "PestScientificName": "liriomyza_huidobrensis",
         "CommonName": "Leafminer on beans",
         "Crop": "beans",
         "CountryISO": "ZM",
@@ -139,13 +139,13 @@
     },
     {
         "pestID": "6",
-        "PestScientificName": "Tuta absoluta",
+        "PestScientificName": "tuta_absoluta",
         "CommonName": "Tomato leafminer",
         "Crop": "tomato",
         "CountryISO": "GH",
         "Identifier": "20147801309",
         "Prevention": "Use pest-free transplants. Inspect new seedlings carefully before they are transplanted into the field or under shelter<br/>-&nbsp;Seal door frames and window frames of shelters, e.g. greenhouses. Plug any openings with insect-proof netting (with mesh less than 1.6mm)<br/>-&nbsp;Where possible, cover small plants with transparent plastic (such as polytunnels) to prevent insects from laying eggs on the plants<br/>-&nbsp;Remove and destroy broadleaf weeds that act as alternative host plants, e.g. Datura, <i>Solanum</i><br/>-&nbsp;Tools should be cleaned after use in infested fields<br/>-&nbsp;Avoid rotation with Solanaceous crops such as eggplants, Irish potatoes, tomatoes and capsicum. Rotate with non-host crops such as maize.<br/>",
-        "Monitoring": "Scout for early insect pest damage on leaves, stems and fruits, especially on the upper third of the seedling.<br/>-&nbsp;Look for:<br/>\\t • Eggs on leaves and stems<br/>\\t • Mines and droppings on leaves, stems and fruit. Leaf mines are wide, silvery, and gradually become brown and necrotic. Leaf necrosis may result in leaf death or premature leaf drop. Fruit mines cause rotting<br/>\\t • Larvae (caterpillars) in mines and fruits. They are green with a black head, their body turning pinkish green as they mature, 0.5-9 mm. <br/>\\t • Exit holes on the surface of fruits<br/>\\t • Adults underneath leaves: silvery brown moth, 5-7 mm long<br/>\\t • Pupae in the soil, on the surface of a leaf, in a curled leaf or in a mine. They are light brown and approximately 9 mm long.<br/>-&nbsp;Use pheromone traps, light traps or sticky traps to detect the pest early<br/>-&nbsp;Use one pheromone trap for a plot of less than 3,500m<sup>2</sup> and two traps for larger plots. Place traps at the same height as the crop. Check the trap every week and count the captured adult moths. After counting clean the traps carefully. Ensure the pheromone does not get wet.<br/>-&nbsp;The leaf mines created by tomato leaf miner can look similar to the mines created by the American serpentine leafminer, <i>Liriomyza trifolii</i>. However, the <i>L. trifolii</i> adult is a tiny, 1-2 mm long, yellow and black fly and its larvae do not feed in the fruits. Therefore <i>L. trifolii</i> does not leave exit holes on fruits. The <i>L. trifolii</i> larva is whitish or yellow-orange.<br/>",
+        "Monitoring": "Scout for early insect pest damage on leaves, stems and fruits, especially on the upper third of the seedling.<br/>-&nbsp;Look for:<br/>\\t • Eggs on leaves and stems<br/>\\t • Mines and droppings on leaves, stems and fruit. Leaf mines are wide, silvery, and gradually become brown and necrotic. Leaf necrosis may result in leaf death or premature leaf drop. Fruit mines cause rotting<br/>\\t • Larvae (caterpillars) in mines and fruits. They are green with a black head, their body turning pinkish green as they mature, 0.5-9 mm. <br/>\\t • Exit holes on the surface of fruits<br/>\\t • Adults underneath leaves: silvery brown moth, 5-7 mm long<br/>\\t • Pupae in the soil, on the surface of a leaf, in a curled leaf or in a mine. They are light brown and approximately 9 mm long.<br/>-&nbsp;Use pheromone traps, light traps or sticky traps to detect the pest early<br/>-&nbsp;Use one pheromone trap for a plot of less than 3,500m<sup>2</sup> and two traps for larger plots. Place traps at the same height as the crop. Check the trap every week and count the captured adult moths. After counting clean the traps carefully. Ensure the pheromone does not get wet.<br/>-&nbsp;The leaf mines created by tomato leaf miner can look similar to the mines created by the American serpentine leafminer, <i>liriomyza_ trifolii</i>. However, the <i>L. trifolii</i> adult is a tiny, 1-2 mm long, yellow and black fly and its larvae do not feed in the fruits. Therefore <i>L. trifolii</i> does not leave exit holes on fruits. The <i>L. trifolii</i> larva is whitish or yellow-orange.<br/>",
         "Direct Control without restrictions": "Remove infested tomato plant materials and destroy by burning or burying in holes more than 50cm deep. Do not dump infested fruits at farm edges, collection points or in markets<br/>-&nbsp;Destroy plant residues after harvest by burning or burying.<br/>-&nbsp;Apply Neem products to the soil, upper surface of leaves or directly on larvae to kill larvae.<br/>-&nbsp;Where populations of tomato leaf miner are low (1-3 moths caught per week) use pheromone baited water traps to mass trap adult male moths and reduce the populations<br/>-&nbsp;Tomato leaf miner has a number of natural enemies that can be used for biological control, including hemiptera predators, parasitic hymenoptera (e.g. <i>Trichogramma</i> spp.) and mites.<br/>-&nbsp;Inspect harvesting containers, field boxes or carts, packaging material and destroy or disinfect if tomato leafminer is suspected.<br/>",
         "Direct Control with restrictions": "Pesticides may be available to control this pest. Please check with the Ministry of Agriculture in your country to find out which pesticides are registered in your country and the local restrictions for their use.",
         "Image 1": {
@@ -163,7 +163,7 @@
     },
     {
         "pestID": "6",
-        "PestScientificName": "Tuta absoluta",
+        "PestScientificName": "tuta_absoluta",
         "CommonName": "Tomato leafminer",
         "Crop": "tomato",
         "CountryISO": "KE",
@@ -175,20 +175,20 @@
         "General Restrictions": "Always wear protective clothing when handling agrochemicals. <br/>-&nbsp;Follow the instructions on the product label, such as dosage, timing of application, pre-harvest interval, maximum number of sprays, restricted re-entry interval. Do not empty into drains.<br/>-&nbsp;WHO class II pesticides might not be allowed in local IPM schemes.<br/>-&nbsp;Always consult recent list of registered pesticides (PCPB).<br/>-&nbsp;The pest is still new in the country and trials on pesticides are still ongoing<br/>",
         "Image 1": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_96930.jpg",
-            "Caption": "Adult <i>Tuta</i>. (Source Marja van der Straten, NVWA Plant Protection Service, Bugwood.org)"
+            "Caption": "Adult <i>tuta_</i>. (Source Marja van der Straten, NVWA Plant Protection Service, Bugwood.org)"
         },
         "Image 2": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_96931.jpg",
-            "Caption": "<i>Tuta</i> larvae on tomato leaf. (Source: Marja van der Straten, NVWA Plant Protection Service, Bugwood)"
+            "Caption": "<i>tuta_</i> larvae on tomato leaf. (Source: Marja van der Straten, NVWA Plant Protection Service, Bugwood)"
         },
         "Image 3": {
             "url": "https://www.plantwise.org/KnowledgeBank/800x640/PMDG_96934.jpg",
-            "Caption": "Burnt leaf and mined fruit infested by <i>Tuta</i> larvae- (Source: Maureen Kuboka)"
+            "Caption": "Burnt leaf and mined fruit infested by <i>tuta_</i> larvae- (Source: Maureen Kuboka)"
         }
     },
     {
         "pestID": "6",
-        "PestScientificName": "Tuta absoluta",
+        "PestScientificName": "tuta_absoluta",
         "CommonName": "Tomato leafminer",
         "Crop": "tomato",
         "CountryISO": "ZM",
@@ -213,7 +213,7 @@
     },
     {
         "pestID": "7",
-        "PestScientificName": "Bemisia tabaci",
+        "PestScientificName": "bemisia_tabaci",
         "CommonName": "White fly",
         "Crop": "tomato",
         "CountryISO": "GH",
@@ -238,7 +238,7 @@
     },
     {
         "pestID": "7",
-        "PestScientificName": "Bemisia tabaci",
+        "PestScientificName": "bemisia_tabaci",
         "CommonName": "White fly",
         "Crop": "tomato",
         "CountryISO": "KE",
@@ -259,7 +259,7 @@
     },
     {
         "pestID": "7",
-        "PestScientificName": "Bemisia tabaci",
+        "PestScientificName": "bemisia_tabaci",
         "CommonName": "White fly",
         "Crop": "tomato",
         "CountryISO": "ZM",
@@ -284,7 +284,7 @@
     },
     {
         "pestID": "8",
-        "PestScientificName": "Helicoverpa armigera",
+        "PestScientificName": "helicoverpa_armigera",
         "CommonName": "Bollworm",
         "Crop": "tomato",
         "CountryISO": "GH",
@@ -309,14 +309,14 @@
     },
     {
         "pestID": "8",
-        "PestScientificName": "Helicoverpa armigera",
+        "PestScientificName": "helicoverpa_armigera",
         "CommonName": "Bollworm",
         "Crop": "tomato",
         "CountryISO": "KE",
         "Identifier": "20177801291",
         "Prevention": "If bollworm population is low, plant before and/or during crop growth one or two rows of maize around the crop field as a trap for pest when at larval stage<br/>-&nbsp;Plant at correct spacing of tomato crop<br/>-&nbsp;Provide habitats for natural enemies (e.g. flowering plants) such as: <i>Trichogramma</i> spp. (egg parasitoids), wasps, flies (larva parasitoids), ants, lacewings, ladybugs + birds<br/>-&nbsp;Rotating with non-host crops to prevent the population from increasing, must use with other prevention/control practices as bollworm can attack + harbour on <200 species of plants<br/>-&nbsp;Avoid crop rotation with other plant hosts incl eggplants, okra, soybeans, cotton, maize, beans, chickpea, flax, wheat, barley, oats + sorghum<br/>-&nbsp;Remove + destroy crop residues (feed to livestock) <br/>-&nbsp;Not recommended to apply insecticides as a preventative measure, pest is often resistant<br/>",
         "Monitoring": "Monitor the pest + symptoms 1-2 times/week from emergence-harvest<br/>\\t • Adults: Moth wingspan 35-40 mm wide. Forewings are yellow/brown, hindwings are white. Use phermone (4-8/acre)/light (2/acre) traps to detect adults<br/>\\t • Look for small larvae on leaves below highest open flowers + fruit bases. Consider taking actions when detected<br/>\\t • Look for small, dark entry holes at base of the tomato, near stem + under base leaves of flower. Open fruit to confirm<br/>\\t • Large caterpillars: 35-40 mm long. Vary from yellow/green/brown/red with grey-black stripes along the body when fully grown. <br/>-&nbsp;When large larvae are inside fruits, sprays do not help as caterpillars are protected<br/>-&nbsp;Note the no. of eggs, small/large caterpillars, % defoliation of plant on 30 random plants. If a large number of small larvae are detected apply control measures<br/>\\t • Necessary to open the fruits + flowers often as larvae are hidden within<br/>",
-        "Direct Control without restrictions": "For small plots, hand pick + destroy the eggs/young caterpillars from flower bud tips and fruit bases<br/>-&nbsp;Plough the soil to expose the pupae to direct sunlight + natural enemies<br/>-&nbsp;Remove/destroy crop residues immediately after harvest <br/>-&nbsp;Release natural enemies, e.g. egg parasitoids (2-3 cards per acre of <i>Trichogramma</i> spp., <i>Telenomus</i> spp.), larva parasitoid (<i>Cotesia</i> spp., <i>Bracon</i> spp.) <br/>-&nbsp;Apply neem products on small larvae (e.g. neem oil 40ml/20L water) 3x max. Start 15 days after transplanting reaching coverage of fruits + plants.<br/>-&nbsp;Spray entomopathogenic fungi (<i>Metarhizium anisopliae</i> + <i>Beauveria bassiana</i>). See label for dosage.<br/>-&nbsp;Spray with a solution of <i>Helicoverpa armigera</i> SNPV 8% w/w 2x99 polyhedra per ml<br/>-&nbsp;Place traps (5/ha) with synthetic sex pheromone <i>Helicoverpa armigera</i> to trap adults<br/>-&nbsp;Remove any fallen fruit/infested plant parts (feed to livestock)<br/>",
+        "Direct Control without restrictions": "For small plots, hand pick + destroy the eggs/young caterpillars from flower bud tips and fruit bases<br/>-&nbsp;Plough the soil to expose the pupae to direct sunlight + natural enemies<br/>-&nbsp;Remove/destroy crop residues immediately after harvest <br/>-&nbsp;Release natural enemies, e.g. egg parasitoids (2-3 cards per acre of <i>Trichogramma</i> spp., <i>Telenomus</i> spp.), larva parasitoid (<i>Cotesia</i> spp., <i>Bracon</i> spp.) <br/>-&nbsp;Apply neem products on small larvae (e.g. neem oil 40ml/20L water) 3x max. Start 15 days after transplanting reaching coverage of fruits + plants.<br/>-&nbsp;Spray entomopathogenic fungi (<i>Metarhizium anisopliae</i> + <i>Beauveria bassiana</i>). See label for dosage.<br/>-&nbsp;Spray with a solution of <i>helicoverpa_ armigera</i> SNPV 8% w/w 2x99 polyhedra per ml<br/>-&nbsp;Place traps (5/ha) with synthetic sex pheromone <i>helicoverpa_ armigera</i> to trap adults<br/>-&nbsp;Remove any fallen fruit/infested plant parts (feed to livestock)<br/>",
         "Direct Control with restrictions": "Azadirachtin 1% based products (neem).&nbsp;General Restrictions:&nbsp;WHO class U. Hazard under normal use. Larvae moulting disruptor; inhibits egg laying, antifeedant effects; PHI 3 d; REI 1 d. 1 spray when flowering. Toxic to bees/aquatic organisms.<br/>-&nbsp;<i>Bacillus thuringiensis</i> var kurstaki Strain ABTS-351 against small larvae.&nbsp;General Restrictions:&nbsp;WHO class III (slightly hazardous); biological multisite stomach poison for insects, must be eaten by insect p.h.i. 1d, r.e.i. 1 d, min retreatment 7 d, 2 sprays per season<br/>-&nbsp;Lambda-cyhalothrin 50g/L (e.g. PENTAGON 5% EC).&nbsp;General Restrictions:&nbsp;WHO class II. Moderately hazardous. MRL: 0.1mg/Kg, PHI: 3 days. REI- when spray dries<br/>-&nbsp;Spinosad 480g/L (e.g. TRACER 480 SC Soluble Concentrate): foliar application.&nbsp;General Restrictions:&nbsp;WHO class III (slightly hazardous). PHI 3 days. REI when spray deposit has dried. Toxic to bees if exposed directly. Apply at night if crop is flowering. Maximum 6 applications per season.<br/>",
         "General Restrictions": "Apply when eggs hatch so larvae are killed. Only the <1 cm long larvae outside the fruits can be controlled. Larvae inside fruit are protected.<br/>-&nbsp;Many WHO class II pesticides registered against pest, less toxic alternatives can control the pest.<br/>",
         "Image 1": {
@@ -334,7 +334,7 @@
     },
     {
         "pestID": "8",
-        "PestScientificName": "Helicoverpa armigera",
+        "PestScientificName": "helicoverpa_armigera",
         "CommonName": "Bollworm",
         "Crop": "tomato",
         "CountryISO": "ZM",
@@ -358,7 +358,7 @@
         }
     },
     {
-        "PestScientificName": "Spodoptera frugiperda",
+        "PestScientificName": "spodoptera_frugiperda",
         "CommonName": "Fall armyworm",
         "Crop": "maize",
         "CountryISO": "GH",
@@ -382,7 +382,7 @@
         }
     },
     {
-        "PestScientificName": "Spodoptera frugiperda",
+        "PestScientificName": "spodoptera_frugiperda",
         "CommonName": "Fall armyworm",
         "Crop": "maize",
         "CountryISO": "KE",
@@ -406,7 +406,7 @@
         }
     },
     {
-        "PestScientificName": "Spodoptera frugiperda",
+        "PestScientificName": "spodoptera_frugiperda",
         "CommonName": "Fall armyworm",
         "Crop": "maize",
         "CountryISO": "ZM",

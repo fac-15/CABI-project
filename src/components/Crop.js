@@ -3,7 +3,7 @@ import React from 'react';
 import HowManyFarmers from './HowManyFarmers.js';
 import Header from './Header';
 import Title from './Title.js';
-var jsonSheet = require('../data/factsheet.json');
+const jsonSheet = require('../data/factsheet.json');
 
 class Crop extends React.Component {
     constructor() {
@@ -34,8 +34,8 @@ class Crop extends React.Component {
                             ) {
                                 return (
                                     <li key={key}>
-                                        <b>Common Name: </b>{' '}
-                                        {e.CommonName.toUpperCase()}
+                                        <h4>Common Name: {' '}
+                                        {e.CommonName.toUpperCase()} </h4>
                                         <br />
                                         <p>
                                             <b>Crop affected: </b> {e.Crop}

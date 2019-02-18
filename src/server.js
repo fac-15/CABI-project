@@ -3,15 +3,16 @@ const app = express();
 // const fs = require("fs");
 const port = process.env.PORT || 5000;
 const Api = require('./api')
-const factsheet = require('../data/factsheet.json');
-
 
 //console.log that your server is up and running
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
 app.get("/riskres", (req, res) => {
-  Api().then(result => res.send(result)).catch(err => console.log(err))
+  Api().then(result => {
+    res.send(result);
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:1234');})
+    .catch(err => console.log(err))
 });
 
 

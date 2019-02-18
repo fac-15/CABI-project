@@ -12,42 +12,45 @@ import Pest from './Pest';
 
 const pests = [
     {
-        name: 'Busseloa',
+        name: "African-stalk-borer",
         risk: 1,
-        crop: 'Bean'
+        crop: 'Maize',
+        pestId: 1
     },
     {
-        name: 'Fall armyworm',
-        risk: 2,
-        crop: 'Tomato'
-    },
-    {
-        name: 'Busseloa',
+        name: 'Fall-armyworm',
         risk: 3,
-        crop: 'Maize'
+        crop: 'Tomato',
+        pestId: 2
     },
     {
-        name: 'Busseloa',
+        name: "Leafminer-on-beans",
         risk: 2,
-        crop: 'Tomato'
+        crop: 'Beans',
+        pestId: 3
     }
 ];
 
 class Routes extends Component {
     state = {
         data: null,
-        panGhana: null
+        panGhana: null,
+        name: '',
+        risk: null
     };
 
     componentDidMount() {
         this.callBackendAPI()
-            .then(res => this.setState({ data: res.express }))
+            .then(body => 
+                this.setState({ risk: body }))
             .catch(err => console.log(err));
     }
 
     callBackendAPI = async () => {
-        const response = await fetch('./express_backend');
-        const body = await response.json();
+        const response = await fetch('./riskres');
+        // // const body = await response.json();
+        // console.log(body)
+        return response;
     };
 
     render() {
@@ -65,7 +68,7 @@ class Routes extends Component {
                         <Route
                             path="/home"
                             component={props => (
-                                <Dashboard {...props} data={pests} />
+                                <Dashboard {...props} data={pests} risk={this.state.risk} />
                             )}
                         />
                         <Route
@@ -74,7 +77,9 @@ class Routes extends Component {
                                 <Crop {...props} data={pests} />
                             )}
                         />
-                        <Route path="/pest" component={Pest} />
+                        <Route path="/pest/:pests" component={props => (
+                             <Pest {...props} data={pests} />
+                        )} />
                         <Route
                             path="/risk"
                             component={() => <Risk {...props} data={pests} />}

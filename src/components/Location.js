@@ -21,14 +21,14 @@ class Location extends Component {
     render() {
         const { country, region } = this.state;
         return (
-            <div>
-                <CountryDropdown
+            <div className="dropdown">
+                <CountryDropdown className="dropdown"
                     value={country}
                     onChange={val => this.selectCountry(val)}
                     whitelist={['GH', 'KE', 'ZM']}
                 />
                 <br />
-                <RegionDropdown
+                <RegionDropdown className="dropdown"
                     defaultOptionLabel="Select County or District"
                     country={country}
                     value={region}
