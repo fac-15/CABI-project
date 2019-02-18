@@ -41,6 +41,13 @@ class Crop extends React.Component {
                                             <b>Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
+                                        <img
+                                            src="https://www.plantwise.org/KnowledgeBank/800x640/PMDG_109244.jpg"
+                                            // src={e.Image1.url}
+                                            width="706"
+                                            height="445"
+                                            alt="e.[Image 1].Caption"
+                                        />
                                         <p>
                                             <b>Country/Region: </b>
                                             {e.CountryISO === 'GH'
