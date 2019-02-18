@@ -69,7 +69,7 @@ class Routes extends Component {
                             )}
                         />
                         <Route
-                            path="/crop/:crops"
+                            path="/:country/:region/:crops"
                             component={props => (
                                 <Crop {...props} data={pests} />
                             )}
