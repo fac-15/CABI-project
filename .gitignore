@@ -81,6 +81,8 @@ typings/
 
 dist
 
+src/api.js
+
 package-lock.json
 
 node_modules/
