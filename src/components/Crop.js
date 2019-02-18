@@ -74,13 +74,24 @@ class Crop extends React.Component {
                                                 {
                                                     console.log(i.Image1.url);
                                                 }
-                                                return (
-                                                    <img
-                                                        src={i.Image1.url}
-                                                        width="706"
-                                                        height="445"
-                                                    />
-                                                );
+                                                if (e.Images.i) {
+                                                    e.Images.i.map((j, key) => {
+                                                        {
+                                                            console.log(
+                                                                'THIS IS J',
+                                                                j
+                                                            );
+                                                        }
+                                                        return (
+                                                            <img
+                                                                key={key}
+                                                                src={i.j.url}
+                                                                width="706"
+                                                                height="445"
+                                                            />
+                                                        );
+                                                    });
+                                                }
                                             })}
                                         {/* <img src="https://www.plantwise.org/KnowledgeBank/800x640/PMDG_110097.jpg" /> */}
                                         <p>
