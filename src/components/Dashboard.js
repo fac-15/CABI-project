@@ -11,17 +11,21 @@ class Dashboard extends React.Component {
         this.state = {
             country: '',
             region: '',
-            data: {}
+            data: {},
+            risk: null
         };
     }
     componentDidMount() {
         // const { data } = this.props.match.params;
         const { country, region } = this.props.location.state;
         console.log(this.props.data);
+        const risk = this.props.risk;
 
         this.setState({
             country: country,
-            region: region
+            region: region,
+            risk: risk
+
         });
     }
 

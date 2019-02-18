@@ -5,7 +5,7 @@ export default function CropButton(props) {
     return (
         <div>
             <Link to={props.route}>
-            <button>{props.crop}</button>
+            <button className="cropBtn">{props.crop}</button>
             </Link>
         </div>
     );

@@ -18,17 +18,17 @@ const pests = [
     },
     {
         name: 'Fall armyworm',
-        risk: 2,
+        risk: 3,
         crop: 'Tomato'
     },
     {
         name: 'Busseloa',
-        risk: 3,
+        risk: 2,
         crop: 'Maize'
     },
     {
         name: 'Busseloa',
-        risk: 2,
+        risk: 1,
         crop: 'Tomato'
     }
 ];
@@ -36,18 +36,23 @@ const pests = [
 class Routes extends Component {
     state = {
         data: null,
-        panGhana: null
+        panGhana: null,
+        name: '',
+        risk: null
     };
 
     componentDidMount() {
         this.callBackendAPI()
-            .then(res => this.setState({ data: res.express }))
+            .then(body => 
+                this.setState({ risk: body }))
             .catch(err => console.log(err));
     }
 
     callBackendAPI = async () => {
-        const response = await fetch('./express_backend');
-        const body = await response.json();
+        const response = await fetch('./riskres');
+        // // const body = await response.json();
+        // console.log(body)
+        return response;
     };
 
     render() {
@@ -65,7 +70,7 @@ class Routes extends Component {
                         <Route
                             path="/home"
                             component={props => (
-                                <Dashboard {...props} data={pests} />
+                                <Dashboard {...props} data={pests} risk={this.state.risk} />
                             )}
                         />
                         <Route
