@@ -29,19 +29,28 @@ class Crop extends React.Component {
         return (
             <div>
                 <Title />
-                {console.log('couuuntry: ', this.props.country)}
-                {console.log('reeeegion: ', this.props.region)}
+                {console.log('couuuntry: ', this.props.match.params.country)}
+                {console.log('reeeegion: ', this.props.match.params.region)}
 
                 {console.log('data: ', this.state.data)}
                 {console.log(this.props.match.params.crops)}
                 {console.log(this.props)}
                 <Header name={this.props.match.params.crops} />
+
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
                             if (
                                 e.Crop ===
-                                this.props.match.params.crops.toLowerCase()
+                                    this.props.match.params.crops.toLowerCase() &&
+                                this.props.match.params.country ===
+                                    (e.CountryISO === 'GH'
+                                        ? 'Ghana'
+                                        : e.CountryISO === 'KE'
+                                        ? 'Kenya'
+                                        : e.CountryISO === 'ZM'
+                                        ? 'Zambia'
+                                        : '')
                             ) {
                                 // const a = e.Image1.url;
                                 // console.log(a);
