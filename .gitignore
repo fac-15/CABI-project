@@ -90,3 +90,5 @@ config.env
 package-lock.json
 coverage/
 .DS_Store
+
+src/api.js
