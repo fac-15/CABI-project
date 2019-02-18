@@ -29,8 +29,8 @@ class Crop extends React.Component {
         return (
             <div>
                 <Title />
-                {console.log('couuuntry: ', this.props.match.params.country)}
-                {console.log('reeeegion: ', this.props.match.params.region)}
+                {/* {console.log('couuuntry: ', this.props.match.params.country)}
+                {console.log('reeeegion: ', this.props.match.params.region)} */}
 
                 {console.log('data: ', this.state.data)}
                 {console.log(this.props.match.params.crops)}
@@ -65,14 +65,28 @@ class Crop extends React.Component {
                                         </p>
                                         <br />
                                         {/* {console.log('image', e['Image 1'])} */}
-                                        {e['Image 1'] && (
-                                            <img
-                                                src={e['Image 1'].url}
-                                                width="706"
-                                                height="445"
-                                                // alt="e.[Image 1].Caption"
-                                            />
+                                        {console.log(
+                                            'Images array:',
+                                            e.Images[0].Image1.url
                                         )}
+                                        {e.Images &&
+                                            e.Images.map(i => {
+                                                {
+                                                    console.log(i.Image1.url);
+                                                }
+                                                <img
+                                                    src={i.Image1.url}
+                                                    width="706"
+                                                    height="445"
+                                                />;
+                                            })
+                                        // <img
+                                        //     src={e['Image 1'].url}
+                                        //     width="706"
+                                        //     height="445"
+                                        //     // alt="e.[Image 1].Caption"
+                                        // />
+                                        }
                                         <p>
                                             <b>Country/Region: </b>
                                             {e.CountryISO === 'GH'
