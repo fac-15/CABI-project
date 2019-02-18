@@ -34,8 +34,8 @@ class Crop extends React.Component {
                             ) {
                                 return (
                                     <li key={key}>
-                                        <b>Common Name: </b>{' '}
-                                        {e.CommonName.toUpperCase()}
+                                        <h4>Common Name: {' '}
+                                        {e.CommonName.toUpperCase()} </h4>
                                         <br />
                                         <p>
                                             <b>Crop affected: </b> {e.Crop}
