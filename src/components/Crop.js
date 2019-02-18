@@ -83,7 +83,6 @@ class Crop extends React.Component {
                                         <p>
                                             <b>Prevention: </b> {e.Prevention}
                                         </p>
-                                        
                                     </li>
                                 );
                             }
