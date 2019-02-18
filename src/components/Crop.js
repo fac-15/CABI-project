@@ -74,19 +74,15 @@ class Crop extends React.Component {
                                                 {
                                                     console.log(i.Image1.url);
                                                 }
-                                                <img
-                                                    src={i.Image1.url}
-                                                    width="706"
-                                                    height="445"
-                                                />;
-                                            })
-                                        // <img
-                                        //     src={e['Image 1'].url}
-                                        //     width="706"
-                                        //     height="445"
-                                        //     // alt="e.[Image 1].Caption"
-                                        // />
-                                        }
+                                                return (
+                                                    <img
+                                                        src={i.Image1.url}
+                                                        width="706"
+                                                        height="445"
+                                                    />
+                                                );
+                                            })}
+                                        {/* <img src="https://www.plantwise.org/KnowledgeBank/800x640/PMDG_110097.jpg" /> */}
                                         <p>
                                             <b>Country/Region: </b>
                                             {e.CountryISO === 'GH'
