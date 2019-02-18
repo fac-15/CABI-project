@@ -75,6 +75,15 @@ class Crop extends React.Component {
                                                 ]
                                             }
                                         </p>
+                                        <br />
+                                        <p>
+                                            <b>Monitoring: </b> {e.Monitoring}
+                                        </p>
+                                        <br />
+                                        <p>
+                                            <b>Prevention: </b> {e.Prevention}
+                                        </p>
+                                        
                                     </li>
                                 );
                             }
