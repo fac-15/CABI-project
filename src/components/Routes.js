@@ -12,24 +12,22 @@ import Pest from './Pest';
 
 const pests = [
     {
-        name: 'Busseloa',
+        name: "African-stalk-borer",
         risk: 1,
-        crop: 'Bean'
+        crop: 'Maize',
+        pestId: 1
     },
     {
-        name: 'Fall armyworm',
+        name: 'Fall-armyworm',
         risk: 3,
-        crop: 'Tomato'
+        crop: 'Tomato',
+        pestId: 2
     },
     {
-        name: 'Busseloa',
+        name: "Leafminer-on-beans",
         risk: 2,
-        crop: 'Maize'
-    },
-    {
-        name: 'Busseloa',
-        risk: 1,
-        crop: 'Tomato'
+        crop: 'Beans',
+        pestId: 3
     }
 ];
 
@@ -79,7 +77,9 @@ class Routes extends Component {
                                 <Crop {...props} data={pests} />
                             )}
                         />
-                        <Route path="/pest" component={Pest} />
+                        <Route path="/pest/:pests" component={props => (
+                             <Pest {...props} data={pests} />
+                        )} />
                         <Route
                             path="/risk"
                             component={() => <Risk {...props} data={pests} />}

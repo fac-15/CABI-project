@@ -3,7 +3,7 @@ import React from 'react';
 import HowManyFarmers from './HowManyFarmers.js';
 import Header from './Header';
 import Title from './Title.js';
-var jsonSheet = require('../data/factsheet.json');
+const jsonSheet = require('../data/factsheet.json');
 
 class Crop extends React.Component {
     constructor() {

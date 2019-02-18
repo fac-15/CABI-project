@@ -9,7 +9,7 @@ export default function PestButton({ pest, route }) {
             <h2>{crop}</h2>
             <Link to={route}>
                 <button>
-                    <h3>{name}</h3>
+                    <h3>{name.split("-").join(" ")}</h3>
                     <RiskLevel level={risk} />
                 </button>
             </Link>
