@@ -77,7 +77,7 @@ class Routes extends Component {
                         <Route path="/pest" component={Pest} />
                         <Route
                             path="/risk"
-                            component={() => <Risk data={pests} />}
+                            component={() => <Risk {...props} data={pests} />}
                         />
                         <Route path="/form" component={Form} />
                         {/* <Route path='/search' component={Search} />
