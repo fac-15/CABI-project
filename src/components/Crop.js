@@ -34,8 +34,47 @@ class Crop extends React.Component {
                             ) {
                                 return (
                                     <li key={key}>
-                                        {e.PestScientificName}{' '}
-                                        <p>{e.CountryISO}</p>
+                                        <b>Common Name: </b>{' '}
+                                        {e.CommonName.toUpperCase()}
+                                        <br />
+                                        <p>
+                                            <b>Crop affected: </b> {e.Crop}
+                                        </p>
+                                        <br />
+                                        <p>
+                                            <b>Country/Region: </b>
+                                            {e.CountryISO === 'GH'
+                                                ? 'Ghana'
+                                                : e.CountryISO === 'KE'
+                                                ? 'Kenya'
+                                                : e.CountryISO === 'ZM'
+                                                ? 'Zambia'
+                                                : ''}
+                                        </p>
+                                        <br />
+                                        <b>
+                                            Direct Control with restrictions:{' '}
+                                        </b>
+                                        <br />
+                                        <p>
+                                            {
+                                                e[
+                                                    'Direct Control with restrictions'
+                                                ]
+                                            }
+                                        </p>
+                                        <br />
+                                        <b>
+                                            Direct Control without restrictions:{' '}
+                                        </b>
+                                        <br />
+                                        <p>
+                                            {
+                                                e[
+                                                    'Direct Control without restrictions'
+                                                ]
+                                            }
+                                        </p>
                                     </li>
                                 );
                             }
