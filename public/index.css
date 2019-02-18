@@ -5,9 +5,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* img {
-    display: inline-block;
-} */
+img {
+    display: block;
+    max-width: 460px;
+    max-height: 190px;
+    width: auto;
+    height: auto;
+}
 
 .panel {
     width: 100%;
