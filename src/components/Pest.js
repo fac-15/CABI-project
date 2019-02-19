@@ -37,11 +37,11 @@ class Pest extends React.Component {
                                         {e.CommonName.toUpperCase()} </h4>
                                         <br />
                                         <p>
-                                            <b>Crop affected: </b> {e.Crop}
+                                          <b>  Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
                                         <p>
-                                            <b>Country/Region: </b>
+                                        <b> Country/Region: </b>
                                             {e.CountryISO === 'GH'
                                                 ? 'Ghana'
                                                 : e.CountryISO === 'KE'
@@ -52,14 +52,14 @@ class Pest extends React.Component {
                                         </p>
                                         <br />
                                         <p>
-                                            <b>Prevention: </b> {e.Prevention}
+                                        <b>   Prevention: </b> {e.Prevention}
                                         </p>
                                         <br />
                                         <p>
-                                            <b>Monitoring: </b> {e.Monitoring}
+                                        <b>   Monitoring: </b> {e.Monitoring}
                                         </p>
                                         <br />
-                                        <b>
+                                        <b> 
                                             Direct Control with restrictions:{' '}
                                         </b>
                                         <br />
@@ -71,7 +71,7 @@ class Pest extends React.Component {
                                             }
                                         </p>
                                         <br />
-                                        <b>
+                                        <b> 
                                             Direct Control without restrictions:{' '}
                                         </b>
                                         <br />

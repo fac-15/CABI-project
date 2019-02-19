@@ -30,6 +30,7 @@ class Dashboard extends React.Component {
     }
 
     render() {
+        console.log("Risk", this.props.risk);
         return (
             <div>
                 <Title />
