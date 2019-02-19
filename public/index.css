@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-    background:white;
+    background: white;
     font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 460px;
+    max-height: 190px;
+    width: auto;
+    height: auto;
 }
 
 h1 {
     padding-left: 1.6em;
 }
-        
+
 .panel {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 3em;
     margin-top: 1em;
     max-height: 0em;
     overflow: hidden;
     transition: max-height 0.5s ease;
 }
-.panel.visible{
-  max-height:100%;
+.panel.visible {
+    max-height: 100%;
 }
 
 .HowManyFarmers-enter {
@@ -28,12 +36,12 @@ h1 {
 
 .HowManyFarmers-enter.example-enter-active {
     height: 100%;
-    -webkit-transition: height .3s ease;
+    -webkit-transition: height 0.3s ease;
 }
 
 .HowManyFarmers-leave.example-leave-active {
     height: 0px;
-    -webkit-transition: height .3s ease;
+    -webkit-transition: height 0.3s ease;
 }
 
 .form {
@@ -42,9 +50,10 @@ h1 {
 }
 
 .clickMe {
-    position: absolute;
-    bottom: 1em;
-    width: 50%;
+    position: fixed;
+    bottom: 0em;
+    left: -1em;
+    width: 20%;
     background: #368729;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -82,7 +91,6 @@ h3 {
     font-size: 1.2em;
     padding: 0.6em;
     color: white;
-    
 }
 
 .wrapper {
@@ -115,7 +123,6 @@ h2 {
     font-size: 1.2em;
     padding: 0.6em;
     color: white;
-    
 }
 
 .button {
@@ -151,4 +158,3 @@ li {
     list-style: none;
     padding: 1em;
 }
-
