@@ -11,26 +11,28 @@ class Dashboard extends React.Component {
         this.state = {
             country: '',
             region: '',
-            data: {},
-            risk: null
+            riskAndName: null,
+            loading: true
         };
     }
     componentDidMount() {
         // const { data } = this.props.match.params;
         const { country, region } = this.props.location.state;
         console.log(this.props.data);
-        const risk = this.props.risk;
 
         this.setState({
             country: country,
             region: region,
-            risk: risk
+            riskAndName: this.props.riskAndName
 
         });
     }
 
     render() {
-        console.log("Risk", this.props.risk);
+        console.log("Dashboard risk", this.state.riskAndName);
+        if (this.state.riskAndName === null) {
+            return (<div>Loading</div>)
+        } else {
         return (
             <div>
                 <Title />
@@ -40,10 +42,11 @@ class Dashboard extends React.Component {
                     className="cropbox"
                     crops={this.state.data}
                 />
-                <PestBox pests={this.props.data} />
+                <PestBox riskAndName={this.state.riskAndName} />
                 <Button name="Back" route="/" />
             </div>
         );
+        }
     }
 }
 
