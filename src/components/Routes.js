@@ -41,13 +41,17 @@ class Routes extends Component {
 
     componentDidMount() {
         this.callBackendAPI()
-            .then(body => 
-                this.setState({ risk: body }))
-            .catch(err => console.log(err));
+            .then(res => res.json())
+            .then(body => {
+                console.log('body', body)
+                this.setState({risk: body});
+            })
+    
+            .catch(err => console.log('error in routes req', err));
     }
 
     callBackendAPI = async () => {
-        const response = await fetch('./riskres');
+        const response = await fetch('http://localhost:5000/riskres');
         // // const body = await response.json();
         // console.log(body)
         return response;

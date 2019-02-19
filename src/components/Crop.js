@@ -61,41 +61,17 @@ class Crop extends React.Component {
                                         {e.CommonName.toUpperCase()} </h4>
                                         <br />
                                         <p>
-                                            <b>Crop affected: </b> {e.Crop}
+                                        <b>    Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
                                         {/* {console.log('image', e['Image 1'])} */}
-                                        {console.log(
-                                            'Images array:',
-                                            e.Images[0].Image1.url
-                                        )}
-                                        {e.Images &&
-                                            e.Images.map(i => {
-                                                {
-                                                    console.log(i.Image1.url);
-                                                }
-                                                if (e.Images.i) {
-                                                    e.Images.i.map((j, key) => {
-                                                        {
-                                                            console.log(
-                                                                'THIS IS J',
-                                                                j
-                                                            );
-                                                        }
-                                                        return (
-                                                            <img
-                                                                key={key}
-                                                                src={i.j.url}
-                                                                width="706"
-                                                                height="445"
-                                                            />
-                                                        );
-                                                    });
-                                                }
-                                            })}
+                                        {/* {
+                                            e.map(image => return image);
+                                                  list.map(url => return <img src={url}></img>)
+                                          } */}
                                         {/* <img src="https://www.plantwise.org/KnowledgeBank/800x640/PMDG_110097.jpg" /> */}
                                         <p>
-                                            <b>Country/Region: </b>
+                                        <b>  Country/Region: </b>
                                             {e.CountryISO === 'GH'
                                                 ? 'Ghana'
                                                 : e.CountryISO === 'KE'
@@ -106,15 +82,15 @@ class Crop extends React.Component {
                                         </p>
                                         <br />
                                         <p>
-                                            <b>Monitoring: </b> {e.Monitoring}
+                                         <b>    Monitoring: </b> {e.Monitoring}
                                         </p>                 
                                         <br />
                                         <p>
-                                            <b>Prevention: </b> {e.Prevention}
+                                          <b>   Prevention: </b> {e.Prevention}
                                         </p>
                                         <br />
-                                        <b>
-                                            Direct Control with restrictions:{' '}
+                                        
+                                        <b>   Direct Control with restrictions:{' '}
                                         </b>
                                         <br />
                                         <p>
@@ -125,8 +101,8 @@ class Crop extends React.Component {
                                             }
                                         </p>
                                         <br />
-                                        <b>
-                                            Direct Control without restrictions:{' '}
+                                        
+                                        <b>    Direct Control without restrictions:{' '}
                                         </b>
                                         <br />
                                         <p>

@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "fs": "0.0.1-security",
     "header": "^0.1.1",
@@ -53,9 +54,8 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
-      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+      ".(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
+      ".(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
     }
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
