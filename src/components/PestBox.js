@@ -6,7 +6,7 @@ const PestBox = props => (
         <div className="pestBox">
         {console.log('Pestbox props:', props)}
         {props.riskAndName.map(pest => (
-            <PestButton pest={pest} route={`/pest/${pest.risk}`} />
+            <PestButton pest={pest} country={props.country} route={`/pest/${pest.risk}`} />
         ))}
         </div>
     </div>

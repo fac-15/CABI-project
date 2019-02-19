@@ -42,7 +42,7 @@ class Dashboard extends React.Component {
                     className="cropbox"
                     crops={this.state.data}
                 />
-                <PestBox riskAndName={this.state.riskAndName} />
+                <PestBox riskAndName={this.state.riskAndName} country={this.state.country} />
                 <Button name="Back" route="/" />
             </div>
         );
