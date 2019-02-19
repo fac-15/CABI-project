@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function PestButton({ pest, route }) {
     const { name, risk, crop } = pest;
     return (
-        <div>
+        <div className="pestBtn">
             <h2>{crop}</h2>
             <Link to={route}>
                 <button>
-                    <h3>{name}</h3>
+                    <h3>{name.split("-").join(" ")}</h3>
                     <RiskLevel level={risk} />
                 </button>
             </Link>

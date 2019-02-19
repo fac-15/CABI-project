@@ -13,6 +13,10 @@ img {
     height: auto;
 }
 
+h1 {
+    padding-left: 1.6em;
+}
+
 .panel {
     width: 100%;
     position: fixed;
@@ -54,6 +58,8 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     padding: 0.5em;
+    color: white;
+    text-transform: uppercase;
 }
 
 .title-container {
@@ -63,4 +69,92 @@ img {
 
 .title {
     margin-left: auto;
+}
+
+.cropBox {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+h3 {
+    text-align: center;
+    flex: 0 0 100%;
+}
+
+.cropBtn {
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    padding: 0.6em;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.pestBox {
+    flex: 0 0 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    flex: 0 0 100%;
+    color: black;
+}
+
+.pestBtn {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    padding: 0.6em;
+    color: white;
+}
+
+.button {
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.6em;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.location {
+    text-align: center;
+}
+
+.dropdown {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.2em;
+    margin: 1em;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: black;
+}
+
+li {
+    list-style: none;
+    padding: 1em;
 }

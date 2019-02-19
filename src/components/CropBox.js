@@ -3,7 +3,7 @@ import CropButton from './CropButton';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const CropBox = props => (
-    <div>
+    <div className="cropBox">
         <p>
             You are in {props.country}, {props.region}.{' '}
             <Link to="/">Change location</Link>

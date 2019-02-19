@@ -11,24 +11,28 @@ class Dashboard extends React.Component {
         this.state = {
             country: '',
             region: '',
-            data: {}
+            data: {},
+            risk: null
         };
     }
     componentDidMount() {
         // const { data } = this.props.match.params;
         const { country, region } = this.props.location.state;
         console.log(this.props.data);
+        const risk = this.props.risk;
 
         this.setState({
             country: country,
-            region: region
+            region: region,
+            risk: risk
+
         });
     }
+
     render() {
         return (
             <div>
                 <Title />
-                <h1 className="App-Title">Hello Dashboard! Muahahahahaha</h1>
                 <CropBox
                     country={this.state.country}
                     region={this.state.region}
