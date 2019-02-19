@@ -105,6 +105,14 @@ class Crop extends React.Component {
                                                 : ''}
                                         </p>
                                         <br />
+                                        <p>
+                                            <b>Monitoring: </b> {e.Monitoring}
+                                        </p>                 
+                                        <br />
+                                        <p>
+                                            <b>Prevention: </b> {e.Prevention}
+                                        </p>
+                                        <br />
                                         <b>
                                             Direct Control with restrictions:{' '}
                                         </b>
@@ -127,14 +135,6 @@ class Crop extends React.Component {
                                                     'Direct Control without restrictions'
                                                 ]
                                             }
-                                        </p>
-                                        <br />
-                                        <p>
-                                            <b>Monitoring: </b> {e.Monitoring}
-                                        </p>
-                                        <br />
-                                        <p>
-                                            <b>Prevention: </b> {e.Prevention}
                                         </p>
                                     </li>
                                 );
