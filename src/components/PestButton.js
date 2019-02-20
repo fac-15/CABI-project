@@ -1,17 +1,31 @@
 import React from 'react';
 import RiskLevel from './RiskLevel';
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import factsheet from '../data/factsheet'
 
-export default function PestButton({ pest, route }) {
-    const { name, risk, crop } = pest;
+export default function PestButton({ pest, country, route }) {
+    const { name, risk} = pest;
+
     return (
         <div className="pestBtn">
-            <h2>{crop}</h2>
             <Link to={route}>
-                <button>
-                    <h3>{name.split("-").join(" ")}</h3>
-                    <RiskLevel level={risk} />
-                </button>
+                {factsheet.map((e) => {
+                        let commonName = "";
+                    if (name === e.PestScientificName && 
+                        country === (e.CountryISO === 'GH'
+                    ? 'Ghana'
+                    : e.CountryISO === 'KE'
+                    ? 'Kenya'
+                    : e.CountryISO === 'ZM'
+                    ? 'Zambia'
+                    : '')) {
+                        commonName = e.CommonName
+                        return <button>
+                        <h3>{commonName}</h3>
+                        <RiskLevel level={risk} />
+                        </button>
+                    }
+                })}
             </Link>
         </div>
     );

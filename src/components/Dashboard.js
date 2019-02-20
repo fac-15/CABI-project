@@ -11,37 +11,44 @@ class Dashboard extends React.Component {
         this.state = {
             country: '',
             region: '',
-            data: {},
-            risk: null
+            riskAndName: null,
+            loading: true
         };
     }
     componentDidMount() {
         // const { data } = this.props.match.params;
         const { country, region } = this.props.location.state;
-        console.log('IN DASH', this.props.location.pathname);
-        const risk = this.props.risk;
+        console.log(this.props.data);
 
         this.setState({
             country: country,
             region: region,
-            risk: risk
+            riskAndName: this.props.riskAndName
         });
     }
 
     render() {
-        return (
-            <div>
-                <Title />
-                <CropBox
-                    country={this.state.country}
-                    region={this.state.region}
-                    className="cropbox"
-                    crops={this.state.data}
-                />
-                <PestBox pests={this.props.data} />
-                <Button name="Back" route="/" />
-            </div>
-        );
+        console.log('Dashboard risk', this.state.riskAndName);
+        if (this.state.riskAndName === null) {
+            return <div>Loading</div>;
+        } else {
+            return (
+                <div>
+                    <Title />
+                    <CropBox
+                        country={this.state.country}
+                        region={this.state.region}
+                        className="cropbox"
+                        crops={this.state.data}
+                    />
+                    <PestBox
+                        riskAndName={this.state.riskAndName}
+                        country={this.state.country}
+                    />
+                    <Button name="Back" route="/" />
+                </div>
+            );
+        }
     }
 }
 

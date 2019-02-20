@@ -8,8 +8,8 @@ const Risk = props => (
         <Title />
         <h1>Hello Risk!</h1>
         <ul>
-            {props.data.map(pest => (
-                <PestButton pest={pest} />
+            {props.data.map(obj => (
+                <PestButton pest={obj.name} />
             ))}
         </ul>
     </div>
