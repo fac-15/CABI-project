@@ -4,9 +4,9 @@ import PestButton from './PestButton';
 const PestBox = props => (
     <div className="wrapper">
         <div className="pestBox">
-        {console.log(props)}
-        {props.pests.map(pest => (
-            <PestButton pest={pest} route={`/pest/${pest.name}`} />
+        {console.log('Pestbox props:', props)}
+        {props.riskAndName.map(pest => (
+            <PestButton pest={pest} country={props.country} route={`/pest/${pest.risk}`} />
         ))}
         </div>
     </div>

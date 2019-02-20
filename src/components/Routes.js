@@ -36,17 +36,30 @@ class Routes extends Component {
         data: null,
         panGhana: null,
         name: '',
-        risk: null
+        riskAndName: null
     };
 
     componentDidMount() {
         this.callBackendAPI()
             .then(res => res.json())
             .then(body => {
-                console.log('body', body)
-                this.setState({risk: body});
+                const reversedBody = body.results.reverse();
+                const oneName = [];
+                const map = new Map();
+                for (const item of reversedBody) {
+                    if(!map.has(item.pest_name)) {
+                        map.set(item.pest_name, true)
+                        oneName.push({name: item.pest_name, risk: item.risk})
+                    }}
+                const riskAndName = oneName.map(obj => {
+                    return { 
+                    name: obj.name,
+                    risk: obj.risk
+                     }
+                })
+               
+                this.setState({riskAndName})
             })
-    
             .catch(err => console.log('error in routes req', err));
     }
 
@@ -58,6 +71,7 @@ class Routes extends Component {
     };
 
     render() {
+        console.log("risk and name array", this.state.riskAndName)
         return (
             <Router>
                 <div>
@@ -66,13 +80,13 @@ class Routes extends Component {
                             exact
                             path="/"
                             component={props => (
-                                <Search {...props} data={props} />
+                                <Search {...props} riskAndName={this.state.riskAndName} />
                             )}
                         />
                         <Route
                             path="/home"
                             component={props => (
-                                <Dashboard {...props} data={pests} risk={this.state.risk} />
+                                <Dashboard {...props} data={pests} riskAndName={this.state.riskAndName} />
                             )}
                         />
                         <Route
@@ -84,10 +98,10 @@ class Routes extends Component {
                         <Route path="/pest/:pests" component={props => (
                              <Pest {...props} data={pests} />
                         )} />
-                        <Route
+                        {/* <Route
                             path="/risk"
-                            component={() => <Risk {...props} data={pests} />}
-                        />
+                            component={() => <Risk {...props} data={this.state.risk} />}
+                        /> */}
                         <Route path="/form" component={Form} />
                         {/* <Route path='/search' component={Search} />
             <Route component={404} /> */}
