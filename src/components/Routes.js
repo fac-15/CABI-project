@@ -12,7 +12,7 @@ import Pest from './Pest';
 
 const pests = [
     {
-        name: "African-stalk-borer",
+        name: 'African-stalk-borer',
         risk: 1,
         crop: 'Maize',
         pestId: 1
@@ -24,7 +24,7 @@ const pests = [
         pestId: 2
     },
     {
-        name: "Leafminer-on-beans",
+        name: 'Leafminer-on-beans',
         risk: 2,
         crop: 'Beans',
         pestId: 3
@@ -47,18 +47,19 @@ class Routes extends Component {
                 const oneName = [];
                 const map = new Map();
                 for (const item of reversedBody) {
-                    if(!map.has(item.pest_name)) {
-                        map.set(item.pest_name, true)
-                        oneName.push({name: item.pest_name, risk: item.risk})
-                    }}
+                    if (!map.has(item.pest_name)) {
+                        map.set(item.pest_name, true);
+                        oneName.push({ name: item.pest_name, risk: item.risk });
+                    }
+                }
                 const riskAndName = oneName.map(obj => {
-                    return { 
-                    name: obj.name,
-                    risk: obj.risk
-                     }
-                })
-               
-                this.setState({riskAndName})
+                    return {
+                        name: obj.name,
+                        risk: obj.risk
+                    };
+                });
+
+                this.setState({ riskAndName });
             })
             .catch(err => console.log('error in routes req', err));
     }
@@ -71,7 +72,7 @@ class Routes extends Component {
     };
 
     render() {
-        console.log("risk and name array", this.state.riskAndName)
+        console.log('risk and name array', this.state.riskAndName);
         return (
             <Router>
                 <div>
@@ -80,13 +81,20 @@ class Routes extends Component {
                             exact
                             path="/"
                             component={props => (
-                                <Search {...props} riskAndName={this.state.riskAndName} />
+                                <Search
+                                    {...props}
+                                    riskAndName={this.state.riskAndName}
+                                />
                             )}
                         />
                         <Route
                             path="/home"
                             component={props => (
-                                <Dashboard {...props} data={pests} riskAndName={this.state.riskAndName} />
+                                <Dashboard
+                                    {...props}
+                                    data={pests}
+                                    riskAndName={this.state.riskAndName}
+                                />
                             )}
                         />
                         <Route
@@ -95,13 +103,19 @@ class Routes extends Component {
                                 <Crop {...props} data={pests} />
                             )}
                         />
-                        <Route path="/pest/:pests" component={props => (
-                             <Pest {...props} data={pests} />
-                        )} />
-                        {/* <Route
+                        <Route
+                            path="/pest/:pests"
+                            component={props => (
+                                <Pest {...props} data={pests} />
+                            )}
+                        />
+                        <Route
                             path="/risk"
-                            component={() => <Risk {...props} data={this.state.risk} />}
-                        /> */}
+                            component={() => (
+                                <Risk {...props} data={this.state.risk} />
+                            )}
+                        />{' '}
+                        */}
                         <Route path="/form" component={Form} />
                         {/* <Route path='/search' component={Search} />
             <Route component={404} /> */}
