@@ -4,24 +4,8 @@ import factsheet from "../data/factsheet";
 
 const PestBox = props => (
   <div className="wrapper">
-    {/* {factsheet.map(e => {
-      let cropName = "";
-      if (
-        props.riskAndName.name === e.PestScientificName &&
-        country ===
-          (e.CountryISO === "GH"
-            ? "Ghana"
-            : e.CountryISO === "KE"
-            ? "Kenya"
-            : e.CountryISO === "ZM"
-            ? "Zambia"
-            : "")
-      ) {
-        cropName = e.Crop;
-        return <h2>{cropName}</h2>;
-      }
-    })} */}
-    <div className="pestBox">
+        <div className="pestBox">
+          <h2>{props.name}</h2>
       {console.log("Pestbox props:", props)}
       {props.riskAndName.map(pest => (
         <PestButton

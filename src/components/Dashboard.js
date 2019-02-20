@@ -3,6 +3,13 @@ import PestBox from './PestBox';
 import Button from './Button.js';
 import CropBox from './CropBox';
 import Title from './Title';
+import factSheet from '../data/factsheet';
+
+const countryISOs = {
+    'Kenya': 'KE',
+    'Ghana': 'GH',
+    'Zambia': 'ZM'
+}
 
 class Dashboard extends React.Component {
     constructor(props) {
@@ -12,6 +19,7 @@ class Dashboard extends React.Component {
             country: '',
             region: '',
             riskAndName: null,
+            crop: "",
             loading: true
         };
     }
@@ -27,8 +35,28 @@ class Dashboard extends React.Component {
         });
     }
 
+    separatePestByCrop = (crop) => {
+      const countryISO = countryISOs[this.state.country];
+
+      if (this.state.riskAndName == null) {
+          return [];
+      }
+      return this.state.riskAndName
+        .map(pest => {
+            return {
+                ...pest,
+                ...factSheet.find(item => item.PestScientificName === pest.name && item.CountryISO === countryISO)
+            }
+        })
+        .filter(pest => pest.Crop === crop);
+      // return factSheet.filter(e => this.state.riskAndName.find(obj => obj.name === e.PestScientificName));
+    }
+
     render() {
-        console.log('Dashboard risk', this.state.riskAndName);
+
+        // console.log('Dashboard risk', this.state.riskAndName);
+        // console.log("Cropname:", this.state.crop)
+        console.log('tomato pests for', this.state.country, this.separatePestByCrop('maize'));
         if (this.state.riskAndName === null) {
             return <div>Loading</div>;
         } else {
@@ -42,7 +70,18 @@ class Dashboard extends React.Component {
                         crops={this.state.data}
                     />
                     <PestBox
-                        riskAndName={this.state.riskAndName}
+                        name='Tomato'
+                        riskAndName={this.separatePestByCrop('tomato')}
+                        country={this.state.country}
+                    />
+                    <PestBox
+                        name='Maize'
+                        riskAndName={this.separatePestByCrop('maize')}
+                        country={this.state.country}
+                    />
+                    <PestBox
+                        name='Beans'
+                        riskAndName={this.separatePestByCrop('beans')}
                         country={this.state.country}
                     />
                     <Button name="Back" route="/" />
