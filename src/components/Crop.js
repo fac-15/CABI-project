@@ -68,7 +68,7 @@ class Crop extends React.Component {
                                         {/* {console.log('image', e['Image 1'])} */}
                                         {
                                             Object.values(e.Images[0]).map(image => 
-                                            <div><img className="pestImg" src={image.url} /><p>{image.Caption}</p></div>)
+                                            <div><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
                                           } 
                                         {/* <img src="https://www.plantwise.org/KnowledgeBank/800x640/PMDG_110097.jpg" /> */}
                                         <p>
@@ -80,38 +80,6 @@ class Crop extends React.Component {
                                                 : e.CountryISO === 'ZM'
                                                 ? 'Zambia'
                                                 : ''}
-                                        </p>
-                                        <br />
-                                        <p>
-                                         <b>    Monitoring: </b> {e.Monitoring}
-                                        </p>                 
-                                        <br />
-                                        <p>
-                                          <b>   Prevention: </b> {e.Prevention}
-                                        </p>
-                                        <br />
-                                        
-                                        <b>   Direct Control with restrictions:{' '}
-                                        </b>
-                                        <br />
-                                        <p>
-                                            {
-                                                e[
-                                                    'Direct Control with restrictions'
-                                                ]
-                                            }
-                                        </p>
-                                        <br />
-                                        
-                                        <b>    Direct Control without restrictions:{' '}
-                                        </b>
-                                        <br />
-                                        <p>
-                                            {
-                                                e[
-                                                    'Direct Control without restrictions'
-                                                ]
-                                            }
                                         </p>
                                     </li>
                                 );
