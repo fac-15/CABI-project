@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import Button from './Button';
+import countyData from '../data/countyData'
+
 
 class Location extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { country: '', region: ' ' };
+        this.state = { country: '', region: '', data: countyData };
 
         this.handleCountryChange = this.handleCountryChange.bind(this);
         this.handleRegionChange = this.handleRegionChange.bind(this);
@@ -38,7 +40,17 @@ class Location extends Component {
     // }
 
     render() {
+        console.log(this.state.data[0].Ghana[0].COUNTY)
         const { country, region } = this.state;
+        let countryData = "";
+        if (this.state.country === "Ghana") {
+            countryData = this.state.data[0].Ghana;
+        } else if (this.state.country === "Kenya") {
+            countryData = this.state.data[1].Kenya;
+        } else {
+            countryData = this.state.data[2].Zambia;   
+        }
+
         return (
             <form onSubmit={this.handleSubmit}>
                 <div className="dropdown">
@@ -69,10 +81,12 @@ class Location extends Component {
                         className="dropdown"
                         value={region}
                         onChange={value => this.handleRegionChange(value)}
+                    
                     >
-                        <option value="Ghana">RegionGhana</option>
-                        <option value="Kenya">RegionKenya</option>
-                        <option value="Zambia">RegionZambia</option>
+                     {
+                         Object.values(countryData).map(region => 
+                        <option value={region.COUNTY}>{region.COUNTY}</option>
+                        )}
                     </select>
                     <br />
                     <Button
