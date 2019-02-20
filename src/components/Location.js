@@ -65,6 +65,7 @@ class Location extends Component {
                         value={country}
                         onChange={value => this.handleCountryChange(value)}
                     >
+                        <option value="" disabled selected>Select Country</option>
                         <option value="Ghana">Ghana</option>
                         <option value="Kenya">Kenya</option>
                         <option value="Zambia">Zambia</option>
@@ -83,6 +84,7 @@ class Location extends Component {
                         onChange={value => this.handleRegionChange(value)}
                     
                     >
+                        <option value="" disabled selected>Select County/District</option>
                      {
                          Object.values(countryData).map(region => 
                         <option value={region.COUNTY}>{region.COUNTY}</option>
