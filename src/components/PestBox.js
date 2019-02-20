@@ -1,10 +1,10 @@
-import React from "react";
-import PestButton from "./PestButton";
-import factsheet from "../data/factsheet";
+import React from 'react';
+import PestButton from './PestButton';
+import factsheet from '../data/factsheet';
 
 const PestBox = props => (
-  <div className="wrapper">
-    {/* {factsheet.map(e => {
+    <div className="wrapper">
+        {/* {factsheet.map(e => {
       let cropName = "";
       if (
         props.riskAndName.name === e.PestScientificName &&
@@ -21,17 +21,18 @@ const PestBox = props => (
         return <h2>{cropName}</h2>;
       }
     })} */}
-    <div className="pestBox">
-      {console.log("Pestbox props:", props)}
-      {props.riskAndName.map(pest => (
-        <PestButton
-          pest={pest}
-          country={props.country}
-          route={`/pest/${pest.name}`}
-        />
-      ))}
+        <div className="pestBox">
+            {console.log('Pestbox props:', props)}
+            {props.riskAndName.map((pest, key) => (
+                <PestButton
+                    key={key}
+                    pest={pest}
+                    country={props.country}
+                    route={`/pest/${pest.name}`}
+                />
+            ))}
+        </div>
     </div>
-  </div>
 );
 
 export default PestBox;
