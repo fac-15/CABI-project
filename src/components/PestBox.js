@@ -27,7 +27,7 @@ const PestBox = props => (
         <PestButton
           pest={pest}
           country={props.country}
-          route={`/pest/${pest.risk}`}
+          route={`/pest/${pest.name}`}
         />
       ))}
     </div>
