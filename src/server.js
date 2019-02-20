@@ -23,9 +23,9 @@ app.get('/express_backend', (req, res) => {
     res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
 });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve('public', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve('public', 'index.html'));
+// });
 
 app.get('/crop', (req, res, next) => {
     res.send(factsheet);
