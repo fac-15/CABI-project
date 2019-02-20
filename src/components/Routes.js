@@ -12,7 +12,7 @@ import Pest from './Pest';
 
 const pests = [
     {
-        name: "African-stalk-borer",
+        name: 'African-stalk-borer',
         risk: 1,
         crop: 'Maize',
         pestId: 1
@@ -24,7 +24,7 @@ const pests = [
         pestId: 2
     },
     {
-        name: "Leafminer-on-beans",
+        name: 'Leafminer-on-beans',
         risk: 2,
         crop: 'Beans',
         pestId: 3
@@ -41,8 +41,7 @@ class Routes extends Component {
 
     componentDidMount() {
         this.callBackendAPI()
-            .then(body => 
-                this.setState({ risk: body }))
+            .then(body => this.setState({ risk: body }))
             .catch(err => console.log(err));
     }
 
@@ -68,7 +67,11 @@ class Routes extends Component {
                         <Route
                             path="/home"
                             component={props => (
-                                <Dashboard {...props} data={pests} risk={this.state.risk} />
+                                <Dashboard
+                                    {...props}
+                                    data={pests}
+                                    risk={this.state.risk}
+                                />
                             )}
                         />
                         <Route
@@ -77,9 +80,12 @@ class Routes extends Component {
                                 <Crop {...props} data={pests} />
                             )}
                         />
-                        <Route path="/pest/:pests" component={props => (
-                             <Pest {...props} data={pests} />
-                        )} />
+                        <Route
+                            path="/pest/:pests"
+                            component={props => (
+                                <Pest {...props} data={pests} />
+                            )}
+                        />
                         <Route
                             path="/risk"
                             component={() => <Risk {...props} data={pests} />}
