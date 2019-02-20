@@ -19,7 +19,7 @@ class Pest extends React.Component {
     }
 
     render() {
-        const pestName = this.props.match.params.pests.split("-").join(" ");
+        const pestName = this.props.match.params.pests;
         return (
             <div>
                 <Title />
@@ -28,7 +28,7 @@ class Pest extends React.Component {
                     <ul>
                         {jsonSheet.map((e, key) => {
                             if (
-                                e.CommonName ===
+                                e.PestScientificName ===
                                 pestName
                             ) {
                                 return (
@@ -40,6 +40,10 @@ class Pest extends React.Component {
                                           <b>  Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
+                                        {
+                                            Object.values(e.Images[0]).map(image => 
+                                            <div><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
+                                          } 
                                         <p>
                                         <b> Country/Region: </b>
                                             {e.CountryISO === 'GH'
