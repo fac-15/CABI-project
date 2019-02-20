@@ -1,6 +1,6 @@
-import React from "react";
-import PestButton from "./PestButton";
-import factsheet from "../data/factsheet";
+import React from 'react';
+import PestButton from './PestButton';
+import factsheet from '../data/factsheet';
 
 const PestBox = props => (
   <div className="wrapper">
@@ -15,7 +15,6 @@ const PestBox = props => (
         />
       ))}
     </div>
-  </div>
 );
 
 export default PestBox;
