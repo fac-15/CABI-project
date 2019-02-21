@@ -10,6 +10,7 @@ const ButtonContianer = styled.button`
     text-transform: uppercase;
     font-weight: bold;
     margin: 1em;
+    border-radius: 0.5em;
 `;
 
 const ChooseACrop = styled.h2`
@@ -30,6 +31,7 @@ const ClickMe = styled.button`
     padding: 0.5em;
     color: white;
     text-transform: uppercase;
+    border-radius: 0.5em;
 `;
 
 const CropboxWrap = styled.div`
@@ -61,8 +63,11 @@ const CropButtonLink = styled.button`
     background: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
-    padding: 0.6em;
+    padding: 0.8em;
+    margin: 0.5em;
     color: white;
+    border-radius: 0.5em;
+    width: 6em;
 `;
 
 const DashWrap = styled.div``;
@@ -108,7 +113,7 @@ const PestBoxContainer = styled.div`
     justify-content: center;
     align-items: center;
     /* width: 80%; */
-    height: 12em;
+    height: 20%;
 `;
 
 const PestButtonName = styled.h3`
@@ -126,7 +131,10 @@ const PestButtonWrap = styled.div`
     box-sizing: border-box;
 `;
 
-const PestButtonContainer = styled.button``;
+const PestButtonContainer = styled.button`
+border-radius: 0.5em;
+width: 14em;
+`;
 
 const riskColor = num => {
     return num === 1
