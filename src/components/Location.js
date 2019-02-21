@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import Button from './Button';
-import countyData from '../data/countyData'
-
+import countyData from '../data/countyData';
 
 class Location extends Component {
     constructor(props) {
@@ -14,7 +13,7 @@ class Location extends Component {
         this.handleCountryChange = this.handleCountryChange.bind(this);
         this.handleRegionChange = this.handleRegionChange.bind(this);
 
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleCountryChange(event) {
@@ -27,10 +26,10 @@ class Location extends Component {
         // this.setState({ region: value });
     }
 
-    handleSubmit(event) {
-        alert('RESULT:  ' + this.state.country + this.state.region);
-        event.preventDefault();
-    }
+    // handleSubmit(event) {
+    //     alert('RESULT:  ' + this.state.country + this.state.region);
+    //     event.preventDefault();
+    // }
     // selectCountry(val) {
     //     this.setState({ country: val });
     // }
@@ -40,15 +39,15 @@ class Location extends Component {
     // }
 
     render() {
-        console.log(this.state.data[0].Ghana[0].COUNTY)
+        console.log(this.state.data[0].Ghana[0].COUNTY);
         const { country, region } = this.state;
-        let countryData = "";
-        if (this.state.country === "Ghana") {
+        let countryData = '';
+        if (this.state.country === 'Ghana') {
             countryData = this.state.data[0].Ghana;
-        } else if (this.state.country === "Kenya") {
+        } else if (this.state.country === 'Kenya') {
             countryData = this.state.data[1].Kenya;
         } else {
-            countryData = this.state.data[2].Zambia;   
+            countryData = this.state.data[2].Zambia;
         }
 
         return (
@@ -65,7 +64,9 @@ class Location extends Component {
                         value={country}
                         onChange={value => this.handleCountryChange(value)}
                     >
-                        <option value="" disabled selected>Select Country</option>
+                        <option value="" disabled selected>
+                            Select Country
+                        </option>
                         <option value="Ghana">Ghana</option>
                         <option value="Kenya">Kenya</option>
                         <option value="Zambia">Zambia</option>
@@ -82,13 +83,15 @@ class Location extends Component {
                         className="dropdown"
                         value={region}
                         onChange={value => this.handleRegionChange(value)}
-                    
                     >
-                        <option value="" disabled selected>Select County/District</option>
-                     {
-                         Object.values(countryData).map(region => 
-                        <option value={region.COUNTY}>{region.COUNTY}</option>
-                        )}
+                        <option value="" disabled selected>
+                            Select County/District
+                        </option>
+                        {Object.values(countryData).map((region, key) => (
+                            <option key={key} value={region.COUNTY}>
+                                {region.COUNTY}
+                            </option>
+                        ))}
                     </select>
                     <br />
                     <Button

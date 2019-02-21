@@ -1,10 +1,10 @@
 import React from 'react';
 import RiskLevel from './RiskLevel';
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import factsheet from '../data/factsheet'
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import factsheet from '../data/factsheet';
 
 export default function PestButton({ pest, country, route }) {
-    const { name, risk} = pest;
+    const { name, risk } = pest;
 
     return (
         <div className="pestBtn">
