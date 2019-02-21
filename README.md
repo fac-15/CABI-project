@@ -2,6 +2,12 @@
 
 ## CABI-project
 
+#### What the project is about: 
+
+Hi! 
+
+We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and Zambia from an API and displays information about the pests, how to monitor, prevent and how to treat the affected crops. 
+
 ##### Color Scheme:
 - ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff - White`
 - ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000 - Black`
@@ -38,3 +44,8 @@
 
 #### Stretch Goals
 
+- Collect more input data 
+
+- Testing (!!!!)
+
+- Make the factsheet text formatted 
