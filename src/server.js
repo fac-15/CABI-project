@@ -9,7 +9,7 @@ const path = require("path");
 app.use(cors());
 
 app.get("/riskres", (req, res) => {
-  Api()
+  Api(req.query.region)
     .then(result => {
       res.send(result);
     })
