@@ -15,6 +15,13 @@ We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and 
 2.1. Run ` npm run dev`. <br/>
 2.2. Go to your browser and type `localhost:1234` to run the app. 
 
+
+## Our Tech Stack
+:battery: React\
+:train: Express\
+:heart_eyes_cat: Parcel\
+:bulb: ESLint & Prettier
+
 ##### Color Scheme:
 - ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff - White`
 - ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000 - Black`
@@ -55,3 +62,5 @@ We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and 
 ##### React Planning
 ![react](https://user-images.githubusercontent.com/41472850/52576240-9cb8e800-2e17-11e9-8f4a-1b3bffe48df0.png)
 ![react1](https://user-images.githubusercontent.com/41472850/52576456-01744280-2e18-11e9-9bba-8e08b720ebeb.png)
+
+## Thanks for reading!
