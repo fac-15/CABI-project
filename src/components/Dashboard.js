@@ -35,6 +35,7 @@ class Dashboard extends React.Component {
     this.callBackendAPI(region)
       .then(res => res.json())
       .then(body => {
+        debugger
         const reversedBody = body.results.reverse();
         const oneName = [];
         const map = new Map();
@@ -110,16 +111,19 @@ class Dashboard extends React.Component {
             name="Tomato"
             riskAndName={this.separatePestByCrop("tomato")}
             country={this.state.country}
+            region={this.state.region}
           />
           <PestBox
             name="Maize"
             riskAndName={this.separatePestByCrop("maize")}
             country={this.state.country}
+            region={this.state.region}
           />
           <PestBox
             name="Beans"
             riskAndName={this.separatePestByCrop("beans")}
             country={this.state.country}
+            region={this.state.region}
           />
           <Button name="Back" route="/" />
           <Button name="Feedback" route="/form" />
