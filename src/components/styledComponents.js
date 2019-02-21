@@ -128,6 +128,16 @@ const PestButtonWrap = styled.div`
 
 const PestButtonContainer = styled.button``;
 
+const riskColor = num => {
+    return num === 1
+        ? 'green'
+        : num === 2
+        ? 'orange'
+        : num === 3
+        ? 'red'
+        : 'white';
+};
+
 const RiskBar = styled.p`
     background-color: ${props => riskColor(props.level)};
 `;

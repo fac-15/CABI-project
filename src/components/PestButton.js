@@ -36,7 +36,7 @@ export default function PestButton({ pest, country, route, region, search }) {
                     ) {
                         commonName = e.CommonName;
                         return (
-                            <PestButtonContainer key={key}>
+                            <PestButtonContainer key={e.pestID}>
                                 <PestButtonName>{commonName}</PestButtonName>
                                 <RiskLevel level={risk} />
                             </PestButtonContainer>

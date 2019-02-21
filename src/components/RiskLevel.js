@@ -14,16 +14,6 @@ const riskNumToString = num => {
     return string;
 };
 
-const riskColor = num => {
-    return num === 1
-        ? 'green'
-        : num === 2
-        ? 'orange'
-        : num === 3
-        ? 'red'
-        : 'white';
-};
-
 const RiskLevel = props => (
     <div>
         <RiskBar level={props.level}>{riskNumToString(props.level)}</RiskBar>
