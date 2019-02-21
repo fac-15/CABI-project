@@ -7,11 +7,14 @@ const PestBox = props => (
         <div className="pestBox">
           <h2>{props.name}</h2>
       {console.log("Pestbox props:", props)}
-      {props.riskAndName.map(pest => (
+      {props.riskAndName.map((pest, key) => (
         <PestButton
+        key={key}
           pest={pest}
           country={props.country}
-          route={`/pest/${pest.name}?country=${props.country}`}
+          region={props.region}
+          search={`?country=${props.country}?region=${props.region}`}
+          route={`/pest/${pest.name}`}
         />
       ))}
     </div>

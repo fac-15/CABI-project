@@ -26,7 +26,7 @@ class Dashboard extends React.Component {
     componentDidMount() {
         // const { data } = this.props.match.params;
         const { country, region } = this.props.location.state;
-        console.log(this.props.data);
+        console.log('PROPS IN DASHBOARD', this.props);
 
         this.setState({
             country: country,
@@ -73,16 +73,21 @@ class Dashboard extends React.Component {
                         name='Tomato'
                         riskAndName={this.separatePestByCrop('tomato')}
                         country={this.state.country}
+                        region={this.state.region}
                     />
                     <PestBox
                         name='Maize'
                         riskAndName={this.separatePestByCrop('maize')}
                         country={this.state.country}
+                        region={this.state.region}
+
                     />
                     <PestBox
                         name='Beans'
                         riskAndName={this.separatePestByCrop('beans')}
                         country={this.state.country}
+                        region={this.state.region}
+
                     />
                     <Button name="Back" route="/" />
                 </div>
