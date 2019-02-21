@@ -118,8 +118,9 @@ class Dashboard extends React.Component {
           <Button name="Back" route="/" />
           <Button name="Feedback" route="/form" />
         </div>
-      );
+      )
     }
+}
 }
 
 export default Dashboard;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from './Button';
 import countyData from '../data/countyData';
 import { DropdownWrap } from './styledComponents';
+import Title from './Title';
 
 class Location extends Component {
     constructor(props) {
