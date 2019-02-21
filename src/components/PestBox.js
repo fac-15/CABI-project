@@ -15,6 +15,7 @@ const PestBox = props => (
         />
       ))}
     </div>
+</div>
 );
 
 export default PestBox;
