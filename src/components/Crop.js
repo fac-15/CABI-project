@@ -54,7 +54,7 @@ class Crop extends React.Component {
                             ) {
                                 // const a = e.Image1.url;
                                 // console.log(a);
-                                console.log('imagesgd', Object.values(e.Images[0]))
+                                // console.log('imagesgd', Object.values(e.Images[0]))
 
                                 return (
                                     <li key={key}>
@@ -66,7 +66,7 @@ class Crop extends React.Component {
                                         </p>
                                         <br />
                                         {/* {console.log('image', e['Image 1'])} */}
-                                        {
+                                        {e.Images &&
                                             Object.values(e.Images[0]).map(image => 
                                             <div><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
                                           } 
