@@ -31,6 +31,7 @@ class Pest extends React.Component {
         const pestName = this.props.match.params.pests;
         const country = this.props.match.params.country;
         console.log(this.state.country)
+        console.log(this.state.region)
         console.log('In PEST:', this.props)
         return (
             <div>
@@ -39,7 +40,15 @@ class Pest extends React.Component {
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
-                            if (e.PestScientificName === pestName && e.country === countryISOs[country]) {
+                          e.countryISO = (e.CountryISO === 'GH'
+                          ? 'Ghana'
+                          : e.CountryISO === 'KE'
+                          ? 'Kenya'
+                          : e.CountryISO === 'ZM'
+                          ? 'Zambia'
+                          : '')
+
+                            if (e.countryISO === this.state.country && e.PestScientificName === pestName ) {
                                 return (
                                     <li key={key}>
                                         <h4>Common Name: {' '}
@@ -55,7 +64,13 @@ class Pest extends React.Component {
                                           } 
                                         <p>
                                         <b> Country/Region: </b>
-                                            {country}
+                                            {e.CountryISO === 'GH'
+                          ? 'Ghana'
+                          : e.CountryISO === 'KE'
+                          ? 'Kenya'
+                          : e.CountryISO === 'ZM'
+                          ? 'Zambia'
+                          : ''}
                                         </p>
                                         <br />
                                         <p>
