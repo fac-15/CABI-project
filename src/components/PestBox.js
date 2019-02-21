@@ -13,7 +13,8 @@ const PestBox = props => (
           pest={pest}
           country={props.country}
           region={props.region}
-          route={`/pest/${pest.name}?country=${props.country}?region=${props.region}`}
+          search={`?country=${props.country}?region=${props.region}`}
+          route={`/pest/${pest.name}`}
         />
       ))}
     </div>

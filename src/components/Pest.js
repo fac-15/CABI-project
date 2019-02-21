@@ -17,7 +17,8 @@ class Pest extends React.Component {
         super(props);
         this.state = {
             data: null,
-            country: this.props.country
+            country: this.props.location.state.country,
+            region: this.props.location.state.region
         };
     }
 
@@ -29,6 +30,7 @@ class Pest extends React.Component {
     render() {
         const pestName = this.props.match.params.pests;
         const country = this.props.match.params.country;
+        console.log(this.state.country)
         console.log('In PEST:', this.props)
         return (
             <div>
@@ -37,7 +39,7 @@ class Pest extends React.Component {
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
-                            if (e.PestScientificName === pestName && country === countryISOs[country]) {
+                            if (e.PestScientificName === pestName && e.country === countryISOs[country]) {
                                 return (
                                     <li key={key}>
                                         <h4>Common Name: {' '}
@@ -49,7 +51,7 @@ class Pest extends React.Component {
                                         <br />
                                         {
                                             Object.values(e.Images[0]).map((image, key) => 
-                                            <div><img key={key} className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
+                                            <div key={key} ><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
                                           } 
                                         <p>
                                         <b> Country/Region: </b>

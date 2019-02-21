@@ -26,7 +26,7 @@ class Dashboard extends React.Component {
     componentDidMount() {
         // const { data } = this.props.match.params;
         const { country, region } = this.props.location.state;
-        console.log(this.props.data);
+        console.log('PROPS IN DASHBOARD', this.props);
 
         this.setState({
             country: country,
