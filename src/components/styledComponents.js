@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ButtonContianer = styled.button`
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -11,6 +11,8 @@ const ButtonContianer = styled.button`
     font-weight: bold;
     margin: 1em;
     border-radius: 0.5em;
+    /* position: fixed; */
+    bottom: 2em;
 `;
 
 const ChooseACrop = styled.h2`
@@ -132,8 +134,8 @@ const PestButtonWrap = styled.div`
 `;
 
 const PestButtonContainer = styled.button`
-border-radius: 0.5em;
-width: 14em;
+    border-radius: 0.5em;
+    width: 14em;
 `;
 
 const riskColor = num => {
@@ -148,6 +150,20 @@ const riskColor = num => {
 
 const RiskBar = styled.p`
     background-color: ${props => riskColor(props.level)};
+    color: ${props => (props.level === 2 ? 'black' : 'white')};
+    border-radius: 20px;
+    padding: 0.3em;
+    font-weight: bold;
+    margin: 1em 2em;
+    text-align: center;
+    align-content: center;
+`;
+
+const Loading = styled.div`
+    font-size: 3em;
+    position: fixed;
+    top: 38%;
+    left: 36%;
 `;
 
 const SelectLocationHead = styled.h1`
@@ -157,10 +173,12 @@ const SelectLocationHead = styled.h1`
 const TitleContainer = styled.div`
     display: flex;
     width: 100%;
+    justify-content: center;
 `;
 
 const TitleImage = styled.img`
-    margin-left: auto;
+    max-width: 100%;
+    min-width: 14em;
 `;
 
 const CropNameHeader = styled.h2`
@@ -184,6 +202,7 @@ export {
     FormWrap,
     GoogleForm,
     Head,
+    Loading,
     LocationInfo,
     PestBoxContainer,
     PestBoxWrapper,

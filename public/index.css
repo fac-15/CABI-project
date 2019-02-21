@@ -3,6 +3,9 @@
 body {
     background: white;
     font-family: 'Open Sans', sans-serif;
+    background-attachment: fixed;
+    background-color: #ffbf10;
+    background-image: -webkit-linear-gradient(140deg, #ffffff 60%, #ffbf10 40%);
 }
 
 /*----FOR Multiple tags----*/
@@ -12,6 +15,10 @@ body {
     font-size: 1em;
     padding: 0.2em;
     margin: 1em;
+}
+
+.dropdown select {
+    display: none;
 }
 
 li {
