@@ -9,7 +9,7 @@ export default function PestButton({ pest, country, route }) {
     return (
         <div className="pestBtn">
             <Link to={route} country={country}>
-                {factsheet.map((e) => {
+                {factsheet.map((e, key) => {
                         let commonName = "";
                     if (name === e.PestScientificName && 
                         country === (e.CountryISO === 'GH'
@@ -20,8 +20,8 @@ export default function PestButton({ pest, country, route }) {
                     ? 'Zambia'
                     : '')) {
                         commonName = e.CommonName
-                        return <button>
-                        <h3>{commonName}</h3>
+                        return <button key={key}>
+                        <h3 >{commonName}</h3>
                         <RiskLevel level={risk} />
                         </button>
                     }
