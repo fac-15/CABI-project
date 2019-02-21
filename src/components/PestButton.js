@@ -8,7 +8,7 @@ export default function PestButton({ pest, country, route }) {
 
     return (
         <div className="pestBtn">
-            <Link to={route}>
+            <Link to={route} country={country}>
                 {factsheet.map((e) => {
                         let commonName = "";
                     if (name === e.PestScientificName && 
