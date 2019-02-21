@@ -3,6 +3,7 @@ require('dotenv').config();
 const username = process.env.USER_NAME;
 const password = process.env.PASSWORD;
 
+
 request = request.defaults({ jar: true });
 
 const url = 'http://192.171.139.69/api/api-auth/login/';
@@ -22,6 +23,7 @@ const Api = region =>
             const csrf = data.headers['set-cookie'][0]
                 .split(';')[0]
                 .split('csrftoken=')[1];
+
 
             // console.log("--------", data.headers["set-cookie"][0] + `Referer=${url};`);
             request.post(
@@ -51,6 +53,7 @@ const Api = region =>
                 }
             );
         });
+
     });
 
 module.exports = Api;

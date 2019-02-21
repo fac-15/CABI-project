@@ -16,6 +16,7 @@ class Dashboard extends React.Component {
     constructor(props) {
         super(props);
 
+
         this.state = {
             country: '',
             region: '',
@@ -29,6 +30,7 @@ class Dashboard extends React.Component {
         this.setState({
             country: country,
             region: region
+
         });
         this.callBackendAPI(region)
             .then(res => res.json())
@@ -81,39 +83,42 @@ class Dashboard extends React.Component {
             .filter(pest => pest.Crop === crop);
     };
 
-    render() {
-        if (this.state.riskAndName === null) {
-            return <div>Loading</div>;
-        } else {
-            return (
-                <DashWrap>
-                    <Title />
-                    <CropBox
-                        country={this.state.country}
-                        region={this.state.region}
-                        className="cropbox"
-                        crops={this.state.data}
-                    />
-                    <PestBox
-                        name="Tomato"
-                        riskAndName={this.separatePestByCrop('tomato')}
-                        country={this.state.country}
-                    />
-                    <PestBox
-                        name="Maize"
-                        riskAndName={this.separatePestByCrop('maize')}
-                        country={this.state.country}
-                    />
-                    <PestBox
-                        name="Beans"
-                        riskAndName={this.separatePestByCrop('beans')}
-                        country={this.state.country}
-                    />
-                    <Button name="Back" route="/" />
-                    <Button name="Feedback" route="/form" />
-                </DashWrap>
-            );
-        }
+
+  render() {
+    if (this.state.riskAndName === null) {
+      return <div>Loading</div>;
+    } else {
+      return (
+        <div>
+          <Title />
+          <CropBox
+            country={this.state.country}
+            region={this.state.region}
+            className="cropbox"
+            crops={this.state.data}
+          />
+          <PestBox
+            name="Tomato"
+            riskAndName={this.separatePestByCrop("tomato")}
+            country={this.state.country}
+            region={this.state.region}
+          />
+          <PestBox
+            name="Maize"
+            riskAndName={this.separatePestByCrop("maize")}
+            country={this.state.country}
+            region={this.state.region}
+          />
+          <PestBox
+            name="Beans"
+            riskAndName={this.separatePestByCrop("beans")}
+            country={this.state.country}
+            region={this.state.region}
+          />
+          <Button name="Back" route="/" />
+          <Button name="Feedback" route="/form" />
+        </div>
+      );
     }
 }
 
