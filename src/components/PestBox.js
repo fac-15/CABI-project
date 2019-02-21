@@ -1,7 +1,5 @@
 import React from 'react';
 import PestButton from './PestButton';
-import factsheet from '../data/factsheet';
-// import styled from 'styled-components';
 import {
     PestBoxWrapper,
     PestBoxContainer,

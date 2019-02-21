@@ -1,19 +1,5 @@
 import styled from 'styled-components';
 
-const CropCommonHeader = styled.h4`
-    font-size: 1.2em;
-    color: black;
-`;
-
-const PestImg = styled.img`
-    display: inline-block;
-    padding: 1em;
-    max-width: 460px;
-    max-height: 190px;
-    width: auto;
-    height: auto;
-`;
-
 const ButtonContianer = styled.button`
     flex: 0 0 100%;
     text-align: center;
@@ -26,6 +12,26 @@ const ButtonContianer = styled.button`
     margin: 1em;
 `;
 
+const ChooseACrop = styled.h2`
+    text-align: center;
+    flex: 0 0 100%;
+    color: black;
+    padding-top: 1em;
+`;
+
+const ClickMe = styled.button`
+    position: fixed;
+    bottom: 0em;
+    left: -1em;
+    width: 20%;
+    background: #368729;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    text-transform: uppercase;
+`;
+
 const CropboxWrap = styled.div`
     display: flex;
     margin: 0 auto;
@@ -35,11 +41,18 @@ const CropboxWrap = styled.div`
     width: 80%;
 `;
 
-const ChooseACrop = styled.h2`
-    text-align: center;
-    flex: 0 0 100%;
+const CropCommonHeader = styled.h4`
+    font-size: 1.2em;
     color: black;
-    padding-top: 1em;
+`;
+
+const PestImg = styled.img`
+    display: inline-block;
+    padding: 1em;
+    max-width: 460px;
+    max-height: 190px;
+    width: auto;
+    height: auto;
 `;
 
 const LocationInfo = styled.p``;
@@ -65,19 +78,6 @@ const Head = styled.h1`
 const Form = styled.iframe`
     margin: 0 auto;
     max-width: 100%;
-`;
-
-const ClickMe = styled.button`
-    position: fixed;
-    bottom: 0em;
-    left: -1em;
-    width: 20%;
-    background: #368729;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 0.5em;
-    color: white;
-    text-transform: uppercase;
 `;
 
 const DropdownWrap = styled.div`
@@ -164,26 +164,26 @@ const CropNameHeader = styled.h2`
 
 export {
     ButtonContianer,
-    CropCommonHeader,
-    ClickMe,
-    CropButtonLink,
-    CropNameHeader,
-    PestImg,
-    CropboxWrap,
     ChooseACrop,
-    LocationInfo,
+    ClickMe,
+    CropboxWrap,
+    CropButtonLink,
+    CropCommonHeader,
+    CropNameHeader,
     DashWrap,
+    DropdownWrap,
+    Form,
     FormWrap,
     GoogleForm,
     Head,
-    Form,
-    DropdownWrap,
-    PestCommonHeader,
+    LocationInfo,
     PestBoxContainer,
     PestBoxWrapper,
     PestButtonContainer,
     PestButtonName,
     PestButtonWrap,
+    PestCommonHeader,
+    PestImg,
     RiskBar,
     SelectLocationHead,
     TitleContainer,

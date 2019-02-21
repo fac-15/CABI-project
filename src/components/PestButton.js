@@ -1,8 +1,7 @@
 import React from 'react';
 import RiskLevel from './RiskLevel';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import factsheet from '../data/factsheet';
-// import styled from 'styled-components';
 import {
     PestButtonName,
     PestButtonWrap,
@@ -13,7 +12,7 @@ export default function PestButton({ pest, country, route, region, search }) {
     const { name, risk } = pest;
     // console.log(query)
     return (
-        <PestButtonWrap /*className="pestBtn"*/>
+        <PestButtonWrap>
             <Link
                 to={{
                     pathname: route,

@@ -1,5 +1,4 @@
 import React from 'react';
-// import styled from 'styled-components';
 import { RiskBar } from './styledComponents';
 
 const riskNumToString = num => {

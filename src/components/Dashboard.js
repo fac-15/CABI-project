@@ -26,13 +26,10 @@ class Dashboard extends React.Component {
     }
     componentDidMount() {
         const { country, region } = this.props.location.state;
-        console.log(this.props.data);
-
         this.setState({
             country: country,
             region: region
         });
-
         this.callBackendAPI(region)
             .then(res => res.json())
             .then(body => {
@@ -61,8 +58,6 @@ class Dashboard extends React.Component {
         const response = await fetch(
             `http://localhost:5000/riskres?region=${region}`
         );
-        // // const body = await response.json();
-        // console.log(body)
         return response;
     };
 
@@ -84,22 +79,14 @@ class Dashboard extends React.Component {
                 };
             })
             .filter(pest => pest.Crop === crop);
-        // return factSheet.filter(e => this.state.riskAndName.find(obj => obj.name === e.PestScientificName));
     };
 
     render() {
-        // console.log('Dashboard risk', this.state.riskAndName);
-        // console.log("Cropname:", this.state.crop)
-        console.log(
-            'tomato pests for',
-            this.state.country,
-            this.separatePestByCrop('maize')
-        );
         if (this.state.riskAndName === null) {
             return <div>Loading</div>;
         } else {
             return (
-                <div>
+                <DashWrap>
                     <Title />
                     <CropBox
                         country={this.state.country}
@@ -124,7 +111,7 @@ class Dashboard extends React.Component {
                     />
                     <Button name="Back" route="/" />
                     <Button name="Feedback" route="/form" />
-                </div>
+                </DashWrap>
             );
         }
     }

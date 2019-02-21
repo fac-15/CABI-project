@@ -1,11 +1,10 @@
 import React from 'react';
 import CropButton from './CropButton';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-// import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { CropboxWrap, ChooseACrop, LocationInfo } from './styledComponents';
 
 const CropBox = props => (
-    <CropboxWrap /*className="cropBox"*/>
+    <CropboxWrap>
         <LocationInfo>
             You are in {props.country}, {props.region}.{' '}
             <Link to="/">Change location</Link>

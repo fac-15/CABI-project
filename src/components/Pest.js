@@ -1,11 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Title from './Title.js';
 import Header from './Header';
 import HowManyFarmers from './HowManyFarmers';
-// import styled from 'styled-components';
-const jsonSheet = require('../data/factsheet.json');
 import { PestCommonHeader, PestImg } from './styledComponents';
+const jsonSheet = require('../data/factsheet.json');
 
 const countryISOs = {
     Kenya: 'KE',
@@ -25,15 +23,11 @@ class Pest extends React.Component {
 
     componentDidMount() {
         this.setState({ data: jsonSheet });
-        // console.log(this.state.data);
     }
 
     render() {
         const pestName = this.props.match.params.pests;
         const country = this.props.match.params.country;
-        console.log(this.state.country);
-        console.log(this.state.region);
-        console.log('In PEST:', this.props);
         return (
             <div>
                 <Title />
@@ -68,11 +62,7 @@ class Pest extends React.Component {
                                         {Object.values(e.Images[0]).map(
                                             (image, key) => (
                                                 <div key={key}>
-                                                    <PestImg
-                                                        /*className="pestImg"*/ src={
-                                                            image.url
-                                                        }
-                                                    />
+                                                    <PestImg src={image.url} />
                                                     <p>
                                                         <b>Identify by: </b>
                                                         {image.Caption}

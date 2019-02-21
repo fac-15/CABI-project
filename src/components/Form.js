@@ -1,5 +1,4 @@
 import React from 'react';
-// import { BrowserRouter as Router, Link } from "react-router-dom";
 import Title from './Title.js';
 import { FormWrap, GoogleForm } from './styledComponents';
 

@@ -1,10 +1,9 @@
 let request = require('request');
 require('dotenv').config();
-const username = process.env.USERNAME;
+const username = process.env.USER_NAME;
 const password = process.env.PASSWORD;
 
 request = request.defaults({ jar: true });
-const axios = require('axios');
 
 const url = 'http://192.171.139.69/api/api-auth/login/';
 
