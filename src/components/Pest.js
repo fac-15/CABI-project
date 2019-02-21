@@ -29,7 +29,7 @@ class Pest extends React.Component {
     render() {
         const pestName = this.props.match.params.pests;
         const country = this.props.match.params.country;
-        console.log('Country:', country)
+        console.log('In PEST:', this.props)
         return (
             <div>
                 <Title />
@@ -48,8 +48,8 @@ class Pest extends React.Component {
                                         </p>
                                         <br />
                                         {
-                                            Object.values(e.Images[0]).map(image => 
-                                            <div><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
+                                            Object.values(e.Images[0]).map((image, key) => 
+                                            <div><img key={key} className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
                                           } 
                                         <p>
                                         <b> Country/Region: </b>

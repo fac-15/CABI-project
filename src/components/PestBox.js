@@ -12,7 +12,8 @@ const PestBox = props => (
         key={key}
           pest={pest}
           country={props.country}
-          route={`/pest/${pest.name}?country=${props.country}`}
+          region={props.region}
+          route={`/pest/${pest.name}?country=${props.country}?region=${props.region}`}
         />
       ))}
     </div>
