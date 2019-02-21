@@ -3,18 +3,9 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Title from './Title.js';
 import Header from './Header';
 import HowManyFarmers from './HowManyFarmers';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 const jsonSheet = require('../data/factsheet.json');
-
-const PestCommonHeader = styled.h4`
-    font-size: 1.2em;
-    color: black;
-`;
-
-const PestImg = styled.img`
-    display: inline-block;
-    padding: 1em;
-`;
+import { PestCommonHeader, PestImg } from './styledComponents';
 
 class Pest extends React.Component {
     constructor() {

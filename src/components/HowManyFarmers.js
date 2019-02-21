@@ -1,24 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import styled from 'styled-components';
-
-const Form = styled.iframe`
-    margin: 0 auto;
-    max-width: 100%;
-`;
-
-const ClickMe = styled.button`
-    position: fixed;
-    bottom: 0em;
-    left: -1em;
-    width: 20%;
-    background: #368729;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 0.5em;
-    color: white;
-    text-transform: uppercase;
-`;
+// import styled from 'styled-components';
+import { Form, ClickMe } from './styledComponents';
 
 class HowManyFarmers extends React.Component {
     constructor(props) {

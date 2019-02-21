@@ -2,15 +2,8 @@ import React, { Component } from 'react';
 // import { BrowserRouter as Router, Link } from 'react-router-dom';
 // import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import Button from './Button';
-import styled from 'styled-components';
-
-const DropdownWrap = styled.div`
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 0.2em;
-    margin: 1em;
-`;
+// import styled from 'styled-components';
+import { DropdownWrap } from './styledComponents';
 
 class Location extends Component {
     constructor(props) {

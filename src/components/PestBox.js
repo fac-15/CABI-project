@@ -1,25 +1,8 @@
 import React from 'react';
 import PestButton from './PestButton';
 import factsheet from '../data/factsheet';
-import styled from 'styled-components';
-
-const PestBoxWrapper = styled.div`
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-`;
-
-const PestBoxContainer = styled.div`
-    flex: 0 0 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-`;
+// import styled from 'styled-components';
+import { PestBoxWrapper, PestBoxContainer } from './styledComponents';
 
 const PestBox = props => (
     <PestBoxWrapper /*className="wrapper"*/>
