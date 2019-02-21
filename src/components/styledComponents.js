@@ -145,11 +145,19 @@ const TitleImage = styled.img`
     margin-left: auto;
 `;
 
+const CropNameHeader = styled.h2`
+    padding-top: 1em;
+    text-align: center;
+    flex: 0 0 100%;
+    color: black;
+`;
+
 export {
     ButtonContianer,
     CropCommonHeader,
     ClickMe,
     CropButtonLink,
+    CropNameHeader,
     PestImg,
     CropboxWrap,
     ChooseACrop,

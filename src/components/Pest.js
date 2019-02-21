@@ -7,11 +7,19 @@ import HowManyFarmers from './HowManyFarmers';
 const jsonSheet = require('../data/factsheet.json');
 import { PestCommonHeader, PestImg } from './styledComponents';
 
+const countryISOs = {
+    Kenya: 'KE',
+    Ghana: 'GH',
+    Zambia: 'ZM'
+};
+
 class Pest extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            data: null
+            data: null,
+            country: this.props.location.state.country,
+            region: this.props.location.state.region
         };
     }
 
@@ -22,6 +30,10 @@ class Pest extends React.Component {
 
     render() {
         const pestName = this.props.match.params.pests;
+        const country = this.props.match.params.country;
+        console.log(this.state.country);
+        console.log(this.state.region);
+        console.log('In PEST:', this.props);
         return (
             <div>
                 <Title />
@@ -29,7 +41,19 @@ class Pest extends React.Component {
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
-                            if (e.PestScientificName === pestName) {
+                            e.countryISO =
+                                e.CountryISO === 'GH'
+                                    ? 'Ghana'
+                                    : e.CountryISO === 'KE'
+                                    ? 'Kenya'
+                                    : e.CountryISO === 'ZM'
+                                    ? 'Zambia'
+                                    : '';
+
+                            if (
+                                e.countryISO === this.state.country &&
+                                e.PestScientificName === pestName
+                            ) {
                                 return (
                                     <li key={key}>
                                         <PestCommonHeader>
@@ -42,11 +66,12 @@ class Pest extends React.Component {
                                         </p>
                                         <br />
                                         {Object.values(e.Images[0]).map(
-                                            image => (
-                                                <div>
+                                            (image, key) => (
+                                                <div key={key}>
                                                     <PestImg
-                                                        /*className="pestImg"*/
-                                                        src={image.url}
+                                                        /*className="pestImg"*/ src={
+                                                            image.url
+                                                        }
                                                     />
                                                     <p>
                                                         <b>Identify by: </b>

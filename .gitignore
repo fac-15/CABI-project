@@ -81,14 +81,10 @@ typings/
 
 dist
 
-src/api.js
-
 package-lock.json
 
 node_modules/
-config.env
+.env
 package-lock.json
 coverage/
 .DS_Store
-
-src/api.js

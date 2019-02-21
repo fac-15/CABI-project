@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-// import styled from 'styled-components';
+// import styled from "styled-components";
 import { Form, ClickMe } from './styledComponents';
 
 class HowManyFarmers extends React.Component {
@@ -21,18 +21,18 @@ class HowManyFarmers extends React.Component {
             <div>
                 <div className={this.state.visible}>
                     <Form
-                        // className="form"
+                        /*className="form"*/
                         src="https://docs.google.com/forms/d/e/1FAIpQLScFlWkjii83RviOdBI23NCD1ROWygM54tLAth6geKpNau-L1g/viewform?embedded=true"
                         width="640"
-                        height="620"
-                        frameBorder="0"
-                        marginHeight="0"
-                        marginWidth="0"
+                        height="914"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
                     >
                         Loading...
                     </Form>
                 </div>
-                <ClickMe className="clickMe" onClick={this.handleClick}>
+                <ClickMe /*className="clickMe"*/ onClick={this.handleClick}>
                     {!this.state.visible == 'panel' ? 'Slide up' : 'Click me!'}
                 </ClickMe>
             </div>

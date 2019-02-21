@@ -123,6 +123,7 @@ li {
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
+    height: 12em;
     align-items: center;
     width: 80%;
 } */

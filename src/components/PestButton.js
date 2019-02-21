@@ -9,12 +9,18 @@ import {
     PestButtonContainer
 } from './styledComponents';
 
-export default function PestButton({ pest, country, route }) {
+export default function PestButton({ pest, country, route, region, search }) {
     const { name, risk } = pest;
-
+    // console.log(query)
     return (
         <PestButtonWrap /*className="pestBtn"*/>
-            <Link to={route}>
+            <Link
+                to={{
+                    pathname: route,
+                    search,
+                    state: { country: country, region: region }
+                }}
+            >
                 {factsheet.map(e => {
                     let commonName = '';
                     if (
@@ -30,7 +36,7 @@ export default function PestButton({ pest, country, route }) {
                     ) {
                         commonName = e.CommonName;
                         return (
-                            <PestButtonContainer>
+                            <PestButtonContainer key={key}>
                                 <PestButtonName>{commonName}</PestButtonName>
                                 <RiskLevel level={risk} />
                             </PestButtonContainer>

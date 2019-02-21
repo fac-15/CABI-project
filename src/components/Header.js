@@ -4,7 +4,7 @@ import React from 'react';
 import { Head } from './styledComponents';
 
 const Header = props => {
-    return <Head>{props.name}</Head>;
+    return <Head />;
 };
 
 export default Header;
