@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { CropButtonLink } from './styledComponents';
 
 export default function CropButton(props) {
     return (
         <div>
             <Link to={props.route} props={props.country}>
-                <button className="cropBtn">{props.crop}</button>
+                <CropButtonLink>{props.crop}</CropButtonLink>
             </Link>
         </div>
     );

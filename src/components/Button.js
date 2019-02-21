@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { ButtonContianer } from './styledComponents';
 
 const Button = props => {
-    console.log(props);
-
     return (
         <Link
             to={{
@@ -11,7 +10,7 @@ const Button = props => {
                 state: { country: props.country, region: props.region }
             }}
         >
-            <button className="button">{props.name}</button>
+            <ButtonContianer>{props.name}</ButtonContianer>
         </Link>
     );
 };

@@ -1,16 +1,15 @@
-import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import Title from "./Title.js";
-import Header from "./Header";
-import HowManyFarmers from "./HowManyFarmers";
+import React from 'react';
+import Title from './Title.js';
+import Header from './Header';
+import HowManyFarmers from './HowManyFarmers';
+import { PestCommonHeader, PestImg } from './styledComponents';
 const jsonSheet = require('../data/factsheet.json');
 
-
 const countryISOs = {
-    'Kenya': 'KE',
-    'Ghana': 'GH',
-    'Zambia': 'ZM'
-}
+    Kenya: 'KE',
+    Ghana: 'GH',
+    Zambia: 'ZM'
+};
 
 class Pest extends React.Component {
     constructor(props) {
@@ -24,15 +23,11 @@ class Pest extends React.Component {
 
     componentDidMount() {
         this.setState({ data: jsonSheet });
-        // console.log(this.state.data);
     }
 
     render() {
         const pestName = this.props.match.params.pests;
         const country = this.props.match.params.country;
-        console.log(this.state.country)
-        console.log(this.state.region)
-        console.log('In PEST:', this.props)
         return (
             <div>
                 <Title />
@@ -40,48 +35,61 @@ class Pest extends React.Component {
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
-                          e.countryISO = (e.CountryISO === 'GH'
-                          ? 'Ghana'
-                          : e.CountryISO === 'KE'
-                          ? 'Kenya'
-                          : e.CountryISO === 'ZM'
-                          ? 'Zambia'
-                          : '')
+                            e.countryISO =
+                                e.CountryISO === 'GH'
+                                    ? 'Ghana'
+                                    : e.CountryISO === 'KE'
+                                    ? 'Kenya'
+                                    : e.CountryISO === 'ZM'
+                                    ? 'Zambia'
+                                    : '';
 
-                            if (e.countryISO === this.state.country && e.PestScientificName === pestName ) {
+                            if (
+                                e.countryISO === this.state.country &&
+                                e.PestScientificName === pestName
+                            ) {
                                 return (
                                     <li key={key}>
-                                        <h4>Common Name: {' '}
-                                        {e.CommonName.toUpperCase()} </h4>
+                                        <PestCommonHeader>
+                                            Common Name:{' '}
+                                            {e.CommonName.toUpperCase()}{' '}
+                                        </PestCommonHeader>
                                         <br />
                                         <p>
-                                          <b>  Crop affected: </b> {e.Crop}
+                                            <b> Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
-                                        {
-                                            Object.values(e.Images[0]).map((image, key) => 
-                                            <div key={key} ><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
-                                          } 
+                                        {Object.values(e.Images[0]).map(
+                                            (image, key) => (
+                                                <div key={key}>
+                                                    <PestImg src={image.url} />
+                                                    <p>
+                                                        <b>Identify by: </b>
+                                                        {image.Caption}
+                                                    </p>
+                                                </div>
+                                            )
+                                        )}
                                         <p>
-                                        <b> Country/Region: </b>
+                                            <b> Country/Region: </b>
                                             {e.CountryISO === 'GH'
-                          ? 'Ghana'
-                          : e.CountryISO === 'KE'
-                          ? 'Kenya'
-                          : e.CountryISO === 'ZM'
-                          ? 'Zambia'
-                          : ''}
+                                                ? 'Ghana'
+                                                : e.CountryISO === 'KE'
+                                                ? 'Kenya'
+                                                : e.CountryISO === 'ZM'
+                                                ? 'Zambia'
+                                                : ''}
                                         </p>
                                         <br />
                                         <p>
-                                        <b>   Prevention: </b> {e.Prevention}
+                                            <b> Prevention: </b> {e.Prevention}
                                         </p>
                                         <br />
                                         <p>
-                                        <b>   Monitoring: </b> {e.Monitoring}
+                                            <b> Monitoring: </b> {e.Monitoring}
                                         </p>
                                         <br />
-                                        <b> 
+                                        <b>
                                             Direct Control with restrictions:{' '}
                                         </b>
                                         <br />
@@ -93,7 +101,7 @@ class Pest extends React.Component {
                                             }
                                         </p>
                                         <br />
-                                        <b> 
+                                        <b>
                                             Direct Control without restrictions:{' '}
                                         </b>
                                         <br />
@@ -115,5 +123,5 @@ class Pest extends React.Component {
         );
     }
 }
-    
+
 export default Pest;
