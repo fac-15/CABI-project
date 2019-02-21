@@ -20,3 +20,21 @@
 ##### React Planning
 ![react](https://user-images.githubusercontent.com/41472850/52576240-9cb8e800-2e17-11e9-8f4a-1b3bffe48df0.png)
 ![react1](https://user-images.githubusercontent.com/41472850/52576456-01744280-2e18-11e9-9bba-8e08b720ebeb.png)
+
+
+#### User stories 
+
+1. As a user, I want to be able to choose my location
+
+2. As a user, I want to be able to choose a crop and see info about the crop-specific pests
+
+3. As a user, I want to be able to choose a pest and see information about that specific pest
+
+4. As a user, I want to be able to visualise a summary of all the crops and pests available for my area
+
+5. As a user, I want to be able to input information about how many farmers have planted that season as a percentage
+
+6. As a user, I want to be able to report if I have seen unexpected pest activity
+
+#### Stretch Goals
+
