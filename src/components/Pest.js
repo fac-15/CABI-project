@@ -5,11 +5,19 @@ import Header from "./Header";
 import HowManyFarmers from "./HowManyFarmers";
 const jsonSheet = require('../data/factsheet.json');
 
+
+const countryISOs = {
+    'Kenya': 'KE',
+    'Ghana': 'GH',
+    'Zambia': 'ZM'
+}
+
 class Pest extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            data: null
+            data: null,
+            country: this.props.country
         };
     }
 
@@ -20,6 +28,8 @@ class Pest extends React.Component {
 
     render() {
         const pestName = this.props.match.params.pests;
+        const country = this.props.match.params.country;
+        console.log('Country:', country)
         return (
             <div>
                 <Title />
@@ -27,10 +37,7 @@ class Pest extends React.Component {
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
-                            if (
-                                e.PestScientificName ===
-                                pestName
-                            ) {
+                            if (e.PestScientificName === pestName && country === countryISOs[country]) {
                                 return (
                                     <li key={key}>
                                         <h4>Common Name: {' '}
@@ -46,13 +53,7 @@ class Pest extends React.Component {
                                           } 
                                         <p>
                                         <b> Country/Region: </b>
-                                            {e.CountryISO === 'GH'
-                                                ? 'Ghana'
-                                                : e.CountryISO === 'KE'
-                                                ? 'Kenya'
-                                                : e.CountryISO === 'ZM'
-                                                ? 'Zambia'
-                                                : ''}
+                                            {country}
                                         </p>
                                         <br />
                                         <p>

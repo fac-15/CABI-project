@@ -103,26 +103,28 @@ h3 {
 }
 
 .pestBox {
-    flex: 0 0 100%;
-    margin: 0 auto;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 12em;
     align-items: center;
-    width: 80%;
 }
 
 h2 {
+    padding-top: 1em;
     text-align: center;
     flex: 0 0 100%;
     color: black;
 }
 
 .pestBtn {
+    flex-direction: row;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     padding: 0.6em;
     color: white;
+    box-sizing: border-box;
 }
 
 .button {
