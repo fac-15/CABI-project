@@ -1,7 +1,8 @@
 let request = require("request");
 require("dotenv").config();
-const username = process.env.USERNAME;
+const username = process.env.USERNAME2;
 const password = process.env.PASSWORD;
+
 
 request = request.defaults({ jar: true });
 const axios = require("axios");
@@ -43,7 +44,7 @@ const Api = region =>
             `http://192.171.139.69/api/pests/?county=${region}&date__gte=${lastWeek}`,
             (err, data) => {
               // `http://192.171.139.69/api/pests/?county=${countyname}&date__gte=${date}`
-              if (err) return console.error("oops", err);
+              if (err) reject(err);
               resolve(data.body);
             }
           );
