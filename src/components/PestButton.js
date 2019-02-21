@@ -13,7 +13,7 @@ export default function PestButton({ pest, country, route }) {
     const { name, risk } = pest;
 
     return (
-        <PestButtonWrap className="pestBtn">
+        <PestButtonWrap /*className="pestBtn"*/>
             <Link to={route}>
                 {factsheet.map(e => {
                     let commonName = '';

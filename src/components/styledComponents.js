@@ -39,6 +39,7 @@ const ChooseACrop = styled.h2`
     text-align: center;
     flex: 0 0 100%;
     color: black;
+    padding-top: 1em;
 `;
 
 const LocationInfo = styled.p``;
@@ -102,12 +103,12 @@ const PestBoxWrapper = styled.div`
 `;
 
 const PestBoxContainer = styled.div`
-    flex: 0 0 100%;
-    margin: 0 auto;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    /* width: 80%; */
+    height: 12em;
 `;
 
 const PestButtonName = styled.h3`
@@ -116,11 +117,13 @@ const PestButtonName = styled.h3`
 `;
 
 const PestButtonWrap = styled.div`
+    flex-direction: row;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     padding: 0.6em;
     color: white;
+    box-sizing: border-box;
 `;
 
 const PestButtonContainer = styled.button``;
@@ -143,19 +146,19 @@ const TitleImage = styled.img`
 `;
 
 export {
-    CropCommonHeader,
-    PestImg,
     ButtonContianer,
+    CropCommonHeader,
+    ClickMe,
+    CropButtonLink,
+    PestImg,
     CropboxWrap,
     ChooseACrop,
     LocationInfo,
-    CropButtonLink,
     DashWrap,
     FormWrap,
     GoogleForm,
     Head,
     Form,
-    ClickMe,
     DropdownWrap,
     PestCommonHeader,
     PestBoxContainer,
