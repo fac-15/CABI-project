@@ -30,11 +30,6 @@ We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and 
 ![#e10098](https://placehold.it/15/e10098/000000?text=+) `#e10098 - Accent`
 ![#80225f](https://placehold.it/15/80225f/000000?text=+) `#80225f - Accent`
 
-##### React Planning
-![react](https://user-images.githubusercontent.com/41472850/52576240-9cb8e800-2e17-11e9-8f4a-1b3bffe48df0.png)
-![react1](https://user-images.githubusercontent.com/41472850/52576456-01744280-2e18-11e9-9bba-8e08b720ebeb.png)
-
-
 #### User stories 
 
 1. As a user, I want to be able to choose my location
@@ -56,3 +51,7 @@ We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and 
 - Testing (!!!!)
 
 - Make the factsheet text formatted 
+
+##### React Planning
+![react](https://user-images.githubusercontent.com/41472850/52576240-9cb8e800-2e17-11e9-8f4a-1b3bffe48df0.png)
+![react1](https://user-images.githubusercontent.com/41472850/52576456-01744280-2e18-11e9-9bba-8e08b720ebeb.png)
