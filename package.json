@@ -7,7 +7,7 @@
     "test": "jest --watch",
     "dev": "parcel public/index.html",
     "build": "parcel build public/index.html",
-    "start": "node src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
