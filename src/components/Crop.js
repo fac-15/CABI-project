@@ -3,7 +3,9 @@ import React from 'react';
 import HowManyFarmers from './HowManyFarmers.js';
 import Header from './Header';
 import Title from './Title.js';
+// import styled from 'styled-components';
 const jsonSheet = require('../data/factsheet.json');
+import { CropCommonHeader, PestImg } from './styledComponents';
 
 class Crop extends React.Component {
     constructor(props) {
@@ -54,25 +56,40 @@ class Crop extends React.Component {
                             ) {
                                 // const a = e.Image1.url;
                                 // console.log(a);
-                                console.log('imagesgd', Object.values(e.Images[0]))
+                                console.log(
+                                    'imagesgd',
+                                    Object.values(e.Images[0])
+                                );
 
                                 return (
                                     <li key={key}>
-                                        <h4>Common Name: {' '}
-                                        {e.CommonName.toUpperCase()} </h4>
+                                        <CropCommonHeader>
+                                            Common Name:{' '}
+                                            {e.CommonName.toUpperCase()}{' '}
+                                        </CropCommonHeader>
                                         <br />
                                         <p>
-                                        <b>    Crop affected: </b> {e.Crop}
+                                            <b> Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
                                         {/* {console.log('image', e['Image 1'])} */}
-                                        {
-                                            Object.values(e.Images[0]).map(image => 
-                                            <div><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
-                                          } 
+                                        {Object.values(e.Images[0]).map(
+                                            image => (
+                                                <div>
+                                                    <PestImg
+                                                        /*className="pestImg"*/
+                                                        src={image.url}
+                                                    />
+                                                    <p>
+                                                        <b>Identify by: </b>
+                                                        {image.Caption}
+                                                    </p>
+                                                </div>
+                                            )
+                                        )}
                                         {/* <img src="https://www.plantwise.org/KnowledgeBank/800x640/PMDG_110097.jpg" /> */}
                                         <p>
-                                        <b>  Country/Region: </b>
+                                            <b> Country/Region: </b>
                                             {e.CountryISO === 'GH'
                                                 ? 'Ghana'
                                                 : e.CountryISO === 'KE'

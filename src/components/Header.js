@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import styled from 'styled-components';
+import { Head } from './styledComponents';
 
 const Header = props => {
-    return <h1>{props.name}</h1>;
+    return <Head>{props.name}</Head>;
 };
 
 export default Header;

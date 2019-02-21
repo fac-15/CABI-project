@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
+// import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import Button from './Button';
+import styled from 'styled-components';
+
+const DropdownWrap = styled.div`
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.2em;
+    margin: 1em;
+`;
 
 class Location extends Component {
     constructor(props) {
@@ -41,7 +50,7 @@ class Location extends Component {
         const { country, region } = this.state;
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="dropdown">
+                <DropdownWrap /*className="dropdown"*/>
                     {/* <CountryDropdown
                     className="dropdown"
                     value={country}
@@ -85,7 +94,7 @@ class Location extends Component {
                         country={this.state.country}
                         region={this.state.region}
                     />
-                </div>
+                </DropdownWrap>
             </form>
         );
     }

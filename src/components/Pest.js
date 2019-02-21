@@ -1,9 +1,20 @@
-import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import Title from "./Title.js";
-import Header from "./Header";
-import HowManyFarmers from "./HowManyFarmers";
+import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Title from './Title.js';
+import Header from './Header';
+import HowManyFarmers from './HowManyFarmers';
+import styled from 'styled-components';
 const jsonSheet = require('../data/factsheet.json');
+
+const PestCommonHeader = styled.h4`
+    font-size: 1.2em;
+    color: black;
+`;
+
+const PestImg = styled.img`
+    display: inline-block;
+    padding: 1em;
+`;
 
 class Pest extends React.Component {
     constructor() {
@@ -27,25 +38,34 @@ class Pest extends React.Component {
                 <div id="container">
                     <ul>
                         {jsonSheet.map((e, key) => {
-                            if (
-                                e.PestScientificName ===
-                                pestName
-                            ) {
+                            if (e.PestScientificName === pestName) {
                                 return (
                                     <li key={key}>
-                                        <h4>Common Name: {' '}
-                                        {e.CommonName.toUpperCase()} </h4>
+                                        <PestCommonHeader>
+                                            Common Name:{' '}
+                                            {e.CommonName.toUpperCase()}{' '}
+                                        </PestCommonHeader>
                                         <br />
                                         <p>
-                                          <b>  Crop affected: </b> {e.Crop}
+                                            <b> Crop affected: </b> {e.Crop}
                                         </p>
                                         <br />
-                                        {
-                                            Object.values(e.Images[0]).map(image => 
-                                            <div><img className="pestImg" src={image.url} /><p><b>Identify by: </b>{image.Caption}</p></div>)
-                                          } 
+                                        {Object.values(e.Images[0]).map(
+                                            image => (
+                                                <div>
+                                                    <PestImg
+                                                        /*className="pestImg"*/
+                                                        src={image.url}
+                                                    />
+                                                    <p>
+                                                        <b>Identify by: </b>
+                                                        {image.Caption}
+                                                    </p>
+                                                </div>
+                                            )
+                                        )}
                                         <p>
-                                        <b> Country/Region: </b>
+                                            <b> Country/Region: </b>
                                             {e.CountryISO === 'GH'
                                                 ? 'Ghana'
                                                 : e.CountryISO === 'KE'
@@ -56,14 +76,14 @@ class Pest extends React.Component {
                                         </p>
                                         <br />
                                         <p>
-                                        <b>   Prevention: </b> {e.Prevention}
+                                            <b> Prevention: </b> {e.Prevention}
                                         </p>
                                         <br />
                                         <p>
-                                        <b>   Monitoring: </b> {e.Monitoring}
+                                            <b> Monitoring: </b> {e.Monitoring}
                                         </p>
                                         <br />
-                                        <b> 
+                                        <b>
                                             Direct Control with restrictions:{' '}
                                         </b>
                                         <br />
@@ -75,7 +95,7 @@ class Pest extends React.Component {
                                             }
                                         </p>
                                         <br />
-                                        <b> 
+                                        <b>
                                             Direct Control without restrictions:{' '}
                                         </b>
                                         <br />
@@ -97,5 +117,5 @@ class Pest extends React.Component {
         );
     }
 }
-    
+
 export default Pest;

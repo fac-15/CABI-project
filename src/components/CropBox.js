@@ -1,14 +1,16 @@
 import React from 'react';
 import CropButton from './CropButton';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+// import styled from 'styled-components';
+import { CropboxWrap, ChooseACrop, LocationInfo } from './styledComponents';
 
 const CropBox = props => (
-    <div className="cropBox">
-        <p>
+    <CropboxWrap /*className="cropBox"*/>
+        <LocationInfo>
             You are in {props.country}, {props.region}.{' '}
             <Link to="/">Change location</Link>
-        </p>
-        <h2>Can't identify the pest? Choose a crop:</h2>
+        </LocationInfo>
+        <ChooseACrop>Can't identify the pest? Choose a crop:</ChooseACrop>
         <CropButton
             country={props.country}
             region={props.region}
@@ -27,7 +29,7 @@ const CropBox = props => (
             crop="Maize"
             route={`/${props.country}/${props.region}/Maize`}
         />
-    </div>
+    </CropboxWrap>
 );
 
 export default CropBox;

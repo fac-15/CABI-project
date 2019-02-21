@@ -3,6 +3,7 @@ import PestBox from './PestBox';
 import Button from './Button.js';
 import CropBox from './CropBox';
 import Title from './Title';
+import { DashWrap } from './styledComponents';
 
 class Dashboard extends React.Component {
     constructor(props) {
@@ -27,13 +28,19 @@ class Dashboard extends React.Component {
         });
     }
 
+    // newfunc = () => {
+    //     this.state.riskAndName.forEach(pest => {
+    //         return this.setState({...name, ...risk, crop: e.Crop}
+    //     }))
+    // }
+
     render() {
         console.log('Dashboard risk', this.state.riskAndName);
         if (this.state.riskAndName === null) {
             return <div>Loading</div>;
         } else {
             return (
-                <div>
+                <DashWrap>
                     <Title />
                     <CropBox
                         country={this.state.country}
@@ -46,7 +53,7 @@ class Dashboard extends React.Component {
                         country={this.state.country}
                     />
                     <Button name="Back" route="/" />
-                </div>
+                </DashWrap>
             );
         }
     }
