@@ -16,7 +16,7 @@ const ButtonContianer = styled.button`
 
     &:hover {
         background: #368729;
-        }
+    }
 `;
 
 const ChooseACrop = styled.h2`
@@ -77,8 +77,7 @@ const CropButtonLink = styled.button`
 
     &:hover {
         background: #cd4400;
-        }
-
+    }
 `;
 
 const DashWrap = styled.div``;
@@ -102,6 +101,7 @@ const DropdownWrap = styled.div`
     font-size: 1em;
     padding: 0.2em;
     margin: 1em;
+    position: relative;
 `;
 
 const PestCommonHeader = styled.h4`
@@ -143,17 +143,15 @@ const PestButtonWrap = styled.div`
 `;
 
 const PestButtonContainer = styled.button`
-border-radius: 0.8em;
-width: 14em;
-background: #ffffff;
-border: 0.3em double #cd4400;
+    border-radius: 0.8em;
+    width: 14em;
+    background: #ffffff;
+    border: 0.3em double #cd4400;
 
-&:hover {
-    border: 0.3em solid black;
-}
-
+    &:hover {
+        border: 0.3em solid black;
+    }
 `;
-
 
 const riskColor = num => {
     return num === 1

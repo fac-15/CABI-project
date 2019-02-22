@@ -4,22 +4,62 @@ body {
     background: white;
     font-family: 'Open Sans', sans-serif;
     background-attachment: fixed;
-    background-color: #ffbf10;
-    background-image: -webkit-linear-gradient(140deg, #ffffff 60%, #ffbf10 40%);
+    background-color: #ffffff;
+    background-image: -webkit-linear-gradient(150deg, #ffbf10 50%, #ffffff 10%);
 }
 
 /*----FOR Multiple tags----*/
+
+form {
+    border-radius: 20px;
+    padding: 10px 8px 10px 14px;
+    position: relative;
+}
+
 .dropdown {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: middle; /* 3 */
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     padding: 0.2em;
     margin: 1em;
+    background-color: #cd4400;
+    color: white;
+    width: 12.5em;
 }
+/* 
+select {
+    background: transparent;
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 120%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+} */
 
-.dropdown select {
-    display: none;
-}
+/* select:after {
+    border: 6px solid transparent;
+    position: absolute;
+    content: '';
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-color: #fff transparent transparent transparent;
+} */
+
+/* option {
+    background-color: black;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+} */
 
 li {
     list-style: none;
