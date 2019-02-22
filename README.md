@@ -62,6 +62,8 @@ We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and 
 
 - Notifications
 
+- Risk level in Identification page
+
 ##### React Planning
 ![](https://user-images.githubusercontent.com/41472850/52576240-9cb8e800-2e17-11e9-8f4a-1b3bffe48df0.png)
 ![](https://user-images.githubusercontent.com/41472850/52576456-01744280-2e18-11e9-9bba-8e08b720ebeb.png)
