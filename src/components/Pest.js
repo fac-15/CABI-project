@@ -64,7 +64,7 @@ class Pest extends React.Component {
                                                 <div key={key}>
                                                     <PestImg src={image.url} />
                                                     <p>
-                                                        <b>Identify by: </b>
+                                                        <b>Identify by: </b><br />
                                                         {image.Caption}
                                                     </p>
                                                 </div>
