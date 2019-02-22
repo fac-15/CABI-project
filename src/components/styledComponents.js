@@ -35,7 +35,7 @@ const ClickMe = styled.button`
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8em;
     font-weight: bold;
-    background: transparent;
+    background: white;
     padding: 0.6em;
     color: black;
     text-transform: uppercase;
