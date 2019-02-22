@@ -29,15 +29,21 @@ const ChooseACrop = styled.h2`
 const ClickMe = styled.button`
     position: fixed;
     bottom: 0em;
-    left: -1em;
-    width: 20%;
-    background: #368729;
+    left: 0.5em;
+    width: 98%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    font-weight: bold;
+    background: transparent;
     padding: 0.5em;
-    color: white;
+    color: black;
     text-transform: uppercase;
     border-radius: 0.5em;
+    border: 0.5em double #368729;
+
+    &:hover {
+        border: 0.3em solid black;
+    }
 `;
 
 const CropboxWrap = styled.div`
@@ -55,10 +61,10 @@ const CropCommonHeader = styled.h4`
 `;
 
 const PestImg = styled.img`
-    display: inline-block;
+    flex: 0 0 1;
     padding: 1em;
-    max-width: 460px;
-    max-height: 190px;
+    min-width: 460px;
+    min-height: 190px;
     width: auto;
     height: auto;
 `;
@@ -93,7 +99,6 @@ const Head = styled.h1`
 
 const Form = styled.iframe`
     margin: 0 auto;
-    max-width: 100%;
 `;
 
 const DropdownWrap = styled.div`
@@ -185,16 +190,17 @@ const Loading = styled.div`
 
 const SelectLocationHead = styled.h1`
     text-align: center;
+    margin-top: 4em;
 `;
 
 const TitleContainer = styled.div`
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
 `;
 
 const TitleImage = styled.img`
-    max-width: 100%;
+    min-width: 100%;
     min-width: 14em;
 `;
 
