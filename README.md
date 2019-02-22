@@ -16,7 +16,9 @@ We made a pest alert app that takes in risk levels of pests in Kenya, Ghana and 
 2.2. Go to your browser and type `localhost:1234` to run the app. 
 
 ##### Our Tech Stack:
+🧩 Javascript\
 :battery: React\
+🎨 Styled Components\
 :train: Express\
 :heart_eyes_cat: Parcel\
 :bulb: ESLint & Prettier
