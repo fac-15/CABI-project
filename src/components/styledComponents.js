@@ -33,18 +33,14 @@ const ClickMe = styled.button`
     left: 0.5em;
     width: 98%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.8em;
     font-weight: bold;
     background: transparent;
-    padding: 0.5em;
+    padding: 0.6em;
     color: black;
     text-transform: uppercase;
     border-radius: 0.5em;
     border: 0.5em double #368729;
-
-    &:hover {
-        border: 0.3em solid black;
-    }
 `;
 
 const CropboxWrap = styled.div`
@@ -93,16 +89,21 @@ const CropButtonLink = styled.button`
 
 const DashWrap = styled.div``;
 
-const FormWrap = styled.div``;
+const FormWrap = styled.div`
+display: flex;
+justify-content: center;
+`;
 
-const GoogleForm = styled.iframe``;
+const GoogleForm = styled.iframe`
+margin-top: 8em;
+`;
 
 const Head = styled.h1`
     padding-left: 1.6em;
 `;
 
 const Form = styled.iframe`
-    margin: 0 auto;
+    padding-bottom: 2em;
 `;
 
 const DropdownWrap = styled.div`

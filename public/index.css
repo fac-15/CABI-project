@@ -12,7 +12,7 @@ body {
 .dropdown {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.6em;
     padding: 0.2em;
     margin: 1em;
 }
@@ -26,7 +26,7 @@ li {
     padding: 1em 2em 4em 1em;
 }
 
-/*----FOR Unknown use?----*/
+/*----FOR Form pop up----*/
 .panel {
     width: 100%;
     position: fixed;
@@ -34,6 +34,8 @@ li {
     margin-top: 1em;
     max-height: 0em;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     transition: max-height 0.5s ease;
 }
 .panel.visible {
