@@ -4,8 +4,8 @@ const ButtonContianer = styled.button`
     /* flex: 0 0 100%; */
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 0.8em;
+    font-size: 1.4em;
+    padding: 1em;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -22,6 +22,7 @@ const ButtonContianer = styled.button`
 const ChooseACrop = styled.h2`
     text-align: center;
     flex: 0 0 100%;
+    font-size: 2em;
     color: black;
     padding-top: 1em;
 `;
@@ -29,15 +30,17 @@ const ChooseACrop = styled.h2`
 const ClickMe = styled.button`
     position: fixed;
     bottom: 0em;
-    left: -1em;
-    width: 20%;
-    background: #368729;
+    left: 0.5em;
+    width: 98%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 0.5em;
-    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    background: white;
+    padding: 0.6em;
+    color: black;
     text-transform: uppercase;
     border-radius: 0.5em;
+    border: 0.5em double #368729;
 `;
 
 const CropboxWrap = styled.div`
@@ -55,21 +58,24 @@ const CropCommonHeader = styled.h4`
 `;
 
 const PestImg = styled.img`
-    display: inline-block;
+    flex: 0 0 1;
     padding: 1em;
-    max-width: 460px;
-    max-height: 190px;
+    min-width: 460px;
+    min-height: 190px;
     width: auto;
     height: auto;
 `;
 
-const LocationInfo = styled.p``;
+const LocationInfo = styled.p`
+    font-size: 2em;
+    margin-top: 3em;
+`;
 
 const CropButtonLink = styled.button`
     background: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    padding: 0.8em;
+    font-size: 2em;
+    padding: 1em;
     margin: 0.3em;
     color: white;
     border-radius: 0.5em;
@@ -82,17 +88,21 @@ const CropButtonLink = styled.button`
 
 const DashWrap = styled.div``;
 
-const FormWrap = styled.div``;
+const FormWrap = styled.div`
+    display: flex;
+    justify-content: center;
+`;
 
-const GoogleForm = styled.iframe``;
+const GoogleForm = styled.iframe`
+    margin-top: 8em;
+`;
 
 const Head = styled.h1`
     padding-left: 1.6em;
 `;
 
 const Form = styled.iframe`
-    margin: 0 auto;
-    max-width: 100%;
+    padding-bottom: 2em;
 `;
 
 const DropdownWrap = styled.div`
@@ -130,6 +140,7 @@ const PestBoxContainer = styled.div`
 const PestButtonName = styled.h3`
     text-align: center;
     flex: 0 0 100%;
+    font-size: 2.4em;
 `;
 
 const PestButtonWrap = styled.div`
@@ -144,9 +155,13 @@ const PestButtonWrap = styled.div`
 
 const PestButtonContainer = styled.button`
     border-radius: 0.8em;
-    width: 14em;
+    width: 24em;
     background: #ffffff;
     border: 0.3em double #cd4400;
+
+    &:hover {
+        border: 0.3em solid black;
+    }
 
     &:hover {
         border: 0.3em solid black;
@@ -167,7 +182,8 @@ const RiskBar = styled.p`
     background-color: ${props => riskColor(props.level)};
     color: ${props => (props.level === 2 ? 'black' : 'white')};
     border-radius: 20px;
-    padding: 0.3em;
+    padding: 0.5em;
+    font-size: 1.8em;
     font-weight: bold;
     margin: 1em 2em;
     text-align: center;
@@ -183,22 +199,25 @@ const Loading = styled.div`
 
 const SelectLocationHead = styled.h1`
     text-align: center;
+    font-size: 3em;
+    margin-top: 4em;
 `;
 
 const TitleContainer = styled.div`
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
 `;
 
 const TitleImage = styled.img`
-    max-width: 100%;
-    min-width: 14em;
+    min-width: 100%;
+    min-width: 18em;
 `;
 
 const CropNameHeader = styled.h2`
     padding-top: 1em;
     text-align: center;
+    font-size: 2.6em;
     flex: 0 0 100%;
     color: black;
 `;

@@ -21,7 +21,6 @@ class Location extends Component {
     }
 
     render() {
-        console.log(this.state.data[0].Ghana[0].COUNTY);
         const { country, region } = this.state;
         let countryData = '';
         if (this.state.country === 'Ghana') {
