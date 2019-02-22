@@ -3,9 +3,10 @@ import Title from './Title.js';
 import { FormWrap, GoogleForm } from './styledComponents';
 
 const Form = () => (
-    <FormWrap>
+    <div>
         <Title />
-        <GoogleForm
+            <FormWrap>
+                <GoogleForm
             src="https://docs.google.com/forms/d/e/1FAIpQLSdecG_s8efNfWrOn_sO7ylhFbZbYdBHLPYFf8abibpknEFGMg/viewform?embedded=true"
             width="640"
             height="612"
@@ -14,8 +15,9 @@ const Form = () => (
             marginWidth="0"
         >
             Loading...
-        </GoogleForm>
-    </FormWrap>
+            </GoogleForm>
+        </FormWrap>
+    </div>
 );
 
 export default Form;
