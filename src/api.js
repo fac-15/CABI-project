@@ -24,14 +24,11 @@ const Api = region =>
                 .split(';')[0]
                 .split('csrftoken=')[1];
 
-
-            // console.log("--------", data.headers["set-cookie"][0] + `Referer=${url};`);
             request.post(
                 url,
                 {
                     headers: {
                         'content-type': 'application/x-www-form-urlencoded',
-                        // cookie: data.headers["set-cookie"][0] + `Referer=${url};`,
                         Referer: url
                     },
                     form: {
@@ -45,7 +42,6 @@ const Api = region =>
                     request.get(
                         `http://192.171.139.69/api/pests/?county=${region}&date__gte=${lastWeek}`,
                         (err, data) => {
-                            // `http://192.171.139.69/api/pests/?county=${countyname}&date__gte=${date}`
                             if (err) reject(err);
                             resolve(data.body);
                         }
