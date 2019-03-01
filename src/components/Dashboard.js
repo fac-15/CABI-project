@@ -56,7 +56,7 @@ class Dashboard extends React.Component {
 
     callBackendAPI = async region => {
         const response = await fetch(
-            `http://localhost:5000/riskres?region=${region}`
+            `https://cabipestalert.herokuapp.com/riskres?region=${region}`
         );
         return response;
     };
